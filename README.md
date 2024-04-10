@@ -6,11 +6,11 @@ Learning workshops
 
 ## Workshop 1 Managed Cluster environment
 
-  ### Obtaining licenses
+  ### 1_1 Obtaining licenses
   > creating Mission control account
   > adding license / quota
 
-  ### Cloud competencies (AWS)
+  ### 1_2 Cloud competencies (AWS)
   > - Regions / availability zones
   > - EC2 / Spot instance request / costing
   > - Security gates / ports 
@@ -18,7 +18,7 @@ Learning workshops
   > - VM types / AMI images
   > - Terminal communication access
 
-  ### Preparing environment (Linux)
+  ### 1_3 Preparing environment (Linux)
   > - Permissions
   > - environment setup
   >   - linux basic commands 
@@ -27,7 +27,7 @@ Learning workshops
   >   - mounting devices
   >   - editing configuration files
 
-  ### Dynatrace Managed Cluster Installation / maintenance
+  ### 1_4 Dynatrace Managed Cluster Installation / maintenance
   > - product architecture / folder structures
   > - communication 
   > - Cluster upgrade / published versions
