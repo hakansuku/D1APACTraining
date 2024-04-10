@@ -27,7 +27,7 @@ Learning workshops
   >   - mounting devices
   >   - editing configuration files
 
-  ### 1_4 Cluster Installation / maintenance
+  ### 1_4 Cluster Installation & maintenance
   > - product architecture / folder structures
   > - communication 
   > - Cluster upgrade / published versions
