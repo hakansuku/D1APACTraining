@@ -10,10 +10,10 @@ Learning workshops
   > creating Mission control account
   > adding license / quota
 
-  ### 1_2 Cloud competencies (AWS)
+  ### 1_2 Cloud environment preparation (AWS)
   > - Regions / availability zones
   > - EC2 / Spot instance request / costing
-  > - Security gates / ports 
+  > - Security groups / ports 
   > - Trust keys (RSA / PEM)
   > - VM types / AMI images
   > - Terminal communication access
