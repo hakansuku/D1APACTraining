@@ -26,3 +26,5 @@ dynatrace {
         }
     }
 }
+
+SELECT usersession.userSessionId, usersession.userId, useraction.name, usersession.longProperties.score FROM useraction where usersession.longProperties.score IS NOT NULL AND useraction.name IS 'send score'
