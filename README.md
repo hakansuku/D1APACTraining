@@ -8,8 +8,8 @@ Learning workshops
 
 Learning value : 
  - Gain confidence in Linux commands
- - Proficiency using cloud. 
- - Improved knowledge supporting managed customers
+ - Gain proficiency using cloud environment. 
+ - Improve knowledge supporting managed customers
 
   ### 1_1 Obtaining licenses
   > creating Mission control account
