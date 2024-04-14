@@ -28,3 +28,18 @@ dynatrace {
 }
 
 SELECT usersession.userSessionId, usersession.userId, useraction.name, usersession.longProperties.score FROM useraction where usersession.longProperties.score IS NOT NULL AND useraction.name IS 'send score'
+
+Create a mobile application in Dynatrace
+Instrument your Android app
+Instrument your application via Dynatrace Android Gradle plugin
+
+
+User action monitoring
+Create custom actions
+https://docs.dynatrace.com/docs/shortlink/oneagent-sdk-for-android#create-custom-actions
+
+Custom queries, segmentation, and aggregation of session data
+How do I get the values that have been reported above within Dynatrace, as well as via your API?
+You can create and manage USQL metric events using the Dynatrace web UI.
+uacm.cookieclickscore
+https://tax37821.dev.dynatracelabs.com/#dashboard;gtf=-6h;gf=all;id=0eba1921-38c0-4eaf-a71c-94c6ac16509f
