@@ -54,7 +54,7 @@ Learning value :
   > - Gradle build tool / Repositories /dependencies / plugins
   > - Device manager/ Virtual devices / Android OS
 
-  ### 2_2 Build your native android application
+  ### 2_2 Build your native Android application
   > - Native android app / Kotlin language / builds and folder structures
   > - manifest / layout editor / components
   > - Configurations / Code / Design / Build / Run / Debug / Test / logs
