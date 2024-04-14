@@ -39,29 +39,34 @@ Learning value :
   > - CMC configuration / nodes / AG / Cluster stats and events
   > - Common maintenance issues
 
-## Workshop 2 Mobile monitoring
+## Workshop 2 Mobile application monitoring
 
 Learning value : 
  - Gain confidence with mobile development environment
  - Experience native mobile development from design to coding , testing and monitoring.
- - Expand knowledge and benefits Dynatrace bring to mobile monitoring
+ - Expand knowledge and benefits Dynatrace bring to mobile application monitoring
+ - Query , segment and aggregate session data using custom action properties for visual analysis
  - Improve knowledge supporting mobile monitoring customers
 
   ### 2_1 Mobile Development Environment preparation
-  > - Android Studio / configuration/ SDK libraries / projects
+  > - Android Studio / configuration / SDK libraries / projects
   > - Native android app / Kotlin language / builds and structures
   > - Gradle build tool / Repositories /dependencies / plugins
   > - Device manager/ Virtual devices / Android OS
 
-  ### 2_2 Build your native android app
+  ### 2_2 Build your native Android application
   > - Native android app / Kotlin language / builds and folder structures
   > - manifest / layout editor / components
   > - Configurations / Code / Design / Build / Run / Debug / Test / logs
+  > - Pairing to physical device 
 
-  ### 2_3 Monitoring Instrumentation with Dynatrace 
+  ### 2_3 Monitoring with Dynatrace 
   > - Instrument dynatrace mobile OneAgent / configuration
   > - Data privacy / tagging / custom actions
-  > - Configurations / Code / Design / Build / Run / Debug / Test / logs
+  > - sessions / key user actions / APDEX thresholds
+  > - custom USQL queries queries / segmentation and aggregation of session data
+  > - custom action properties / custom metrics / dashboards
+ 
 
 
  
