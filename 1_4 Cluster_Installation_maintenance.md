@@ -13,7 +13,7 @@ Copy and paste YOUR license token download link command from your invitation ema
 ## 2) Check the file is downloaded using 'ls -l' command
 ![paste download](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/DTmanagedsh.png?raw=true)
 
-## 3) Copy and paste the Start the installer with root rights which contains your license string as a parmeter from the email.
+## 3) Copy and paste the Start the installer with root rights which contains your license string as a parameter from the email.
 > 	Start the installer with root rights:
 /bin/sh dynatrace-managed.sh --license Do94PnGuvVxXXXXXX 
 
@@ -24,7 +24,7 @@ simply press enter to accept the default directory for Dynatrace binaries (else 
 simply press enter to accept default directory for Dynatrace Data (else specify another folder).
 simply press enter to accept y to keep all data in default directory.
 simply press enter to n as this is a new cluster installation.
-simply press enter to use 'sudo -n %CMD' for executing commands with superuser priviledges.
+simply press enter to use 'sudo -n %CMD' for executing commands with superuser privileges.
 
 The installation should complete in 10 minutes and will automatically start the Cluster.
 ![install complete](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/installcomplete.png?raw=true)

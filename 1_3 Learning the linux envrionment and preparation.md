@@ -10,7 +10,7 @@ We will be using this tool to establish an SSH connection to the AWS instance ho
 > 1. Click Session 
 > 2. Select SSH 
 > 3. Input Host public IP address
-> 4. Set speciy user: ubuntu
+> 4. Set specify user: ubuntu
 > 5. Click Advanced SSH settings tab 
 > 6. Set Use private key - select the key pair .pem file downloaded from previous workshop
 Press OK
