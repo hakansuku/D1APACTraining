@@ -30,7 +30,7 @@ In android studio, open the top-level 'build.gradle.kts' file under Gradle Scrip
 
 ![gradle](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/buildgradlekts.png?raw=true)
 
-- Similarly copy plugin configuration (below) and insert at the botoom of 'build.gradle.kts' file as above.
+- Similarly copy plugin configuration (below) and insert at the bottom of 'build.gradle.kts' file as above.
 
 ![manifest](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/applyplugin.png?raw=true)
 
