@@ -24,7 +24,7 @@ simply press enter to accept the default directory for Dynatrace binaries (else 
 simply press enter to accept default directory for Dynatrace Data (else specify another folder).
 simply press enter to accept y to keep all data in default directory.
 simply press enter to n as this is a new cluster installation.
-simply press enter to use 'sudo -n %CMD' for executing commands with superuser priviledges.
+simply press enter to use 'sudo -n %CMD' for executing commands with superuser privileges.
 
 The installation should complete in 10 minutes and will automatically start the Cluster.
 ![install complete](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/installcomplete.png?raw=true)
