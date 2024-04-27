@@ -35,8 +35,26 @@ Expand the dropdown and select Classic Environment API v2
 ![swagger](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/APIdropdown.png?raw=true)
 
 > Swagger UI allows to visualize and interact with the API's resources without having any of the implementation logic in place.
-> We will be using Environment API v2 to ingest a log record
 
-![env api](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/authorize.png?raw=true)
+> We will be using REST Environment API v2 functions to ingest log record. 
+
+Click on Authorize button
+
+![authorize](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/authorize.png?raw=true)
+
+> We will add our new generated authentication token to be used for API request headers
+
+Paste the generated token in step 1) into the value field and click Authorize button.
+
+![copytoken](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/tokenauthorize.png?raw=true)
+
+Click close to finalize adding token header.
+
+![copytoken](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/authorizeclose.png?raw=true)
+
+> We have now enabled Environment API v2 function requests with the token header.
+
+
+
 
 
