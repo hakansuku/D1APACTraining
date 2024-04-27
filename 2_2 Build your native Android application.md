@@ -71,9 +71,11 @@ Click on Design mode (tab).
 Edit the class declaration and add the first part of the code for the MainActivity class:
 
 Click to open MainActivity file in the editor
+
 ![MainActivity](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/androidappview.png?raw=true)
 
 In the editor, copy the below code and insert into the MainActivity source code as below
+
 ```kotlin
         // variables
         var counter=0 
@@ -91,6 +93,10 @@ In the editor, copy the below code and insert into the MainActivity source code 
             finishAndRemoveTask() // exit mobile application
         }
 ```
+
+> Notice the added two library imports. Android Studio will remind what needs to be imported.
+
+> Import necessary classes like Button and TextView
 
 ![MainActivitye](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/mainactivity.png?raw=true)
 > In summary the above added code does:
