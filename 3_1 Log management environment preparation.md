@@ -21,7 +21,7 @@ Click on Access Tokens
 
 > Note: Generated token has permissions to ingest log record using API.  Click on Copy and save for later use.
 
-## 1) Ingesting sample log record using Dynatrace API (Swagger UI)
+## 2) Configuring Dynatrace API (Swagger UI)
 
 Click search and type "API"
 Click Dynatrace API
@@ -52,8 +52,9 @@ Click close to finalize adding token header.
 
 ![copytoken](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/authorizeclose.png?raw=true)
 
-> We have now enabled Environment API v2 function requests with the token header.
+> We have now enabled Environment API v2 function requests with the authorization API-Token header.
 
+3)
 
 
 
