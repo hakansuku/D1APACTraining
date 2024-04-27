@@ -66,8 +66,8 @@ Click close to finalize adding token header.
 
 - Expand drop down in Request body section and choose "text/plain, charset utf-8" 
 - Copy sample log text below and paste into Examples body field (refer screenshot)
-  
-```logs
+
+```
 COR-8f69b922-038c-11ef-8aa2-72feaaeb5541 REQ-b47536b9-038c-11ef-aebe-56fa8f9f42b9 INFO core-om-com-dev-om-com-event-handler-service --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.d.ps.fallout.handler.RequestUtil Fallout has been generated for this order Id 25016 and pushed to kafka {"records":[{"value":{"context":{"event":{"name":"ProductOrderInErrorEvent","timestamp":"2024-04-26T05:20:38.000362Z","eventId":"b7ac941f-038c-11ef-a28b-caaca7f9e0f9"},"producer":{"name":"COM"},"payload":{"orderInfo":{"externalKey":"6690140-2ed4-4fa7-ac01-70b8f65821b1","orderSubmittedDate":"2024-04-26T05:19:30.000833Z","orderLastUpdatedDate":"2024-04-26T05:20:38.000362Z","clientId":"TestTool","orderId":"25016","orderVersionNumber":"1","orderOperation":"CREATE","orderType":"Resume","subscriberID":"REG-926274375","customerID":"CustomerCloud2","orderStatus":"Order in Fallout","falloutInfo":{"falloutId":"8476","createdDate":"2024-04-26T05:20:33.000250Z","errorCode":"SOI-0001","failureReason":"FAILED","taskName":"acb3a7a6","workgroupName":"GlobalFallout"},"GPSI":"19525295333"}}}}}]}
 ```
 
