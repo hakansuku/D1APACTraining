@@ -67,9 +67,19 @@ Learning value :
   > - custom USQL queries queries / segmentation and aggregation of session data
   > - custom action properties / custom metrics / dashboards
  
+## Workshop 3 Unleash the full power of logs and events with Dynatrace Pattern Language (DPL)
 
+Learning value : 
+ - Gain confidence with Dynatrace Pattern Language 
+ - Experience ingesting reshaping Log and event data processing.
+ - Expand knowledge and benefits Dynatrace bring helping organizations more quickly detect anomalies and respond to them.
+ - Ingest / match / reshape / filter/ parse  log data using DPL to unlock information.
+ - Improve knowledge supporting customers enhance data visibility, insights and security
 
- 
+  ### [3_1 Log and Events environment preparation]
+  > - SaaS Dynatrace (3rd gen) sprint tenant
+  > - Dynatrace API / Environment API v2 / Log API / Access Token and scope
+  > - Ingest sample log data / verify structure
   
  
 
