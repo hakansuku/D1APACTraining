@@ -77,7 +77,7 @@ Learning value :
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
   ### [3_1 Log management environment preparation]
-  > - (pre-requisite) SaaS Dynatrace (3rd gen) tenant
+  > - (**pre-requisite**) SaaS Dynatrace (3rd gen) tenant
   > - Dynatrace API / Environment API v2 / Log API / Access Token and scope
   > - Ingest sample log data / verify structure
   
