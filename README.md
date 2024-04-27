@@ -4,7 +4,7 @@
 
 Learning workshops
 
-## Workshop 1 Managed Cluster environment
+## Workshop 1 : Managed Cluster environment
 
 :blue_book: Learning value : 
  - Gain confidence in Linux commands
@@ -39,7 +39,7 @@ Learning workshops
   > - CMC configuration / nodes / AG / Cluster stats and events
   > - Common maintenance issues
 
-## Workshop 2 Mobile application monitoring
+## Workshop 2 : Mobile application monitoring
 
 :blue_book: Learning value : 
  - Gain confidence with mobile development environment
@@ -67,7 +67,7 @@ Learning workshops
   > - custom USQL queries queries / segmentation and aggregation of session data
   > - custom action properties / custom metrics / dashboards
  
-## Workshop 3 Unleash the full power of logs and events with Dynatrace Pattern Language (DPL)
+## Workshop 3 : Unleash the full power of logs and events with Dynatrace Pattern Language (DPL)
 
 :blue_book: Learning value : 
  - Gain confidence with Dynatrace Pattern Language 
