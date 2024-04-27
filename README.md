@@ -11,11 +11,11 @@ Learning value :
  - Gain proficiency using cloud environment. 
  - Improve knowledge supporting on-premise customers
 
-  ### 1_1 Obtaining licenses
+  ### 1_1 [Obtaining licenses](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
   > creating Mission control account
   > adding license / quota
 
-  ### 1_2 Cloud environment preparation (AWS)
+  ### [1_2 Cloud environment preparation (AWS)](https://github.com/hakansuku/D1APACTraining/blob/main/1_2%20Cloud%20environment%20preparation.md)
   > - Regions / availability zones
   > - EC2 / Spot instance request / costing
   > - Security groups / ports 
@@ -23,7 +23,7 @@ Learning value :
   > - VM types / AMI images
   > - Terminal communication access
 
-  ### 1_3 Preparing environment (Linux)
+  ### [1_3 Preparing environment (Linux)](https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
   > - Permissions
   > - environment setup
   >   - linux basic commands 
@@ -32,7 +32,7 @@ Learning value :
   >   - mounting devices
   >   - editing configuration files
 
-  ### 1_4 Cluster Installation & maintenance
+  ### [1_4 Cluster Installation & maintenance](https://github.com/hakansuku/D1APACTraining/blob/main/1_4%20Cluster_Installation_maintenance.md)
   > - product architecture / folder structures
   > - communication 
   > - Cluster upgrade / published versions
@@ -48,19 +48,19 @@ Learning value :
  - Query , segment and aggregate session data using custom action properties for visual analysis
  - Improve knowledge supporting mobile monitoring customers
 
-  ### 2_1 Mobile Development Environment preparation
+  ### [2_1 Mobile Development Environment preparation](https://github.com/hakansuku/D1APACTraining/blob/main/2_1%20Mobile%20Development%20Environment%20preparatio.md)
   > - Android Studio / configuration / SDK libraries / projects
   > - Native android app / Kotlin language / builds and structures
   > - Gradle build tool / Repositories /dependencies / plugins
   > - Device manager/ Virtual devices / Android OS
 
-  ### 2_2 Build your native Android application
+  ### [2_2 Build your native Android application](https://github.com/hakansuku/D1APACTraining/blob/main/2_2%20Build%20your%20native%20Android%20application.md)
   > - Native android app / Kotlin language / builds and folder structures
   > - manifest / layout editor / components
   > - Configurations / Code / Design / Build / Run / Debug / Test / logs
   > - Pairing to physical device 
 
-  ### 2_3 Monitoring with Dynatrace 
+  ### [2_3 Monitoring with Dynatrace](https://github.com/hakansuku/D1APACTraining/blob/main/2_3%20Monitoring%20with%20Dynatrace.md)
   > - Instrument dynatrace mobile OneAgent / configuration
   > - Data privacy / tagging / custom actions
   > - sessions / key user actions / APDEX thresholds
