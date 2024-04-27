@@ -71,6 +71,8 @@ The minimum requirements for cluster node hardwared is 8 CPU cores and 32 GiB RA
 This will submit a spot instance request
 ![t32xlarge](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/launch.png?raw=true)
 
+> If estimated hourly price is above $0.15 adjust max. cost in step 11)
+
 ### 16) Open the request and check the history. 
 Once the status is active , t means an instance has been created.  
 Click on Instances to go to the Instances page
