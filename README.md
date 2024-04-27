@@ -67,13 +67,13 @@ Learning workshops
   > - custom USQL queries queries / segmentation and aggregation of session data
   > - custom action properties / custom metrics / dashboards
  
-## Workshop 3 : Unleash the full power of logs and events with Dynatrace Pattern Language (DPL)
+## Workshop 3 : Unleash the full power of logs using Dynatrace Pattern Language (DPL)
 
 :blue_book: Learning value : 
  - Gain confidence with Dynatrace Pattern Language 
- - Experience ingesting reshaping Log and event data processing.
+ - Experience ingesting reshaping Log data processing.
  - Expand knowledge and benefits Dynatrace bring helping organizations more quickly detect anomalies and respond to them.
- - Ingest / match / reshape / filter/ parse  log data using DPL to unlock information.
+ - Ingest / match / reshape / filter/ parse log data using DPL to unlock information.
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
   ### [3_1 Log management environment preparation :link: ]
