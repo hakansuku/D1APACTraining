@@ -13,7 +13,7 @@ Copy and paste YOUR license token download link command from your invitation ema
 ## 2) Check the file is downloaded using 'ls -l' command
 ![paste download](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/DTmanagedsh.png?raw=true)
 
-## 3) Copy and paste the Start the installer with root rights which contains your license string as a parmeter from the email.
+## 3) Copy and paste the Start the installer with root rights which contains your license string as a parameter from the email.
 > 	Start the installer with root rights:
 /bin/sh dynatrace-managed.sh --license Do94PnGuvVxXXXXXX 
 
