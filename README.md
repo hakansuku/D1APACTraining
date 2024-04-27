@@ -1,15 +1,15 @@
-# D1APACTraining
+| # D1APACTraining |
+| --- |
+ ## This repository is for training internal D1 Product Specialists on empowering individual technical knowledge via hand-on workshops 
 
-## This repository is for training internal D1 Product Specialists on empowering individual technical knowledge via hand-on workshops
-
-Learning workshops
+Learning workshops 
 
 ## Workshop 1 : Managed Cluster environment
 
 :blue_book: Learning value : 
- - Gain confidence in Linux commands
+ - Gain confidence in Linux commands 
  - Gain proficiency using cloud environment. 
- - Improve knowledge supporting on-premise customers
+ - Improve knowledge supporting on-premise customers 
 
   ### [1_1 - Obtaining licenses :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
   > creating Mission control account
