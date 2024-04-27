@@ -76,7 +76,7 @@ Learning value :
  - Ingest / match / reshape / filter/ parse  log data using DPL to unlock information.
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
-  ### [3_1 Log and Events environment preparation]
+  ### [3_1 Log management environment preparation]
   > - SaaS Dynatrace (3rd gen) sprint tenant
   > - Dynatrace API / Environment API v2 / Log API / Access Token and scope
   > - Ingest sample log data / verify structure
