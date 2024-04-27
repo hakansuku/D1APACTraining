@@ -7,6 +7,7 @@
 
 From your Dynatrace environment under Digital Experience open Mobile page.
 Click on create mobile application
+
 ![mobile app](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/mobileappcreate.png?raw=true)
 
 Type in name of the mobile application and press 'Create mobile app' button.
@@ -54,6 +55,8 @@ Open MainActivity.kt and insert below user tag:
 Dynatrace.identifyUser("Minkook Kang"); //tag user name
 ```
 > With user tags, you can analyze a specific user's behavior and experience via user session analysis.
+
+
 ```
 val action = Dynatrace.enterAction("send score") //initialize custom action
 action.reportValue("score",counter.toLong()) //report score value in Long format
@@ -62,6 +65,8 @@ Dynatrace.endVisit() // terminate session
 ```
 
 ![mobile app](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/usertagging.png?raw=true)
+
+> NOTE: Similarly you will need add **import com.dynatrace.android.agent.Dynatrace** at the top of the page.
 
 # 3) Define custom action property key to capture reported value from mobile session
 > NOTE action.reportValue sends a key-value pairs (String, Long) format. 
