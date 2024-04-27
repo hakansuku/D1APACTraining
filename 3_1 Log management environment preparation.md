@@ -26,12 +26,17 @@ Click on Access Tokens
 Click search and type "API"
 Click Dynatrace API
 
-![token copy](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/APIsearch.png?raw=true)
+![DTAPI](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/APIsearch.png?raw=true)
 
 > Notice a new tab opens Dynatrace API Swagger UI interface.
-> Swagger UI allows to visualize and interact with the API's resources without having any of the implementation logic in place 
 
-![token copy](
+Expand the dropdown and select Classic Environment API v2
 
+![swagger](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/APIdropdown.png?raw=true)
+
+> Swagger UI allows to visualize and interact with the API's resources without having any of the implementation logic in place.
+> We will be using Environment API v2 to ingest a log record
+
+![env api](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/authorize.png?raw=true)
 
 
