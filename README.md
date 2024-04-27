@@ -11,7 +11,7 @@ Learning value :
  - Gain proficiency using cloud environment. 
  - Improve knowledge supporting on-premise customers
 
-  ### 1_1 [Obtaining licenses](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
+  ### [1_1 Obtaining licenses](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
   > creating Mission control account
   > adding license / quota
 
