@@ -74,7 +74,7 @@ This will submit a spot instance request
 > If estimated hourly price is above $0.15 adjust max. cost in step 11)
 
 ### 16) Open the request and check the history. 
-Once the status is active , t means an instance has been created.  
+Once the status is active , it means an instance has been created.  
 Click on Instances to go to the Instances page
 ![t32xlarge](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/active.png?raw=true)
 
