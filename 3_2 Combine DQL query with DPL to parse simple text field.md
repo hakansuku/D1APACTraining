@@ -123,4 +123,43 @@ data 'orderId":"' INT:orderId '"'
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/dataformatconversion.png?raw=true)
 > Notice how the data format has now changed for event_timestamp and orderId.
 
+## 3) Applying DPL expressions to log processing rules.
+- Open log & events application
+- Switch to advanced mode
+- Run query
 
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/openlogadvancedmode.png?raw=true)
+
+> Observe that there are only 6 fields in the record we ingested. (timestamp, status, content, loglevel, event.type, dt.auth.origin)
+
+- click on the log record
+- click on create processing rule
+
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/createprocessingrule.png?raw=true)
+
+- Type in the Rule name field
+- Type isNotNull(`dt.auth.origin`) in the matcher field
+- Type in process definition
+  
+```
+parse(content , "
+data 'name\":\"' 
+data:event_name '\",\"timestamp\":\"' 
+JSONTIMESTAMP('yyyy-MM-ddTHH:mm:ss.SSSSSSZ'):event_timestamp '\",\"eventId\":\"' 
+data:event_Id '\"' 
+data 'orderId\":\"' INT:orderId '\"'
+")
+```
+> NOTE as DPL is wrapped inside parse, quotation mark inside a quotated string requires protecting it with a backslash. 
+
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/parcingruleMK.png?raw=true)
+
+scroll down and click on run rule test
+
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/runruletest.png?raw=true)
+
+> Observe how 4 fields are now extracted from content as attributes.
+
+Click Save Changes
+
+Now 
