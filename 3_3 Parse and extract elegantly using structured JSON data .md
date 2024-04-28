@@ -15,7 +15,7 @@
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualJSON.png?raw=true)
 
-> Expand the JSON object structure to visualize the nexted fields.
+> Expand the JSON object structure to visualize the nested fields.
 
 ## 2) Build DPL expression for structured JSON data
 
