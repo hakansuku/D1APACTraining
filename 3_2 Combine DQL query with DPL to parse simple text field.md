@@ -1,4 +1,4 @@
-# 3_2 - Combine DQL query with DPL to parse simple text field
+# 3_2 - Combine DQL query with DPL to parse simple text format logs
 
 > Dynatrace Pattern Language (DPL) is a pattern language that allows you to describe patterns using matchers, where a matcher is a mini-pattern that matches a certain type of data
 
@@ -93,5 +93,34 @@ data 'name":"' data:event_name '","timestamp":"' data:event_timestamp '","eventI
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/multivalues.png?raw=true)
 
+Click on results tab to validate the extracted values (there is a bug where the values are shrunk so long values are unreadable. hover your cursor over the value and it will pop up)
 
- 
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/cursorhoverpopup.png?raw=true)
+
+> You can also arrange the syntax in multiple lines, whichever way is more readable to your comfort.
+
+```
+data 'name":"' 
+data:event_name '","timestamp":"' 
+data:event_timestamp '","eventId":"' 
+data:event_Id '"' 
+data 'orderId":"' data:orderId '"'
+```
+
+> Notice that using DATA as the matcher always stores the data format to STRING.  You can easily format the data during extraction by replacing with the corresponding data type.
+
+From the record text we can recognize the timestamp format follows JSONTIMESTAMP data type format and orderId is numeric so can be stored as INTEGER data type format. 
+Replace the expression with 
+
+```
+data 'name":"' 
+data:event_name '","timestamp":"' 
+JSONTIMESTAMP('yyyy-MM-ddTHH:mm:ss.SSSSSSZ'):event_timestamp '","eventId":"' 
+data:event_Id '"' 
+data 'orderId":"' INT:orderId '"'
+```
+
+![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/dataformatconversion.png?raw=true)
+> Notice how the data format has now changed for event_timestamp and orderId.
+
+
