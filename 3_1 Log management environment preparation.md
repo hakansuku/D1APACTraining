@@ -1,4 +1,4 @@
-Log management environment preparation
+# Log management environment preparation
 
 ## 1) Creating access token to ingest log records via API
 
