@@ -21,7 +21,7 @@
 
 - Open DPL Architect and type :
 ```
-DATA 'pushed to kafka ' JSON:parsedJson EOL 
+LD 'pushed to kafka ' JSON:parsedJson EOL 
 ```
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject.png?raw=true)
