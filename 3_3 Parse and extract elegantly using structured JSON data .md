@@ -37,5 +37,34 @@ DATA 'pushed to kafka ' JSON:parsedJson EOL
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONmkrule.png?raw=true)
 
+- Type in the Rule name field
+- Type isNotNull(dt.auth.origin) in the matcher field
+- Type in process definition
+
+```
+PARSE(content, "DATA 'pushed to kafka ' JSON:parsedJson EOL ")
+| FIELDS_ADD(event.name: parsedJson[records][0][value][context][event][name])
+| FIELDS_ADD(event.timestamp: parsedJson[records][0][value][context][event][timestamp])
+| FIELDS_ADD(event.eventId: parsedJson[records][0][value][context][event][eventId])
+| FIELDS_ADD(producer.name: parsedJson[records][0][value][context][producer][name])
+| FIELDS_ADD(orderInfo.externalKey: parsedJson[records][0][value][context][payload][orderInfo][externalKey])
+| FIELDS_ADD(orderInfo.orderSubmittedDate: parsedJson[records][0][value][context][payload][orderInfo][orderSubmittedDate])
+| FIELDS_ADD(orderInfo.orderLastUpdatedDate: parsedJson[records][0][value][context][payload][orderInfo][orderLastUpdatedDate])
+| FIELDS_ADD(orderInfo.clientId: parsedJson[records][0][value][context][payload][orderInfo][clientId])
+| FIELDS_ADD(orderInfo.orderId: parsedJson[records][0][value][context][payload][orderInfo][orderId])
+| FIELDS_ADD(orderInfo.orderVersionNumber: parsedJson[records][0][value][context][payload][orderInfo][orderVersionNumber])
+| FIELDS_ADD(orderInfo.orderOperation: parsedJson[records][0][value][context][payload][orderInfo][orderOperation])
+| FIELDS_ADD(orderInfo.orderType: parsedJson[records][0][value][context][payload][orderInfo][orderType])
+| FIELDS_ADD(orderInfo.subscriberID: parsedJson[records][0][value][context][payload][orderInfo][subscriberID])
+| FIELDS_ADD(orderInfo.customerID: parsedJson[records][0][value][context][payload][orderInfo][customerID])
+| FIELDS_ADD(orderInfo.orderStatus: parsedJson[records][0][value][context][payload][orderInfo][orderStatus])
+| FIELDS_ADD(falloutInfo.falloutId: parsedJson[records][0][value][context][payload][orderInfo][falloutInfo][falloutId])
+| FIELDS_ADD(falloutInfo.createdDate: parsedJson[records][0][value][context][payload][orderInfo][falloutInfo][createdDate])
+| FIELDS_ADD(falloutInfo.failureReason: parsedJson[records][0][value][context][payload][orderInfo][falloutInfo][failureReason])
+| FIELDS_ADD(falloutInfo.createdDate: parsedJson[records][0][value][context][payload][orderInfo][falloutInfo][createdDate])
+| FIELDS_ADD(falloutInfo.taskName: parsedJson[records][0][value][context][payload][orderInfo][falloutInfo][taskName])
+| FIELDS_ADD(GPSI: parsedJson[records][0][value][context][payload][orderInfo][GPSI])
+| FIELDS_REMOVE(parsedJson)
+```
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
