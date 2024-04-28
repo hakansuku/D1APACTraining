@@ -24,11 +24,13 @@
 LD 'pushed to kafka ' JSON:parsedJson EOL 
 ```
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject.png?raw=true)
+> NOTE: LD stands for	Line data matcher and EOL stands for End Of Line.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar
+
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject2.png?raw=true)
 
 - Click on results tab
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject.png?raw=true)
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject2.png?raw=true)
 
 > Observe the JSON data format is VARIANT OBJECT. You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
 
@@ -77,6 +79,10 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
 
 - Ingest same sample record again using Dynatrace Log API Swagger UI
 - Validate that all the JSON structure fields are added as attributes in the new ingested log record.
+
+![FINAL](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/validatefinal.png?raw=true)
+
+> Parsing with DPL expressions for unstructured text data is messy compared to parsing structured JSON data.
 
 End of Document
 
