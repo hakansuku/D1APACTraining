@@ -81,7 +81,7 @@ Learning workshops
   > - Dynatrace API Swagger UI / Environment API v2 / Logs / Access Token and scope
   > - Ingest sample log record data / validate
 
-### [3_2 - Combine DQL query with DPL to parse simple text field :link: ]()
+### [3_2 - Combine DQL query with DPL to parse simple text field :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_2%20Combine%20DQL%20query%20with%20DPL%20to%20parse%20simple%20text%20field.md)
   > - DQL query fetch and parse commands and parameters
   > - DPL log-processing-grammar / DPL architect / schema / visual feedback / pattern quality / preset patterns
   > - Extract fields with data type and format / conversion pattern
