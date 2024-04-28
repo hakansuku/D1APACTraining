@@ -1,4 +1,4 @@
-# 3_2 - Combine DQL query with DPL to parse simple text format logs
+# 3_2 - Combine DQL query with DPL to parse unstructured text log data
 
 > Dynatrace Pattern Language (DPL) is a pattern language that allows you to describe patterns using matchers, where a matcher is a mini-pattern that matches a certain type of data
 
