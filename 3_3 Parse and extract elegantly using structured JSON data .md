@@ -30,7 +30,10 @@ DATA 'pushed to kafka ' JSON:parsedJson EOL
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject.png?raw=true)
 
-> You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
+> Observe the JSON data format is VARIANT OBJECT. You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
+
+- Open Log & Events app and Run Query.
+- In advanced mode, select the ingested sample record and click on Create processing rule button 
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONmkrule.png?raw=true)
 
