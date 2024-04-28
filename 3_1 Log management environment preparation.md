@@ -99,7 +99,7 @@ In Log & Events page, simply click Run Query button.
 
 Observe the ingested log record and validate by looking at the timestamp and content section.
 
-> NOTE: When supporting customers, often we need to test using customers' log records, use this method  ingest customer log samples for testing processing rules.
+> NOTE: This method is also useful to test customer log samples.
 
 End of Document
 
