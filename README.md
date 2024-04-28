@@ -76,11 +76,21 @@ Learning workshops
  - Ingest / match / reshape / filter/ parse log data using DPL to unlock information.
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
-  ### [3_1 - Log management environment preparation :link: ]
+### [3_1 - Log management environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_1%20Log%20management%20environment%20preparation.md)
   > - ( :exclamation: **pre-requisite**) SaaS Dynatrace (3rd gen) tenant environment access
-  > - Dynatrace API / Environment API v2 / Log API / Access Token and scope
-  > - Ingest sample log data / verify structure
-  
- 
+  > - Dynatrace API Swagger UI / Environment API v2 / Logs / Access Token and scope
+  > - Ingest sample log record data / validate
+
+### [3_2 - Combine DQL query with DPL to parse simple text field :link: ]()
+  > - DQL query fetch and parse commands and parameters
+  > - DPL log-processing-grammar / DPL architect / schema / visual feedback / pattern quality / preset patterns
+  > - Extract fields with data type and format / conversion pattern
+
+### [3_3 - Extract elegantly using JSON data structure parsing :link: ]()
+  > - Analyze visually JSON structures
+  > - Extract elegantly fields with data type and format
+  > - Optimize logs using log processing commands
+
+
 
 

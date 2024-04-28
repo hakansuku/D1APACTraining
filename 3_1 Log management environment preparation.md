@@ -23,7 +23,7 @@ Click on Access Tokens
 
 ## 2) Configure Dynatrace API (Swagger UI)
 
-Click search and type "API"
+Open search and type "API"
 Click Dynatrace API
 
 ![DTAPI](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/APIsearch.png?raw=true)
@@ -54,7 +54,7 @@ Click close to finalize adding token header.
 
 > We have now enabled Environment API v2 function requests with the authorization API-Token header.
 
-## 3) Ingesting sample log record
+## 3) Ingesting sample log record into Dynatrace via Log API
 
 > Swagger UI provides friendly interface that displays Dynatrace API documentation and allows you to test Dynatrace API endpoints.
 
@@ -85,9 +85,22 @@ Notice that the request headers contain authorization (API-token)
 
 ![response](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/successingest.png?raw=true)
 
+> You have now successfully ingested a log record.  Next we will validate the log record in Dynatrace.
 
+## 4) Validating ingested sample log record in Dynatrace
+Open search and type "log"
+Click to open Log & Events app
 
+![response](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/logevents.png?raw=true)
 
+In Log & Events page, simply click Run Query button. 
 
+![response](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/logrecord.png?raw=true)
+
+Observe the ingested log record and validate by looking at the timestamp and content section.
+
+> NOTE: This method is also useful to test customer log samples.
+
+End of Document
 
 
