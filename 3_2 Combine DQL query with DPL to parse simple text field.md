@@ -158,8 +158,20 @@ scroll down and click on run rule test
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/runruletest.png?raw=true)
 
-> Observe how 4 fields are now extracted from content as attributes.
+> Observe how 4 fields are now extracted from content as attributes in the test result.
 
 Click Save Changes
 
-Now 
+> We will now test by ingesting the same record again 
+Refer course 3_1 step 3) to ingest log record using Log API using SWAGGER UI
+
+- Ingest same sample record again using Dynatrace Log API Swagger UI
+- Click Run Query
+
+![processing rule](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/4fieldextractionrunqueryresult.png?raw=true)
+
+> Observe the 4 fields available as attributes.  You can also validate the record fields with fetch logs from Notebooks app.
+
+End of Document
+
+
