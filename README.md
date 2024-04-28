@@ -76,7 +76,7 @@ Learning workshops
  - Ingest / match / reshape / filter/ parse log data using DPL to unlock information.
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
-  ### [3_1 - Log management environment preparation :link: ]
+  ### [3_1 - Log management environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_1%20Log%20management%20environment%20preparation.md)
   > - ( :exclamation: **pre-requisite**) SaaS Dynatrace (3rd gen) tenant environment access
   > - Dynatrace API / Environment API v2 / Log API / Access Token and scope
   > - Ingest sample log data / verify structure
