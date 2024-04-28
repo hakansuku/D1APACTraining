@@ -1,4 +1,4 @@
-# 3_3 Parse and extract elegantly using structured JSON data 
+# Parse and extract elegantly using structured JSON data 
 
 ## 1) Understanding JSON structure through visualization
 - Open DPL architect from Notebooks, copy JSON data from record content.
