@@ -32,7 +32,7 @@ DATA 'pushed to kafka ' JSON:parsedJson EOL
 
 > Observe the JSON data format is VARIANT OBJECT. You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
 
-- Open Log & Events app and Run Query.
+- Open Log & Events app and click Run Query.
 - In advanced mode, select the ingested sample record and click on Create processing rule button 
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONmkrule.png?raw=true)
@@ -66,5 +66,19 @@ PARSE(content, "DATA 'pushed to kafka ' JSON:parsedJson EOL ")
 | FIELDS_ADD(GPSI: parsedJson[records][0][value][context][payload][orderInfo][GPSI])
 | FIELDS_REMOVE(parsedJson)
 ```
-
+- scroll down and click run test rule button
+  
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
+
+- Click Save changes button.
+- Disable previous 3_2 unstructured text processing rule created.
+
+> We will now test by ingesting the same record again. Refer course 3_1 step 3) to ingest log record using Log API using SWAGGER UI
+
+- Ingest same sample record again using Dynatrace Log API Swagger UI
+- Validate that all the JSON structure fields are added as attributes in the new ingested log record.
+
+End of Document
+
+
+
