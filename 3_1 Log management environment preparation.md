@@ -73,7 +73,17 @@ COR-8f69b922-038c-11ef-8aa2-72feaaeb5541 REQ-b47536b9-038c-11ef-aebe-56fa8f9f42b
 
 ![Tryitout](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/ingestsample.png?raw=true)
 
-- Click execute button
+- Click Execute button
+
+Upon Execution, you are now able to check outcome of the request looking at the responses section below.
+
+Notice that the request headers contain authorization (API-token)
+
+> A 204 status code is used when the server successfully processes the request, but there is no content to return to the client.
+
+> The HTTP 200 OK success status response code indicates that the request has succeeded.
+
+![response](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/successingest.png?raw=true)
 
 
 
