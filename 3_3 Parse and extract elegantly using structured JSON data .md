@@ -1,6 +1,6 @@
 # 3_3 Parse and extract elegantly using structured JSON data 
 
-## 1) Understanding JSON structure
+## 1) Understanding JSON structure with visualization
 - Open DPL architect from Notebooks, copy JSON data from record content.
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualizeJSON.png?raw=true)
@@ -15,10 +15,24 @@
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualJSON.png?raw=true)
 
-> Observe how the JSON
+> Expand the JSON object structure to visualize the nexted fields.
+
+## 2) Build DPL expression for structured JSON data
+
+- Open DPL Architect and type :
+```
+DATA 'pushed to kafka ' JSON:parsedJson EOL 
+```
+
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject.png?raw=true)
+
+- Click on results tab
+
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject.png?raw=true)
+
+> You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONmkrule.png?raw=true)
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject.png?raw=true)
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
