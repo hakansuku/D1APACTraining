@@ -42,7 +42,7 @@ LD 'pushed to kafka ' JSON:parsedJson EOL
 - Type in process definition
 
 ```
-PARSE(content, "DATA 'pushed to kafka ' JSON:parsedJson EOL ")
+PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
 | FIELDS_ADD(event.name: parsedJson[records][0][value][context][event][name])
 | FIELDS_ADD(event.timestamp: parsedJson[records][0][value][context][event][timestamp])
 | FIELDS_ADD(event.eventId: parsedJson[records][0][value][context][event][eventId])
