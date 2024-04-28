@@ -86,7 +86,7 @@ Learning workshops
   > - DPL log-processing-grammar / DPL architect / schema / visual feedback / pattern quality / preset patterns
   > - Extract fields with data type and format / conversion pattern
 
-### [3_3 - Extract elegantly using JSON data structure parsing :link: ]()
+### [3_3 - Parse and extract elegantly using structured JSON data :link: ]()
   > - Analyze visually JSON structures
   > - Extract elegantly fields with data type and format
   > - Optimize logs using log processing commands
