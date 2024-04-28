@@ -1,4 +1,4 @@
-# 3_2 - Combine DQL query with DPL to parse simple text format logs
+# 3_3 Parse and extract elegantly using structured JSON data 
 
 ## 1) Understanding JSON structure
 - Open DPL architect from Notebooks, copy JSON data from record content.
