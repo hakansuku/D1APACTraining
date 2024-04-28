@@ -87,7 +87,7 @@ Notice that the request headers contain authorization (API-token)
 
 > You have now successfully ingested a log record.  Next we will validate the log record in Dynatrace.
 
-## 4) Validating ingested log record in Dynatrace
+## 4) Validating ingested sample log record in Dynatrace
 Open search and type "log"
 Click to open Log & Events app
 
@@ -98,6 +98,8 @@ In Log & Events page, simply click Run Query button.
 ![response](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/logrecord.png?raw=true)
 
 Observe the ingested log record and validate by looking at the timestamp and content section.
+
+> NOTE: When supporting customers, often we need to test using customers' log records, use this method  ingest customer log samples for testing processing rules.
 
 End of Document
 
