@@ -68,6 +68,8 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
 | FIELDS_ADD(GPSI: parsedJson[records][0][value][context][payload][orderInfo][GPSI])
 | FIELDS_REMOVE(parsedJson)
 ```
+> Notice how we are able to easily add fields using the JSON variant object.  We are able to refer structure and nested position of field values from step 1)
+
 - scroll down and click run test rule button
   
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
