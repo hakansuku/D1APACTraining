@@ -1,5 +1,7 @@
 # Log management environment preparation
 
+> IMPORTANT : If you don't have SaaS (3rd Gen) with Grail tenant environment access. Please ping me and I'll give you an account.
+
 ## 1) Creating access token to ingest log records via API
 
 > Login to your SaaS (3rd Gen) tenant environment, click search and type "Token"
