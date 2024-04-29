@@ -77,7 +77,8 @@ Learning workshops
  - Improve knowledge supporting customers enhance data visibility, insights and security
 
 ### [3_1 - Log management environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_1%20Log%20management%20environment%20preparation.md)
-  > - ( :exclamation: **pre-requisite**) SaaS Dynatrace (3rd gen) tenant with Grail enabled environment access.  Pls ask me for an account if you don't have one.
+  > - ( :exclamation: **pre-requisite**) SaaS Dynatrace (3rd gen) tenant with Grail enabled environment access.  
+  >    Pls ask me for an account if you don't have one.
   > - Dynatrace API Swagger UI / Environment API v2 / Logs / Access Token and scope
   > - Ingest sample log record data / validate
 
