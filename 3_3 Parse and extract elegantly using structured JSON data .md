@@ -1,6 +1,6 @@
-# 3_3 Parse and extract elegantly using structured JSON data 
+# Parse and extract elegantly using structured JSON data 
 
-## 1) Understanding JSON structure with visualization
+## 1) Understanding JSON structure through visualization
 - Open DPL architect from Notebooks, copy JSON data from record content.
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualizeJSON.png?raw=true)
@@ -15,20 +15,23 @@
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualJSON.png?raw=true)
 
-> Expand the JSON object structure to visualize the nexted fields.
+> Expand the JSON object structure to visualize the nested fields.
 
 ## 2) Build DPL expression for structured JSON data
 
 - Open DPL Architect and type :
 ```
-LD 'pushed to kafka ' JSON:parsedJson EOL 
+LD 'pushed to kafka ' JSON:parsedJson
 ```
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject.png?raw=true)
+> NOTE: LD stands for	Line data matcher.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar.
+> ignore EOL in the screenshots.
+
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject2.png?raw=true)
 
 - Click on results tab
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject.png?raw=true)
+![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject2.png?raw=true)
 
 > Observe the JSON data format is VARIANT OBJECT. You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
 
@@ -42,7 +45,7 @@ LD 'pushed to kafka ' JSON:parsedJson EOL
 - Type in process definition
 
 ```
-PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
+PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson ")
 | FIELDS_ADD(event.name: parsedJson[records][0][value][context][event][name])
 | FIELDS_ADD(event.timestamp: parsedJson[records][0][value][context][event][timestamp])
 | FIELDS_ADD(event.eventId: parsedJson[records][0][value][context][event][eventId])
@@ -66,6 +69,8 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
 | FIELDS_ADD(GPSI: parsedJson[records][0][value][context][payload][orderInfo][GPSI])
 | FIELDS_REMOVE(parsedJson)
 ```
+> Notice how we are able to easily add fields using the JSON variant object.  We are able to refer structure and nested position of field values from step 1)
+
 - scroll down and click run test rule button
   
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
@@ -77,6 +82,10 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson EOL ")
 
 - Ingest same sample record again using Dynatrace Log API Swagger UI
 - Validate that all the JSON structure fields are added as attributes in the new ingested log record.
+
+![FINAL](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/validatefinal.png?raw=true)
+
+> Parsing with DPL expressions for unstructured text data is messy compared to parsing structured JSON data.
 
 End of Document
 

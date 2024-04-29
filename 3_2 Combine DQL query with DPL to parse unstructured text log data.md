@@ -1,4 +1,4 @@
-# 3_2 - Combine DQL query with DPL to parse simple text format logs
+# Combine DQL query with DPL to parse unstructured text log data
 
 > Dynatrace Pattern Language (DPL) is a pattern language that allows you to describe patterns using matchers, where a matcher is a mini-pattern that matches a certain type of data
 
@@ -93,7 +93,7 @@ data 'name":"' data:event_name '","timestamp":"' data:event_timestamp '","eventI
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/multivalues.png?raw=true)
 
-Click on results tab to validate the extracted values (there is a bug where the values are shrunk so long values are unreadable. hover your cursor over the value and it will pop up)
+Click on results tab to validate the extracted values (simply expand the sections if you can read or hover your cursor over the value and it will pop up)
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/cursorhoverpopup.png?raw=true)
 
