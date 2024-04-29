@@ -93,7 +93,7 @@ data 'name":"' data:event_name '","timestamp":"' data:event_timestamp '","eventI
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/multivalues.png?raw=true)
 
-Click on results tab to validate the extracted values (there is a bug where the values are shrunk so long values are unreadable. hover your cursor over the value and it will pop up)
+Click on results tab to validate the extracted values (simply expand the sections if you can read or hover your cursor over the value and it will pop up)
 
 ![dplarchitect](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/cursorhoverpopup.png?raw=true)
 
