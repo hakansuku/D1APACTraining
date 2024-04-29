@@ -21,7 +21,7 @@
 
 - Open DPL Architect and type :
 ```
-LD 'pushed to kafka ' JSON:parsedJson EOL 
+LD 'pushed to kafka ' JSON:parsedJson
 ```
 
 > NOTE: LD stands for	Line data matcher and EOL stands for End Of Line.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar
