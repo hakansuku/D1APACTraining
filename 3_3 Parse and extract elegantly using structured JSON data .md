@@ -24,7 +24,8 @@
 LD 'pushed to kafka ' JSON:parsedJson
 ```
 
-> NOTE: LD stands for	Line data matcher and EOL stands for End Of Line.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar
+> NOTE: LD stands for	Line data matcher.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar.
+> ignore EOL in the screenshots.
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject2.png?raw=true)
 
