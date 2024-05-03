@@ -1,6 +1,6 @@
 # Practice Dynatrace Query language
 
-1) Start with DQL Beginners exercise
+## 1) Start with DQL Beginners exercise
    Learn the Dynatrace Query Language (DQL) hands-on with interactive tutorials
 ![dojo"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/dojo.png?raw=true)
 
