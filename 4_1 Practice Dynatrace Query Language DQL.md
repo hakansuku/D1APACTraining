@@ -2,7 +2,7 @@
 
 ## 1) Start with DQL Beginners exercise.  
 
->  In this section, you will be able to familiarize with basic fetch, filter, parse or summarize commands.
+>  In this section, you will be able to familiarize with basic fetch, filter, fieldsAdd & fieldsRemove , parse , sort , makeTimeseries and summarize commands.
 
    Learn the Dynatrace Query Language (DQL) hands-on with interactive tutorials
 ![dojo"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/dojo.png?raw=true)
