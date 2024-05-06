@@ -44,11 +44,26 @@ filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
 
 > Observe the output contains the fields thisWeek , dt.entity.host , interval and timeframe defined. 
 
-- Change the visualization by pressing OPTIONS and select Line chart
-
 !["line"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/memoryusage.png?raw=true)
 
-Type in 
+- Change the visualization type by pressing OPTIONS and select Line chart
+
+!["linechart"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/memorylinechart.png?raw=true)
+
+> Next, we will now use Davis predictive AI to forecast memory percentage usage based on our timeseries dataset.
+
+- Click Davis AI at the bottom of the chart options and select enable Davis Analyzer
+- Press Run Query
+
+!["linechart"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/enableforecast.png?raw=true)
+
+
+
+
+
+
+
+
 
 > Predictive AI helps teams avoid costly problems
 This is just one example of predictive AI in action. But for ITOps, DevSecOps, and SRE teams, predictive AI presents numerous use cases for gaining foresight into issues and pre-emptively addressing them before they escalate into costly problems. They see improved efficiency, reduced risks of security breaches, and better compliance with industry regulations.
