@@ -10,6 +10,8 @@
 >Choose beginners exercise. 
 ![install"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/beginners.png?raw=true)
 
-Watch videos and complete 8 lesson steps to learn the basics of DQL. 
+Watch videos and complete Beginners 8 lesson steps to learn the basics of DQL. 
+
+End of document
 
 
