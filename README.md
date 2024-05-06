@@ -92,6 +92,18 @@ Learning workshops
   > - Extract elegantly fields with data type and format
   > - Optimize logs using log processing commands
 
+## Workshop 4 : Practice Dynatrace Query Language (DQL)
 
+:blue_book: Learning value : 
+ - Gain confidence with Dynatrace Query Language 
+ - Learn DQL through hands-on experience with interactive tutorials.
+ - Explore, query, combine and process ALL of your observability data stored in Grail.
+ - Familiarize with Notebooks / Workflows .
+ - Examine use cases
+
+### [4_1 - Practice Dynatrace Query language (DQL) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
+ > - Basic commands fetch, filter, parse or summarize tutorials.
+
+### [4_1 - Compare Disk Usage Week-over-Week
 
 
