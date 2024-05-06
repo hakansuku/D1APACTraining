@@ -52,11 +52,15 @@ filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
 
 > Next, we will now use Davis predictive AI to forecast memory percentage usage based on our timeseries dataset.
 
-- Click Davis AI at the bottom of the chart options and select enable Davis Analyzer
+- Click Davis AI at the bottom of the chart options
+- Click to enable Davis Analyzer
 - Press Run Query
 
 !["linechart"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/enableforecast.png?raw=true)
 
+> Observe how easily memory usage trend is projected into the future with the help of Davis Analyzer. 
+
+!["forecasted"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/forecastedmemoryusage.png?raw=true)
 
 
 
