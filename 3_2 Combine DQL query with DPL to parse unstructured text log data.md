@@ -139,7 +139,7 @@ data 'orderId":"' INT:orderId '"'
 
 - Type in the Rule name field
 - Type isNotNull(`dt.auth.origin`) in the matcher field
-- Type in process definition
+- Type in processor definition
   
 ```
 parse(content , "
