@@ -71,3 +71,7 @@ filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
 
 > Predictive AI helps teams avoid costly problems
 This is just one example of predictive AI in action. But for ITOps, DevSecOps, and SRE teams, predictive AI presents numerous use cases for gaining foresight into issues and pre-emptively addressing them before they escalate into costly problems. They see improved efficiency, reduced risks of security breaches, and better compliance with industry regulations.
+
+Similarly try forecasting disk usage percentage. (HINT: dt.host.disk.used.percent)
+
+End of document
