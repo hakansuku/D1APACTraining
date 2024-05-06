@@ -1,5 +1,7 @@
 # Parse and extract elegantly using structured JSON data 
 
+> Please take a note of the json structure under json decode in previous section. We will use this to create DPL in our next step.
+
 ## 1) Understanding JSON structure through visualization
 - Open DPL architect from Notebooks, copy JSON data from record content.
 
@@ -25,7 +27,6 @@ LD 'pushed to kafka ' JSON:parsedJson
 ```
 
 > NOTE: LD stands for	Line data matcher.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar.
-> ignore EOL in the screenshots.
 
 ![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject2.png?raw=true)
 
