@@ -1,4 +1,4 @@
-# 4_2 Davis® forecast analysis
+# 4_2 : Davis® forecast analysis
 
 ## 1) Predictive AI : Visualize future trend in memory usage
 
