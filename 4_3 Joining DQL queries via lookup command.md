@@ -40,7 +40,7 @@ lookupField:dt.entity.host
 
 > The first part (1) is a simple timeseries data on average disk % usage for last 7 days , we are calling it thisWeek.
 
-> The part (2) section w use a lookup function to add a field called lastWeek of type timeseries for average disk % usage during prior week.  Note how we specify the common field dt.entity.host when joining the queries.
+> The part (2) section w use a lookup function to add a field called lastWeek of type timeseries for average disk % usage during prior week.  Note how we specify the common field dt.entity.host when joining the queries.  Please watch this 2 minutes video (https://community.dynatrace.com/t5/Videos/Joining-Two-Queries-Lookup-Command/m-p/233788/highlight/true)
 
 > In part (3) section, we add the fields for thisWeek and lastWeek averages.  We then calculate the difference between thisWeek and lastWeek % and define indicators to display trend up and down.  Lastly we add status indicator with thresholds 🔴 > 95% > 🟠 > 50%  🟢. 
 
