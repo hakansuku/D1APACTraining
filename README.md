@@ -98,12 +98,15 @@ Learning workshops
  - Gain confidence with Dynatrace Query Language 
  - Learn DQL through hands-on experience with interactive tutorials.
  - Explore, query, combine and process ALL of your observability data stored in Grail.
- - Familiarize with Notebooks / Workflows .
+ - Davis Analyzer / Davis Predictive AI
+ - Familiarize with Notebooks
  - Examine use cases
 
 ### [4_1 - Practice Dynatrace Query language (DQL) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
- > - Basic commands fetch, filter, parse or summarize tutorials.
+ > - Basic commands and tutorials.
+ > - fetch, filter, fieldsAdd & fieldsRemove , parse , sort , makeTimeseries and summarize commands.
 
-### [4_1 - Compare Disk Usage Week-over-Week
+### [4_2 - Davis® forecast analysis.md :link: ] (https://github.com/hakansuku/D1APACTraining/blob/main/4_2%20Davis%C2%AE%20forecast%20analysis.md)
 
+### [4_3 - Joining DQL queries via lookup command :link: ] (https://github.com/hakansuku/D1APACTraining/blob/main/4_3%20Joining%20DQL%20queries%20via%20lookup%20command.md)
 
