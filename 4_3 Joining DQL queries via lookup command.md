@@ -42,6 +42,9 @@ lookupField:dt.entity.host
 
 > The part (2) section w use a lookup function to add a field called lastWeek of type timeseries for average disk % usage during prior week.  Note how we specify the common field dt.entity.host when joining the queries.
 
-> In part (3) section, we add the fields for average % per week 
+> In part (3) section, we add the fields for thisWeek and lastWeek averages.  We then calculate the difference between thisWeek and lastWeek % and define indicators to display trend up and down.  Lastly we add status indicator with thresholds 🔴 > 95% > 🟠 > 50%  🟢. 
+
 
 !["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/lookup.png?raw=true)
+
+> Key takeaway : In this exercise, make sure you understand how we use lookup command to join data from two queries using a common field as a key.  And use the results for analysis. 
