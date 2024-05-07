@@ -47,4 +47,4 @@ lookupField:dt.entity.host
 
 !["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/lookup.png?raw=true)
 
-> Key takeaway : In this exercise, make sure you understand how we use lookup command to join data from two queries using a common field as a key.  And use the results for analysis. 
+> Key takeaway : In this exercise, make sure you understand how we use lookup command to join data from two queries using a common field as a key.    
