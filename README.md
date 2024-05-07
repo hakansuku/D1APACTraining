@@ -104,9 +104,15 @@ Learning workshops
 
 ### [4_1 - Practice Dynatrace Query language (DQL) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
  > - Basic commands and tutorials.
- > - fetch, filter, fieldsAdd & fieldsRemove , parse , sort , makeTimeseries and summarize commands.
+ > - fetch, filter, fieldsAdd & fieldsRemove , parse (DPL), sort , makeTimeseries and summarize commands.
 
 ### [4_2 - Davis® forecast analysis.md :link: ] (https://github.com/hakansuku/D1APACTraining/blob/main/4_2%20Davis%C2%AE%20forecast%20analysis.md)
+ > - Visualize future trend with help of Davis predictive AI.
+ > - Timeseries, understand intervals and granularity
+ > - Predictive AI use case and its benefits
 
 ### [4_3 - Joining DQL queries via lookup command :link: ] (https://github.com/hakansuku/D1APACTraining/blob/main/4_3%20Joining%20DQL%20queries%20via%20lookup%20command.md)
+ > - Joining DQL queries for analysis
+ > - Use case comparing disk % usage week-over-week 
+ > - Thresholds/Indicators to display trends/status
 
