@@ -3,9 +3,9 @@
 > Very often , there are instances where you need to join data in different queries for analysis. 
 > In DQL you can use the lookup command. Lookup returns a record from a subquery (the lookup table) producing a match between a field in the source table (sourceField) and a field in the lookup table (lookupField).
 
-We will look at how we can use Davis Predictive AI to predict the percentage of host memory usage from existing timeseries usage data.
+In the below example, we will look at how we can use lookup to compare average host disk usage week-over-week
 
-## 1) Predictive AI : Visualize future trend in host memory usage
+## 1) Compare disk usage week-over-week
 
 > Benefits for predicting : Increased visibility into future capacity demands, Improved decision making for capacity planning, Reduced costs associated with unplanned capacity increases and Increased customer satisfaction. 
 
@@ -14,4 +14,28 @@ We will look at how we can use Davis Predictive AI to predict the percentage of 
  - Open Notebooks
  - Create new query section
 
-!["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/querygrail.png?raw=true)
+Type : 
+```
+timeseries thisWeek = avg( dt.host.disk.used.percent ),
+from: now()-7d,
+by: {dt.entity.host},
+filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
+
+| fieldsAdd lastWeek = lookup (
+[timeseries disk = avg(dt.host.disk.used.percent),
+  from: now()-14d, 
+  to: now()-7d,
+  by: {dt.entity.host},
+  filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"], 
+sourceField:dt.entity.host, 
+lookupField:dt.entity.host
+)[disk]
+
+| fields  dt.entity.host, memThisWeek = arrayAvg(thisWeek), memLastWeek = arrayAvg(lastWeek)
+| fieldsAdd diff = memThisWeek- memLastWeek
+| sort diff desc
+| fieldsAdd trend = if(diff<0,"↘️", else:if(diff>=0,"↗️"))
+| fieldsAdd indicator = if(memThisWeek<95,if(memThisWeek>50,"🟠",else:"🟢"), else:if(memThisWeek>95,"🔴"))
+```
+
+!["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/lookup.png?raw=true)
