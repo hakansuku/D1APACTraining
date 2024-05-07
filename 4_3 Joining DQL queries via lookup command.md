@@ -1,6 +1,6 @@
 # 4_3 : Joining DQL queries via lookup command
 
-> Very often , there are instances where you need to join data in different queries. 
+> Very often , there are instances where you need to join data in different queries for analysis. 
 > In DQL you can use the lookup command. Lookup returns a record from a subquery (the lookup table) producing a match between a field in the source table (sourceField) and a field in the lookup table (lookupField).
 
 We will look at how we can use Davis Predictive AI to predict the percentage of host memory usage from existing timeseries usage data.
