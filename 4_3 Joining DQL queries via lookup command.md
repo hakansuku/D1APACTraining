@@ -5,7 +5,7 @@
 
 In the below example, we will look at how we can use lookup to compare average host disk usage week-over-week
 
-## 1) Compare disk usage week-over-week
+## 1) Compare disk % usage week-over-week
 
 > Benefits for predicting : Increased visibility into future capacity demands, Improved decision making for capacity planning, Reduced costs associated with unplanned capacity increases and Increased customer satisfaction. 
 
@@ -37,5 +37,9 @@ lookupField:dt.entity.host
 | fieldsAdd trend = if(diff<0,"↘️", else:if(diff>=0,"↗️"))
 | fieldsAdd indicator = if(memThisWeek<95,if(memThisWeek>50,"🟠",else:"🟢"), else:if(memThisWeek>95,"🔴"))
 ```
+
+> The first part (1) is a simple timeseries data on average disk % usage for last 7 days , we are calling it thisWeek.
+
+> The part (2) section is we are adding a lookup function to add timeseries data on average disk % for prior week with common field dt.entity.host. 
 
 !["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/lookup.png?raw=true)
