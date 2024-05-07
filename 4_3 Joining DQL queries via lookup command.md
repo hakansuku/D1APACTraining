@@ -31,15 +31,17 @@ sourceField:dt.entity.host,
 lookupField:dt.entity.host
 )[disk]
 
-| fields  dt.entity.host, memThisWeek = arrayAvg(thisWeek), memLastWeek = arrayAvg(lastWeek)
-| fieldsAdd diff = memThisWeek- memLastWeek
+| fields  dt.entity.host, diskThisWeek = arrayAvg(thisWeek), diskLastWeek = arrayAvg(lastWeek)
+| fieldsAdd diff = diskThisWeek- diskLastWeek
 | sort diff desc
 | fieldsAdd trend = if(diff<0,"↘️", else:if(diff>=0,"↗️"))
-| fieldsAdd indicator = if(memThisWeek<95,if(memThisWeek>50,"🟠",else:"🟢"), else:if(memThisWeek>95,"🔴"))
+| fieldsAdd indicator = if(diskThisWeek<95,if(diskThisWeek>50,"🟠",else:"🟢"), else:if(diskThisWeek>95,"🔴"))
 ```
 
 > The first part (1) is a simple timeseries data on average disk % usage for last 7 days , we are calling it thisWeek.
 
-> The part (2) section is we are adding a lookup function to add timeseries data on average disk % for prior week with common field dt.entity.host. 
+> The part (2) section w use a lookup function to add a field called lastWeek of type timeseries for average disk % usage during prior week.  Note how we specify the common field dt.entity.host when joining the queries.
+
+> In part (3) section, we add the fields for average % per week 
 
 !["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/lookup.png?raw=true)
