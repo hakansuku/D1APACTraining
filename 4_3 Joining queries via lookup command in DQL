@@ -1,0 +1,17 @@
+# 4_3 : Joining queries via lookup command in DQL
+
+> Very often , there are instances where you need to join data in different queries. 
+> In DQL you can use the lookup command. Lookup returns a record from a subquery (the lookup table) producing a match between a field in the source table (sourceField) and a field in the lookup table (lookupField).
+
+We will look at how we can use Davis Predictive AI to predict the percentage of host memory usage from existing timeseries usage data.
+
+## 1) Predictive AI : Visualize future trend in host memory usage
+
+> Benefits for predicting : Increased visibility into future capacity demands, Improved decision making for capacity planning, Reduced costs associated with unplanned capacity increases and Increased customer satisfaction. 
+
+- Connect to demo tenannt https://guu84124.apps.dynatrace.com/
+
+ - Open Notebooks
+ - Create new query section
+
+!["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/querygrail.png?raw=true)
