@@ -118,3 +118,19 @@ Learning workshops
  > - Use case comparing disk % usage week-over-week 
  > - Thresholds/Indicators to display trends/status
 
+## Workshop 5 : Automation services with Workflows 
+:blue_book: Learning value : 
+
+### 5_1 Basic Workflows
+ > - Basic Settings / Task Types / Trigger types
+
+### 5_2 Advanced Workflows
+ > - JavaScript / Dynatrace SDK
+ > - Loops and characteristics
+
+### 5_3 Use cases
+
+
+
+
+
