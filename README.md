@@ -12,10 +12,12 @@ Learning workshops
  - Improve knowledge supporting on-premise customers 
 
   ### [1_1 - Obtaining licenses :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
+  
   > creating Mission control account
   > adding license / quota
 
-  ### [1_2 - Cloud environment preparation (AWS) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_2%20Cloud%20environment%20preparation.md)
+  ### [1_2 - Cloud environment preparation (AWS) :link:](https://github.com/hakansuku/D1APACTraining/blob/main/1_2%20Cloud%20environment%20preparation.md)
+  
   > - Regions / availability zones
   > - EC2 / Spot instance request / costing
   > - Security groups / ports 
@@ -23,7 +25,7 @@ Learning workshops
   > - VM types / AMI images
   > - Terminal communication access
 
-  ### [1_3 - Preparing environment (Linux) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
+  ### [1_3 - Preparing environment (Linux) :link:] (https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
   > - Permissions
   > - environment setup
   >   - linux basic commands 
@@ -98,12 +100,37 @@ Learning workshops
  - Gain confidence with Dynatrace Query Language 
  - Learn DQL through hands-on experience with interactive tutorials.
  - Explore, query, combine and process ALL of your observability data stored in Grail.
- - Familiarize with Notebooks / Workflows .
+ - Davis Analyzer / Davis Predictive AI
+ - Familiarize with Notebooks
  - Examine use cases
 
 ### [4_1 - Practice Dynatrace Query language (DQL) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
- > - Basic commands fetch, filter, parse or summarize tutorials.
+ > - Basic commands and tutorials.
+ > - fetch, filter, fieldsAdd & fieldsRemove , parse (DPL), sort , makeTimeseries and summarize commands.
 
-### [4_1 - Compare Disk Usage Week-over-Week
+### [4_2 - Davis® forecast analysis :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_2%20Davis%C2%AE%20forecast%20analysis.md)
+ > - Visualize future trend with help of Davis predictive AI.
+ > - Timeseries, understand intervals and granularity
+ > - Predictive AI use case and its benefits
+
+### [4_3 - Joining DQL queries via lookup command :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_3%20Joining%20DQL%20queries%20via%20lookup%20command.md)
+ > - Joining DQL queries for analysis
+ > - Use case comparing disk % usage week-over-week 
+ > - Thresholds/Indicators to display trends/status
+
+## Workshop 5 : Automation services with Workflows 
+:blue_book: Learning value : 
+
+### 5_1 Basic Workflows
+ > - Basic Settings / Task Types / Trigger types
+
+### 5_2 Advanced Workflows
+ > - JavaScript / Dynatrace SDK
+ > - Loops and characteristics
+
+### 5_3 Use cases
+
+
+
 
 
