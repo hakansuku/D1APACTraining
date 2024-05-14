@@ -45,3 +45,18 @@ https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.
 
 !["getexchange"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/getexchangerate.png?raw=true)
 
+> The above may fail.  Outbound connections from functions are not allowed by default due to security restrictions. Learn how to configure the environment to access external hosts. More information : https://developer.dynatrace.com/develop/functions/allow-outbound-connections/
+
+- Disable outbound connectinos limit in Settings> Preferences > limit outbound connections. 
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/limitoutbound.png?raw=true)
+
+-  Run the workflow again
+
+- When status is success, click on results tab.
+
+> You should be able to confirm result of the API call section contains JSON format exchange rate data.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/jsonresult.png?raw=true)
+
+
