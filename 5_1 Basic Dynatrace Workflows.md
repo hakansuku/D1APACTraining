@@ -28,5 +28,20 @@
 
 !["add task"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/createaction.png?raw=true)
 
-- Choose HTTP
-!["add task"]
+- Choose action type HTTP Requests
+  
+> Observe that there are other types of actions that we can select.
+
+!["add task"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/HTTPRequest1.png?raw=true)
+
+- 1) Rename the taskname  (eg. get_currency)
+- 2) Choose GET from the dropdown list
+- 3) Copy & Paste exteranl API URL 
+```
+https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json
+```
+- 4) Save the workflow
+- 5) Click Run
+
+!["getexchange"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/getexchangerate.png?raw=true)
+
