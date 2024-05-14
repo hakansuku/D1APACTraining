@@ -4,7 +4,9 @@
 
 > Workflow is a sequence of steps to perform specific to a goal.
 
-## 1) Triggers and Tasks
+## Triggers and Tasks
+
+### 1) Adding a trigger
 
 > Each action executed in in a workflow is called a step (tasks).
 
@@ -19,11 +21,14 @@
 >  In this section, you will be able to familiarize with basic trigger types.  Notice how workflows can be triggered by 3 main types :
 > #### 1) events 2) schedule and 3) on-demand.
 
+
+
  - Select on-demand trigger 
 
 !["entername"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/ondemandtrigger.png?raw=true)
 > Now this workflow with be only triggered on demand, means it will only run when manually triggered via Run button, or via API call. 
 
+### 2) Adding a task
 - add a task by pressing the + button
 
 !["add task"](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/createaction.png?raw=true)
@@ -55,8 +60,26 @@ https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.
 
 - When status is success, click on results tab.
 
-> You should be able to confirm result of the API call section contains JSON format exchange rate data.
+> You should be able to confirm result of the API call section contains JSON format exchange rate data.  We will pass this data to the next task.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/jsonresult.png?raw=true)
+
+### 3) Adding a second task
+
+- Click + to add a second task of type HTTP request
+
+> In this section we will create a task which will use Dynatrace Environment API to ingest a subset of the exchange rate data (4 currencies only) collected in the previous task.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/secondtask.png?raw=true)
+
+- [1] Rename the task name
+- [2] Choose POST method from the dropdown
+  
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/ingest_logs.png?raw=true)
+
+> #### [3] [4] [5] We require the tenant end point information and token. Refer to workshop 3_1 part 3) Ingesting sample log record into Dynatrace via Log API.
+
+![]()
+
 
 
