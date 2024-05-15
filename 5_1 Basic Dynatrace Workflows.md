@@ -77,9 +77,41 @@ https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/ingest_logs.png?raw=true)
 
-> #### [3] [4] [5] We require the tenant end point information and token. Refer to workshop 3_1 part 3) Ingesting sample log record into Dynatrace via Log API.
+> #### [3] [4] [5] We require the tenant end point information and token. Refer to workshop 3_1 part 3) Ingesting sample log record into Dynatrace via Environment API 2.0 logs/ingest.
 
-![]()
+- [3]Insert API Request URL and header [4]Authorization and [5]token string as below
 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/ingestAPI.png?raw=true)
+
+- [6] In the payload copy and paste
+
+```
+[
+  {
+    "AUD":{{result("get_daily_currency")["json"]["usd"]["aud"]}},
+    "KRW":{{result("get_daily_currency")["json"]["usd"]["krw"]}},
+    "USD":{{result("get_daily_currency")["json"]["usd"]["usd"]}},
+    "JPY":{{result("get_daily_currency")["json"]["usd"]["jpy"]}}
+  }
+]
+```
+> Dynatrace Workflows use the Jinja﻿ templating engine to allow for dynamic configurations in workflows. Those expressions provide access to execution parameters, schedule information, event context, and much more.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/jinja.png?raw=true)
+
+> Note that we have formatted payload in JSON format.  Also defining the fields to 4 currencies AUD , KRW , USD and JPY.  We can retrieve values from the previous task (get_exchange_rate) result (JSON) by using result() from reference expression. Refer to https://docs.dynatrace.com/docs/platform-modules/automations/workflows/reference.  Workflows uses set of powerful Expressions that enable you to reference results from predecessors in a task configuration and define custom conditions.
+
+- Run the workflow.  
+
+> Check both tasks have success labels and validate the input contains the 4 currencies with data from previous task. 
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/success.png?raw=true)
+
+- Go to logs & events app.  
+> Observe how 4 fields in the content are automatically recognized and parsed into fields by Dynatrace.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/logs.png?raw=true)
+
+End of document
 
 
