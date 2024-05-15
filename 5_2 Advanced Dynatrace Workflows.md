@@ -25,3 +25,38 @@
   const result = await response.json();
   return result;
 ```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/yourcode.png?raw=true)
+
+- Click Run and validate results tab. 
+> Notice the result set is different data structure (JSON is now USD)
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/resultjavascript.png?raw=true)
+
+- Modify the second step (ingest_filtered_logs) to reflect the data structure change by removing ["JSON"] to adjust to the changed structure. 
+
+> Payload should now look like
+
+```
+[
+  {
+    "AUD":{{result("get_exchange_rate")["usd"]["aud"]}},
+    "KRW":{{result("get_exchange_rate")["usd"]["krw"]}},
+    "USD":{{result("get_exchange_rate")["usd"]["usd"]}},
+    "JPY":{{result("get_exchange_rate")["usd"]["jpy"]}}
+  }
+]
+```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/payloadjava.png?raw=true)
+
+- Run the workflow and validate the input of the ingest_filtered_logs task.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/inputtabjava.png?raw=true)
+
+- Finally validate in logs and events app
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/WORKFLOWS/javafinal.png?raw=true)
+
+End of document
+
