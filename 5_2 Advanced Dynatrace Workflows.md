@@ -1,4 +1,4 @@
-# Advanced Dynatrace Workflows
+# Advanced Dynatrace Workflows using Javascript code
 
 > The Run Javascript action for Workflows enables you to build a custom task running JavaScript code in a workflow.
 
