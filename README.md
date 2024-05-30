@@ -128,7 +128,13 @@ Learning workshops
  > - JavaScript / Dynatrace SDK
  > - Loops and characteristics
 
-### 5_3 Use cases
+## Workshop 6 : Site Reliability Engineering with Dynatrace
+:blue_book: Learning value : 
+
+### 6_1 Environment preparation 
+> - Deploy Jenkins
+
+
 
 
 
