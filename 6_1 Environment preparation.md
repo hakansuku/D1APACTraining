@@ -65,7 +65,21 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/adminpass.png?raw=true)
 
-Copy the password string and enter into Administrator password field of the initial jenkins website
+> Copy the password string and enter into Administrator password field of the initial jenkins website
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/passwordcontinue.png?raw=true)
+
+> Select Install suggested plugins to continue setup
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/suggestedplugins.png?raw=true)
+
+> let the installation to proceed installing default plugins till completion
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/installplugins.png?raw=true)
+
+> Create your admin user by entering the required fields with your own credentials as below and clic Save and continue.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/createadminuser.png?raw=true)
+
 
 
 
