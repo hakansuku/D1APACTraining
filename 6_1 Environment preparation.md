@@ -38,12 +38,34 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkin
 Now update apt to get information on the newest versions of jenkin packages
 ```
 apt update
+
+apt upgrade
 ```
 then run the installation command to install jenkins
 ```
 apt install jenkins -y
 ```
-once installed now you can access jenkins using VM instance public address on port 8080.
+
+> Now check jenkins installed status by typing
+```
+systemctl status jenkins
+```
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsservice.png?raw=true)
+
+> Once installation is confirmed now you can access jenkins using VM instance public address on port 8080.
+Access the initial jenkins website using your browser
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/unlockJenkins.png?raw=true)
+
+Jenkins generates a password upon installation which is required to start using jenkins.
+To obtain the generated password type (Note: requires root access)
+```
+cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/adminpass.png?raw=true)
+
+Copy the password string and enter into Administrator password field of the initial jenkins website
 
 
 
