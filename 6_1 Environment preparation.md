@@ -24,10 +24,14 @@ apt install openjdk-17-jdk -y
 
 
 > Check installed java version using command : 
-java -version 
+```
+java -version
+```
+ 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jdkversion.png?raw=true)
 
-type to enable jenkins libary repository
+type to add jenkins packages library repository for downloads
+
 ```
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 
@@ -52,8 +56,8 @@ systemctl status jenkins
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsservice.png?raw=true)
 
-> Once installation is confirmed now you can access jenkins using VM instance public address on port 8080.
-Access the initial jenkins website using your browser
+> Once installation is confirmed now you can access jenkins using VM instance's public ip address on port 8080.
+Access the initial jenkins website using your browser (eg http://<your public ip address>:8080)
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/unlockJenkins.png?raw=true)
 
@@ -76,9 +80,14 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 > let the installation to proceed installing default plugins till completion
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/installplugins.png?raw=true)
 
-> Create your admin user by entering the required fields with your own credentials as below and clic Save and continue.
+> Create your admin user by entering the required fields with your own credentials as below and click Save and Continue.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/createadminuser.png?raw=true)
+
+Finally, confirm the instance URL is correct and click Save and Finish to finalize the setup.
+You are now ready to start using Jenkins.  Click start using Jenkins button. 
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsstartpage.png?raw=true)
 
 
 
