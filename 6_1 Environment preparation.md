@@ -43,7 +43,8 @@ then run the installation command to install jenkins
 ```
 apt install jenkins -y
 ```
-once installed now you can access jenkins 
+once installed now you can access jenkins using VM instance public address on port 8080.
+
 
 
 
