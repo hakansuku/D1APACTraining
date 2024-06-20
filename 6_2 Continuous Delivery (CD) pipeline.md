@@ -5,7 +5,7 @@
 
 - You will be defining 3 stages:  Build -> Deploy -> Test.
 - You will schedule it to run every 15 minutes.
-- During each stage we will use Business events API to ingest JSON-format data into Dynatrace via the /bizevents/ingest endpoint.
+- For each stage we will use Business events API to ingest JSON-format data into Dynatrace via the /bizevents/ingest endpoint.
 - You will be able to access records stored in Grail by making DQL queries (fetch bizevents) using Notebooks application.
 
 ## Create a new pipeline
@@ -18,3 +18,18 @@
 - click OK
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/examplepipelineok.png?raw=true)
+
+Scroll down to Build Triggers section.
+
+- Click on Build periodically
+- Enter frequency under Schedule box (eg. # Every fifteen minutes)
+
+```
+H/15 * * * *
+```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/schedule15.png?raw=true)
+
+> Note: you can click on (?) icon next to Schedule to find out more about the frequency format.
+
+
