@@ -8,7 +8,7 @@
 - During each stage we will use Business events API to ingest JSON-format data into Dynatrace via the /bizevents/ingest endpoint.
 - You will be able to access records stored in Grail by making DQL queries (fetch bizevents) using Notebooks application.
 
-## Create a new pipeline called example-pipeline 
+## Create a new pipeline
 - Click New item from the Jekins Main page
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/newitem.png?raw=true)
