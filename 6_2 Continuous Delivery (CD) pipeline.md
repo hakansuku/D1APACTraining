@@ -1,6 +1,7 @@
 # Creating a simple Continuous Delivery (CD) pipeline
 
 #### In this workshop we will create a continuous delivery pipeline in Jenkins.  A continuous delivery pipeline automates the entire software release process. 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/pipeline.png?raw=true)
 
 - You will be defining 3 stages:  Build -> Deploy -> Test.
 - You will schedule it to run every 15 minutes.
