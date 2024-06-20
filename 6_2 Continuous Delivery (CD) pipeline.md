@@ -1,4 +1,4 @@
-# Creating a simple continuous delivery pipeline
+# Creating a simple Continuous Delivery (CD) pipeline
 
 #### In this workshop we will create a continuous delivery pipeline in Jenkins.  A continuous delivery pipeline automates the entire software release process. 
 
