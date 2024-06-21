@@ -17,10 +17,27 @@
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/plugins.png?raw=true)
 
+> Jenkins has numerous plugins that extends its automation capabilities.
+
 - Select Availabe plugins
 - type in steps
 - Select and install "Pipeline Utility Steps" Plugin
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
-  
+## Defining custom JSON data structure 
+
+> You will be editing the existing pipeline and create custom data in JSON format which you will later ingest into Dynatrace via API Biz event format.
+
+- Click on the pipeline you created in workshop 6_2 form the main Jenkins dashboard (eg. example-pipeline)
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/mainpipeline.png?raw=true)
+
+> To edit the pipeline
+
+- Select Configure
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/Configure.png?raw=true)
+
+
+
