@@ -30,6 +30,35 @@ H/15 * * * *
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/schedule15.png?raw=true)
 
-> Note: you can click on (?) icon next to Schedule to find out more about the frequency format.
+> Note: you can click on (?) icon next to Schedule to find out more about the frequency format expression.
 
+## Defining stages in the pipeline
+
+Scroll further down to Pipiline section.
+
+- paste the following script code to define 3 stages
+
+```
+pipeline {
+    agent any 
+    stages {
+        stage('Build') {
+            steps {
+            }
+        }
+        stage('Deploy') {
+            steps {
+            }
+        }
+        stage('Test') {
+            steps {
+            }
+        }
+    }
+}
+```
+
+- Click Save button
+  
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/stages.png?raw=true)
 
