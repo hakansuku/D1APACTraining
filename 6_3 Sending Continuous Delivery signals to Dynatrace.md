@@ -17,10 +17,12 @@
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/plugins.png?raw=true)
 
+> Jenkins has numerous plugins that extends its automation capabilities.
+
 - Select Availabe plugins
 - type in steps
 - Select and install "Pipeline Utility Steps" Plugin
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
-  
+
