@@ -39,5 +39,35 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/Configure.png?raw=true)
 
+> Scroll down to Pipeline section
 
+- At the top of the script-box add the line to import JSON library
+  
+```
+import groovy.json.JsonOutput
+```
 
+- For each of the stages (Build/Deploy/Test) replace the line [echo "Running XYZ tasks in Build stage!"] with below JSON data definition
+
+```
+ script {
+          def myJSON = readJSON text: '{}'
+          myJSON.Jobname = "${env.JOB_BASE_NAME}" as String
+          myJSON.BuildUrl = "${env.BUILD_URL}" as String
+          myJSON.Stage = "${env.STAGE_NAME}" as String
+          myJSON.'event.type' = "CICD Tool" as String
+          myJSON.'event.provider' = "${env.BUILD_TAG}" as String
+          myJSON.id = "${env.BUILD_ID}" as String
+                    
+          def jsonFormat = JsonOutput.toJson(myJSON)
+          echo "${jsonFormat}"                  
+        }
+```
+> NOTE: Make sure you do this for all the stages. In between the steps {...}.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/import.png?raw=true)
+
+- Click Save button
+
+> 
+- 
