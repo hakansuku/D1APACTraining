@@ -1,6 +1,6 @@
-# Sending Continuous Delivery (CD) pipeline run signals to Dynatrace for each stage
+# Sending Continuous Delivery (CD) pipeline signals to Dynatrace
 
-#### In this workshop, during each stage (Build/Deploy/Test) you will add Dynatrace API call to send custom information (from Jenkins to Dynatrace) for each stage during pipeline execution .
+#### In this workshop, during each stage (Build/Deploy/Test) you will add Dynatrace API call to send custom information when the pipeline executes.
 
 - You will create a custom JSON data structure with the pipeline stage information.
 - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
