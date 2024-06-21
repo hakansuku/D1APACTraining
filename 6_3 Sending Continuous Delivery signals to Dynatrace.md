@@ -69,6 +69,53 @@ import groovy.json.JsonOutput
 
 - Click Save button
 
-> Execute Build Now and observe in the console validating data being populated in JSON structure for each of the stages
+> Execute Build Now and observe in the console , observe data in JSON format in each of the stages
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jsondata.png?raw=true)
+
+## Creating Dynatrace API TOKEN for Business events API to ingest JSON-format data into Dynatrace via the /bizevents/ingest endpoint
+
+- Open Access Token app from Dynatrace SaaS tenant(3rd Gen).
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/APIToken.png?raw=true)
+
+> - Click to Generate new Token
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/generatetoken.png?raw=true)
+
+
+- Enter TOKEN Name
+- search for Write API
+- Tick on Write API tokens to add into the selected scopes
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/writeapi.png?raw=true)
+
+> add further two scopes
+
+- search for Ingest
+- tick on Ingest bizevents and Ingest events to add both into the selected scopes
+- Finally, click on Generate Token
+  
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/ingestbizevent.png?raw=true)
+
+
+- Lastly, Copy the generated token and save the token string.  You will need it for later use.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/copyTOKEN.png?raw=true)
+
+> Observe the 3 scopes are included in the token generated
+
+## For each stage, execute an API call to ingest JSON data when the pipeline executes.
+
+> Add API POST call in each of the stages (Build/Deploy/Test) of the pipeline.
+
+- Add the following code just under the line echo "${jsonFormat}"
+  
+#### NOTE : Replace XXXXX.XXX.XXXX.com with your own Dynatrace SaaS tenant domain name and replace TOKEN value dt0c01.XXXXXXXXXXXX... with your own created token value. 
+
+```
+sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'accept: application/json; charset=utf-8' -H 'Content-Type: application/json' -H 'Authorization: Api-Token dt0c01.XXXXXXXXXXXXXXAW7HPAWSW.X4APBHCADVRUO4YTUND45QB6RVLWGLDHRHS4XZEOEAVZRHM2NUZW3HIXHEUOAFAK' -d '${jsonFormat}' """
+```
+
+
+
