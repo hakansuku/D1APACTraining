@@ -98,10 +98,23 @@ import groovy.json.JsonOutput
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/ingestbizevent.png?raw=true)
 
-> Observe the 3 scopes are included in the token generated
 
-- Copy the generated token and save it as you will need it for later use.
+- Lastly, Copy the generated token and save the token string.  You will need it for later use.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/copyTOKEN.png?raw=true)
+
+> Observe the 3 scopes are included in the token generated
+
+## For each stage, execute an API call to ingest JSON data when the pipeline executes.
+
+> Add API POST call in each of the stages (Build/Deploy/Test) of the pipeline.
+
+- Type the following command under the line echo "${jsonFormat}" 
+> NOTE : Replace XXXXX.XXX.XXXX.com with your own tenant URL and replace TOKEN value dt0c01.XXXXXXXXXXXX... with your own token value. 
+
+```
+sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'accept: application/json; charset=utf-8' -H 'Content-Type: application/json' -H 'Authorization: Api-Token dt0c01.XXXXXXXXXXXXXXAW7HPAWSW.X4APBHCADVRUO4YTUND45QB6RVLWGLDHRHS4XZEOEAVZRHM2NUZW3HIXHEUOAFAK' -d '${jsonFormat}' """
+```
+
 
 
