@@ -6,3 +6,21 @@
 - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
 - You will be adding API call script task within the pipeline for each of 3 stages:  Build -> Deploy -> Test.
 - You will be using notebooks to write DQL query to Grail and validate the events information of the pipeline executions.
+
+## Add plugin for manipulating JSON data structure
+
+- Click on Manage Jenkins option
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/maangejenkins.png?raw=true)
+
+- Click Plugins
+  
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/plugins.png?raw=true)
+
+- Select Availabe plugins
+- type in steps
+- Select and install "Pipeline Utility Steps" Plugin
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
+
+  
