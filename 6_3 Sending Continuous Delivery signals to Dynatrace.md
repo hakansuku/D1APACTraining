@@ -69,5 +69,6 @@ import groovy.json.JsonOutput
 
 - Click Save button
 
-> 
-- 
+> Execute Build Now and observe in the console validating data being populated in JSON structure for each of the stages
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jsondata.png?raw=true)
