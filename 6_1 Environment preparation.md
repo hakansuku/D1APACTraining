@@ -89,7 +89,6 @@ You are now ready to start using Jenkins.  Click start using Jenkins button.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsstartpage.png?raw=true)
 
-
-
+End of Document
 
 
