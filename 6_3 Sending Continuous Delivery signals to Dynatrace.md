@@ -94,5 +94,14 @@ import groovy.json.JsonOutput
 
 - search for Ingest
 - tick on Ingest bizevents and Ingest events to add both into the selected scopes
+- Finally, click on Generate Token
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/ingestbizevent.png?raw=true)
+
+> Observe the 3 scopes are included in the token generated
+
+- Copy the generated token and save it as you will need it for later use.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/copyTOKEN.png?raw=true)
+
+
