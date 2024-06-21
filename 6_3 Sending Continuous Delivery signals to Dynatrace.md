@@ -109,8 +109,9 @@ import groovy.json.JsonOutput
 
 > Add API POST call in each of the stages (Build/Deploy/Test) of the pipeline.
 
-- Type the following command under the line echo "${jsonFormat}" 
-> NOTE : Replace XXXXX.XXX.XXXX.com with your own tenant URL and replace TOKEN value dt0c01.XXXXXXXXXXXX... with your own token value. 
+- Add the following code just under the line echo "${jsonFormat}"
+  
+# > NOTE : Replace XXXXX.XXX.XXXX.com with your own Dynatrace SaaS tenant URL and replace TOKEN value dt0c01.XXXXXXXXXXXX... with your own created token value. 
 
 ```
 sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'accept: application/json; charset=utf-8' -H 'Content-Type: application/json' -H 'Authorization: Api-Token dt0c01.XXXXXXXXXXXXXXAW7HPAWSW.X4APBHCADVRUO4YTUND45QB6RVLWGLDHRHS4XZEOEAVZRHM2NUZW3HIXHEUOAFAK' -d '${jsonFormat}' """
