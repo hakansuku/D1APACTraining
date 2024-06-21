@@ -120,4 +120,6 @@ sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'ac
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/APIPOSTCALL.png?raw=true)
 
+> Notice at the end of the API call command there is -d '${jsonFormat} parameter.  This is how our jsonformat data is passed as the payload which is ingested.
+
 
