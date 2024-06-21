@@ -25,7 +25,7 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
-## Import JSON library and define custom JSON data structure 
+## Defining custom JSON data structure 
 
 > You will be editing the existing pipeline and create custom data in JSON format which you will later ingest into Dynatrace via API Biz event format.
 
