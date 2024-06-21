@@ -65,3 +65,20 @@ pipeline {
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/stages.png?raw=true)
 
+## Test the pipeline
+
+> Although the pipeline is scheduled for every 15 minutes, You can immediately manually trigger the pipeline at anytime by Clicking on Build Now.  Observe under Build history, a new build run ID gets added and executed.
+
+- Click on Build now. 
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/buildnow.png?raw=true)
+
+> You can also visualize the different stages of the pipeline and drill down to the console output to debug the results of the pipeline run.  
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/consoleoutput.png?raw=true)
+
+Now you have a Continuous Deployment pipeline which will automatically trigger a run every 15 minutes.
+
+End of Document
+
+ 
