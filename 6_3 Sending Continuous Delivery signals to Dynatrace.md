@@ -69,6 +69,30 @@ import groovy.json.JsonOutput
 
 - Click Save button
 
-> Execute Build Now and observe in the console validating data being populated in JSON structure for each of the stages
+> Execute Build Now and observe in the console , observe data in JSON format in each of the stages
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jsondata.png?raw=true)
+
+## Creating Dynatrace API TOKEN for Business events API to ingest JSON-format data into Dynatrace via the /bizevents/ingest endpoint
+
+- Open Access Token app from Dynatrace SaaS tenant(3rd Gen).
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/APIToken.png?raw=true)
+
+> - Click to Generate new Token
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/generatetoken.png?raw=true)
+
+
+- Enter TOKEN Name
+- search for Write API
+- Tick on Write API tokens to add into the selected scopes
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/writeapi.png?raw=true)
+
+> add further two scopes
+
+- search for Ingest
+- tick on Ingest bizevents and Ingest events to add both into the selected scopes
+  
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/ingestbizevent.png?raw=true)
