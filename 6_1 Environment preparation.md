@@ -57,7 +57,7 @@ systemctl status jenkins
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsservice.png?raw=true)
 
 > Once installation is confirmed now you can access jenkins using VM instance's public ip address on port 8080.
-Access the initial jenkins website using your browser (eg http://<your public ip address>:8080)
+Access the initial jenkins website using your browser (eg http:// your public ip address :8080)
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/unlockJenkins.png?raw=true)
 
