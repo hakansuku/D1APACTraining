@@ -44,14 +44,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo "Running XYZ tasks in Build stage!"
             }
         }
         stage('Deploy') {
             steps {
+                echo "Running XYZ tasks in Deploy stage!"
             }
         }
         stage('Test') {
             steps {
+                echo "Running XYZ tasks in Test stage!"
             }
         }
     }
