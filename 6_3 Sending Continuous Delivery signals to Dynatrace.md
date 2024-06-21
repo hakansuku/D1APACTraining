@@ -145,4 +145,7 @@ fetch bizevents
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/bizeventsDQL.png?raw=true)
 
+> You have now successfully started to receive signals from each stage when the pipeline runs every 15 minutes.
+
+End of document
 
