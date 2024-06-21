@@ -109,8 +109,11 @@ import groovy.json.JsonOutput
 
 > Add API POST call in each of the stages (Build/Deploy/Test) of the pipeline.
 
+- Go to your pipeline (eg. example-pipeline)
+- Click Configure and scroll down to pipeline section
 - Add the following code just under the line echo "${jsonFormat}"
-> remember to add the code for all the 3 stages
+  
+> remember to add the below API code for all the 3 stages
   
 #### NOTE : Replace XXXXX.XXX.XXXX.com with your own Dynatrace SaaS tenant domain name and replace TOKEN value dt0c01.XXXXXXXXXXXX... with your own created token value. 
 
@@ -120,6 +123,11 @@ sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'ac
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/APIPOSTCALL.png?raw=true)
 
-> Notice at the end of the API call command there is -d '${jsonFormat} parameter.  This is how our jsonformat data is passed as the payload which is ingested.
+> Notice at the end of the API call command there is -d '${jsonFormat} parameter.  This is how our jsonformat data is passed as the payload.
+
+- Finally Click save and execute Build Now.
+- Open Console Output and validate the API call has successfully ingested JSON data into Dynatrace (eg. as below)
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/apiconsoleoutput.png?raw=true)
 
 
