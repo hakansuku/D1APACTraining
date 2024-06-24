@@ -144,7 +144,10 @@ Learning workshops
 > - Test the pipeline
 
 ### [6_3 Sending Continuous Delivery signals to Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
-
+> - You will create a custom JSON data structure with the pipeline stage information.
+> - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
+> - You will be adding API call script task within the pipeline for each of 3 stages: Build -> Deploy -> Test.
+> - You will be using notebooks app to write DQL query to Grail and validate the events information of the pipeline executions.
 
 
 
