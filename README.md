@@ -160,8 +160,8 @@ Learning workshops
 > - You will create a token in Jenkins.
 > - You will create a workflow and trigger a run every 60 minutes.
 > - You will create a Javascript code to PULL data using Jenkins API endpoint to retrieve pipeline execution informaiton (pipeline run status, ID , Duration for each stage (Build/Deploy/Test) etc. Then will PUSH (ingest) the information as bizevents into Dynatrace.
-> - You will validate the information using Notebooks app and DQL to observe the bizevents ingested.
-> - You will create a dashboard to visualize the events ingested
+> - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
+> - You will create a dashboard to visualize the events ingested near real-time
 
 
 
