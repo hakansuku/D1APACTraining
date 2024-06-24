@@ -20,6 +20,12 @@
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/useradmin.png?raw=true)
 
-- 
+> Now generate a new token.  This new token heredits the access permissions of the admin user.
+
+- Click Add new Token button
+- Enter any name for the token
+- Click Generate button
+
+> NOTE: Please copy and save this token as you will be using later for authorizing Jenkins API calls.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsnewtoken.png?raw=true)
