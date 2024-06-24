@@ -26,6 +26,6 @@
 - Enter any name for the token
 - Click Generate button
 
-> NOTE: Please copy and save this token as you will be using later for authorizing Jenkins API calls.
+> NOTE: Please copy and save the generated token as you will be using later for authorizing Jenkins API calls.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/jenkinsnewtoken.png?raw=true)
