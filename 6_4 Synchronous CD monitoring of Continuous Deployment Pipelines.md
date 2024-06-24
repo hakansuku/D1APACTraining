@@ -61,6 +61,7 @@
 - Delete existing default code.  Copy and paste the en Javascript code below
 - Click SAVE button
 
+
 > #### NOTE :  MODIFY JenkinsBaseUrl value to your Jenkins Url IP  and MODIFY JENKINS_API_TOKEN with your Jenkins token generated previously
 
 ```
@@ -239,4 +240,28 @@ async function identifyStageDetailAndPushAsBizevents(builds, jenkinsBaseUrl, JEN
   }
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/javascriptcode.png?raw=true)
+
+> Once saved it will automatically run every 60 minutes.  However you can also trigger a run manually.
+
+- Click Run
+
+> Validate the results of the run,  observe the logs as below
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/firstrun.png?raw=true)
+
+## Validating ingested Bizevents data using Notebooks app and DQL
+> You will now build a DQL query to validate the Bizevent ingested information.
+
+- Open Notebooks APP
+- Build a DQL query as below and check the timestamp and information has been collected.
+
+![]{https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/notebookvalidate.png?raw=true)
+
+## Visualize CD pipeline runs using Dynatrace Dashboard
+> Next we will create a dashboard to visualize the Bizevents information
+
+- Open a new browser and downlaod pre-build dashboard JSON file from [ HERE :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/Build%20Performance%20for%20all%20jobs.json) 
+
+- Open Dashboards app
+- Import the pre-built dashboard file in JSON format 
 
