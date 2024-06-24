@@ -34,7 +34,7 @@
 
 - Open Dynatrace Workflows APP
 - Click  + Workflows  button
-- Name the workflow
+- Name the workflow "Pull & Push Bizevents"
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/workflowpushandpull.png?raw=true)
 
