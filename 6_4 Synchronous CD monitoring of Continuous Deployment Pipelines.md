@@ -55,7 +55,7 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/NewtaskJS.png?raw=true)
 
-> Add the Javascript body now
+> Next we will add the Javascript code to this task
 
 - Name the task as "pull_jenkins_data_n_push_bizevents"
 - Delete existing default code.  Copy and paste the en Javascript code below
