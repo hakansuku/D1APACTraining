@@ -1,6 +1,6 @@
 # Synchronous monitoring of Continuous Deployment Pipelines using Dynatrace Workflows
 
-#### In this workshop, we will be using Dynatrace Workflows to schedule periodic connection every (60 minutes) to Jenkins using Jenkins API and query data (PULL) to obtain information of all pipelines being executed. You will then ingest the data into Dynatrace as Biz events (PUSH)
+#### In this workshop, we will be using Dynatrace Workflows to schedule periodic connection every (60 minutes) to Jenkins using Jenkins API and query data (PULL) to obtain information of all pipelines being executed. You will then ingest (PUSH) the data into Dynatrace as Biz events.
 
 - You will create a workflow and trigger a run every 60 minutes. 
 - You will create a Javascript code to PULL data using Jenkins API endpoint to retrieve pipeline execution informaiton (pipeline run status, ID , Duration for each stage (Build/Deploy/Test) etc. Then will PUSH (ingest) the information as bizevents into Dynatrace.
