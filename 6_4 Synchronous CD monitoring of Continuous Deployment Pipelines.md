@@ -276,7 +276,7 @@ async function identifyStageDetailAndPushAsBizevents(builds, jenkinsBaseUrl, JEN
 
 > Scroll down the dashboard You should now be able visualize all the metrics related to the pipeline jobs
 
-> NOTICE: Your pipeline is ran every 15 minutes so ideally you will be seeing 4 build jobs completed.  However if you see more is because you must have run the workflow manually which adds to multiple events getting ingested.
+> NOTICE: Your pipeline is ran every 15 minutes so ideally you will be seeing 4 build jobs completed within 1hour timeframe selector.  However if you see more is because you must have run the workflow manually which adds additional events.  If you leave workflow automatically, you will only see 4 jobs per hour. 
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/builddashboard.png?raw=true)
 
