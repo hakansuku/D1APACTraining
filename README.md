@@ -25,7 +25,7 @@ Learning workshops
   > - VM types / AMI images
   > - Terminal communication access
 
-  ### [1_3 - Preparing environment (Linux) :link:] (https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
+  ### [1_3 - Preparing environment (Linux) :link:](https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
   > - Permissions
   > - environment setup
   >   - linux basic commands 
