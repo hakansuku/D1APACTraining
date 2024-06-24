@@ -48,7 +48,7 @@
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/runevery60save.png?raw=true)
 
 ## Create New task - type Run Javascript
-> Add a new task under the trigger and define the type as Javascript
+> Add a new task under the trigger and define the type as Javascript. You don't need to know this code as it is specific to Jenkins API.  Customers may be using Ansible or Azure DevOps etc... Just remenber that Dynatrace Workflows can use Javascript code to query CI/CD tools to obtain pipeline related information for monitoring and triggering actions based on the events.
 
 - Click + icon under schedule box
 - select Run Javascript
