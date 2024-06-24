@@ -1,6 +1,6 @@
 | # D1APACTraining |
 | --- |
- ## This repository is for training internal D1 Product Specialists on empowering individual technical knowledge via hand-on workshops 
+ ## This repository is for training internal Dynatrace One Product Specialists on empowering individual technical knowledge via hand-on workshops 
 
 Learning workshops 
 
@@ -25,7 +25,7 @@ Learning workshops
   > - VM types / AMI images
   > - Terminal communication access
 
-  ### [1_3 - Preparing environment (Linux) :link:] (https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
+  ### [1_3 - Preparing environment (Linux) :link:](https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
   > - Permissions
   > - environment setup
   >   - linux basic commands 
@@ -120,19 +120,42 @@ Learning workshops
 
 ## Workshop 5 : Automation services with Workflows 
 :blue_book: Learning value : 
+- Gain confidence and understand Dynatrace Workflows
+- Familiarize with Workflows app
+- Examine usecases
+- Learn by building a workflow define triggers and apply programming language to define conditions and query
+- Explore query data, transform, filter results and further ingest into Dynatrace for analysis, notification and alerting
 
-### 5_1 Basic Workflows
+
+### [5_1 Basic Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_1%20Basic%20Dynatrace%20Workflows.md)
  > - Basic Settings / Task Types / Trigger types
+ > - Create a workflow that is triggered on demand
 
-### 5_2 Advanced Workflows
+### [5_2 Advanced Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_2%20Advanced%20Dynatrace%20Workflows.md)
  > - JavaScript / Dynatrace SDK
  > - Loops and characteristics
 
 ## Workshop 6 : Site Reliability Engineering with Dynatrace
 :blue_book: Learning value : 
 
-### 6_1 Environment preparation 
-> - Deploy Jenkins
+### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
+> - Prepare Ubuntu and update libraries
+>   Install JDK 17
+> - Install Jenkins 
+> - Activate Jenkins admin password / install Plugins
+
+### [6_2 Continuous Delivery (CD) pipeline :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_2%20Continuous%20Delivery%20(CD)%20pipeline.md)
+> - Create a new pipeline
+> - Build triggers
+> - Define stages in the pipeline
+> - Test the pipeline
+
+### [6_3 Sending Continuous Delivery signals to Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
+> - You will create a custom JSON data structure with the pipeline stage information.
+> - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
+> - You will be adding API call script task within the pipeline for each of 3 stages: Build -> Deploy -> Test.
+> - You will be using notebooks app to write DQL query to Grail and validate the events information of the pipeline executions.
+
 
 
 

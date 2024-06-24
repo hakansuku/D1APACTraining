@@ -5,7 +5,7 @@
 - You will create a custom JSON data structure with the pipeline stage information.
 - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
 - You will be adding API call script task within the pipeline for each of 3 stages:  Build -> Deploy -> Test.
-- You will be using notebooks to write DQL query to Grail and validate the events information of the pipeline executions.
+- You will be using notebooks app to write DQL query to Grail and validate the events information of the pipeline executions.
 
 ## Add plugin for manipulating JSON data structure
 
@@ -130,4 +130,22 @@ sh """ curl -X POST 'https://XXXXX.XXX.XXXXX.com/api/v2/bizevents/ingest' -H 'ac
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/apiconsoleoutput.png?raw=true)
 
+## Checking your ingested bizevents data 
+> Finally, login to your SaaS tenant and validate the signals received
+
+- Login to your SaaS tenant
+- Open Notebooks app
+- Build your DQL as below
+```
+fetch bizevents
+| filter event.type == "CICD Tool"
+| sort timestamp desc
+```
+- Click Run
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/bizeventsDQL.png?raw=true)
+
+> You have now successfully started to receive signals from each stage when the pipeline runs every 15 minutes.
+
+End of document
 
