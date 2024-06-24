@@ -156,7 +156,12 @@ Learning workshops
 > - You will be adding API call script task within the pipeline for each of 3 stages: Build -> Deploy -> Test.
 > - You will be using notebooks app to write DQL query to Grail and validate the events information of the pipeline executions.
 
-
+### [6_4 Synchronous CD monitoring of Continuous Deployment Pipelines :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_4%20Synchronous%20CD%20monitoring%20of%20Continuous%20Deployment%20Pipelines.md)
+> - You will create a token in Jenkins.
+> - You will create a workflow and trigger a run every 60 minutes.
+> - You will create a Javascript code to PULL data using Jenkins API endpoint to retrieve pipeline execution informaiton (pipeline run status, ID , Duration for each stage (Build/Deploy/Test) etc. Then will PUSH (ingest) the information as bizevents into Dynatrace.
+> - You will validate the information using Notebooks app and DQL to observe the bizevents ingested.
+> - You will create a dashboard to visualize the events ingested
 
 
 
