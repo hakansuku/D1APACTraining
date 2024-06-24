@@ -121,18 +121,24 @@ Learning workshops
 ## Workshop 5 : Automation services with Workflows 
 :blue_book: Learning value : 
 
-### 5_1 Basic Workflows
+### [5_1 Basic Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_1%20Basic%20Dynatrace%20Workflows.md)
  > - Basic Settings / Task Types / Trigger types
 
-### 5_2 Advanced Workflows
+### [5_2 Advanced Workflows:link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_2%20Advanced%20Dynatrace%20Workflows.md)
  > - JavaScript / Dynatrace SDK
  > - Loops and characteristics
 
 ## Workshop 6 : Site Reliability Engineering with Dynatrace
 :blue_book: Learning value : 
 
-### 6_1 Environment preparation 
+### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
 > - Deploy Jenkins
+
+### [6_2 Continuous Delivery (CD) pipeline :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_2%20Continuous%20Delivery%20(CD)%20pipeline.md)
+
+### [6_3 Sending Continuous Delivery signals to Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
+
+
 
 
 
