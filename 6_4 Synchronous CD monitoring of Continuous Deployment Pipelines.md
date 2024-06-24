@@ -255,13 +255,29 @@ async function identifyStageDetailAndPushAsBizevents(builds, jenkinsBaseUrl, JEN
 - Open Notebooks APP
 - Build a DQL query as below and check the timestamp and information has been collected.
 
-![]{https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/notebookvalidate.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/notebookvalidate.png?raw=true)
 
 ## Visualize CD pipeline runs using Dynatrace Dashboard
-> Next we will create a dashboard to visualize the Bizevents information
+> Next we will create a dashboard to visualize the Bizevents information. First download the pre-build dashboard and upload it from the Dashboards app.
 
 - Open a new browser and downlaod pre-build dashboard JSON file from [ HERE :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/Build%20Performance%20for%20all%20jobs.json) 
 
-- Open Dashboards app
-- Import the pre-built dashboard file in JSON format 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/download.png?raw=true)
+>Now upload the downloaded dashboard JSON file into the Dynatrace Dashboards app
 
+- Open Dashboards app
+- Click Upload
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/upload.png?raw=true)
+
+> Confirm the dashboard has been uploaded.
+
+- Open Build Performance for all jobs dashboard.  
+
+> Scroll down the dashboard You should now be able visualize all the metrics related to the pipeline jobs
+
+> NOTICE: Your pipeline is ran every 15 minutes so ideally you will be seeing 4 build jobs completed.  However if you see more is because you must have run the workflow manually which adds to multiple events getting ingested.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/builddashboard.png?raw=true)
+
+End of Document
