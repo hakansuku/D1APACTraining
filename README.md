@@ -131,7 +131,7 @@ Learning workshops
  > - Basic Settings / Task Types / Trigger types
  > - Create a workflow that is triggered on demand
 
-### [5_2 Advanced Workflows:link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_2%20Advanced%20Dynatrace%20Workflows.md)
+### [5_2 Advanced Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_2%20Advanced%20Dynatrace%20Workflows.md)
  > - JavaScript / Dynatrace SDK
  > - Loops and characteristics
 
