@@ -120,9 +120,11 @@ Learning workshops
 
 ## Workshop 5 : Automation services with Workflows 
 :blue_book: Learning value : 
-- Gain confidence and understand Dynatrace Workflows purpose
-- Unlock the potentials by creating 
-- Create a workflow that is triggered on demand, it will access a public API to get 150+ currency exchange rates, we will filter the results for 4 currencies only and ingest as logs into Dynatrace in JSON format.
+- Gain confidence and understand Dynatrace Workflows
+- Familiarize with Workflows app
+- Examine usecases
+- Learn by building a workflow define triggers and apply programming language to define conditions and query
+- Explore query data, transform, filter results and further ingest into Dynatrace for analysis, notification and alerting
 
 
 ### [5_1 Basic Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_1%20Basic%20Dynatrace%20Workflows.md)
