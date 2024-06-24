@@ -132,9 +132,16 @@ Learning workshops
 :blue_book: Learning value : 
 
 ### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
-> - Deploy Jenkins
+> - Prepare Ubuntu and update libraries
+>   Install JDK 17
+> - Install Jenkins 
+> - Activate Jenkins admin password / install Plugins
 
 ### [6_2 Continuous Delivery (CD) pipeline :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_2%20Continuous%20Delivery%20(CD)%20pipeline.md)
+> - Create a new pipeline
+> - Build triggers
+> - Define stages in the pipeline
+> - Test the pipeline
 
 ### [6_3 Sending Continuous Delivery signals to Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
 
