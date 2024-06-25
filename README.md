@@ -123,7 +123,7 @@ Learning workshops
 - Gain confidence and understand Dynatrace Workflows
 - Familiarize with Workflows app
 - Examine usecases
-- Learn by building a workflow define triggers and apply programming language to define conditions and query
+- Learn by building a workflow define triggers and apply programming language to define filters and logic
 - Explore query data, transform, filter results and further ingest into Dynatrace for analysis, notification and alerting
 
 
@@ -137,6 +137,12 @@ Learning workshops
 
 ## Workshop 6 : Site Reliability Engineering with Dynatrace
 :blue_book: Learning value : 
+
+- Understand how Dynatrace Software Intelligence Platform empowers SRE
+- Build your own Continuous Deployment pipeline
+- Examine and learn how Dynatrace helps automate, optimize CI/CD operations and reduce cost 
+- Experience coding Synchronous and Asynchronous communication between CI/CD tool.
+- Be able to articulate competitive value and unique proposition of Dynatrace for SRE and demonstrate live.
 
 ### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
 > - Prepare Ubuntu and update libraries
