@@ -22,6 +22,7 @@
 - Select Availabe plugins
 - type in steps
 - Select and install "Pipeline Utility Steps" Plugin
+- Also Select and install "Pipeline Stage View" Plugin
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
