@@ -24,6 +24,8 @@
 - Select and install "Pipeline Utility Steps" Plugin
 - Also Select and install "Pipeline Stage View" Plugin
 
+> NOTE Make sure you have both plugins installed or you will encounter errors in 6.4 using PUSH and PULL workflows.
+
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
 ## Defining custom JSON data structure 
