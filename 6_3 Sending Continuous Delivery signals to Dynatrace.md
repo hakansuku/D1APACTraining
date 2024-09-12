@@ -22,6 +22,9 @@
 - Select Availabe plugins
 - type in steps
 - Select and install "Pipeline Utility Steps" Plugin
+- Also Select and install "Pipeline Stage View" Plugin
+
+> NOTE Make sure you have both plugins installed or you will encounter errors in workshop 6.4 using PUSH and PULL workflows. You are also able to restart Jenkins via Manage Jenkins > Plugins > Download progress section. At the bottom tick the restart checkbox.  it will automatically restart Jenkins. 
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/SRE/steps.png?raw=true)
 
