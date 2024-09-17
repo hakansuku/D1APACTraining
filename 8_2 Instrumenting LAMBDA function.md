@@ -24,7 +24,7 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/configuration.png?raw=true)
 
-- click Environment section and click edit button
+- click Environment variables section and click edit button
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/edit.png?raw=true)
 
