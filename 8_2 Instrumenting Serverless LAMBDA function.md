@@ -49,3 +49,18 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/addarn.png?raw=true)
 
+> - To test your service, use the API entry point link to generate traffic
+
+> - You are now able to observe lambda service monitored under Services page
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/services.png?raw=true)
+
+> - check information getting gathered 
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/lambdainfo.png?raw=true)
+
+> - Go to logs and observe how logs have been captured for analysis
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/logs.png?raw=true)
+
+> end of document
