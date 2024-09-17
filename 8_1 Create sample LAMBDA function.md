@@ -26,7 +26,18 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/addtrigger.png?raw=true)
 
+> - Select API Gateway and create new API endpoint
+> - Select open for security and click Add button
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/addtrigger2.png?raw=true)
+
+> Refer a trigger API endpoint has been generated.
+- Click on the link and test the API trigger.
+
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/triggerlink.png?raw=true)
+
+> - Observe your lambda function response in the browser
+
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/triggertest.png?raw=true)
+
+> End of Document
