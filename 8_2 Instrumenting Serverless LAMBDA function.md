@@ -31,3 +31,21 @@
 > - Add environment variables (generated in previous section) and press SAVE button.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/lambdaenvvariableSAVE.png?raw=true)
+
+> - Click on Layer in the function diagram
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/layer.png?raw=true)
+
+> - Click on add layer button
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/addlayer.png?raw=true)
+
+> refer to previous generated Amazon Resources Name (note how it contains region ap-southeast-2 (Sydney))
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/arnawslambda.png?raw=true)
+
+> - select Specify ARN option, and copy and paste from the generated ARN.
+- Click Add
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/lambda/addarn.png?raw=true)
+
