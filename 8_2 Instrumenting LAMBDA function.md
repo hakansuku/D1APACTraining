@@ -1,4 +1,4 @@
-# Instrumenting LAMBDA function via environment variables
+# Instrumenting Serverless - LAMBDA function via environment variables
 
 > - Go to Dynatrace Hub page, search for AWS lambda and click.
 
