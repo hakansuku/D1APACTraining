@@ -1,3 +1,7 @@
+# Download and install Python
+https://www.python.org/downloads/release/python-3126/
+
+
 # Download the AWS SAM CLI 64-bit.
 https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
 
