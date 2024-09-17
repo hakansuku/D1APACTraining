@@ -1,5 +1,6 @@
-#DO NOT TRY THIS IF YOU DO NOT HAVE private full access priviliges to AWS console.  
-
+```diff
+- #DO NOT TRY BELOW IF YOU DO NOT HAVE private full access priviliges to AWS console.  
+``` 
 # Download and install Python
 https://www.python.org/downloads/release/python-3126/
 
