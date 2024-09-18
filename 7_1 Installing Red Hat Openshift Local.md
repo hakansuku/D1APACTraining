@@ -1,4 +1,4 @@
-# install Red Hat OpenShift Local
+# Install Red Hat OpenShift Local
 Create a minimal cluster on your desktop/laptop for local development and testing.
 
 #### In this workshop, we will be installing openshift local 
