@@ -7,7 +7,12 @@
 
 > An OpenShift project is an alternative representation of a Kubernetes namespace.
 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/createproject.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/createproject2.png?raw=true)
+
+> - enter project name and create a new project
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/mkproject.png?raw=true)
+
 
 
 
