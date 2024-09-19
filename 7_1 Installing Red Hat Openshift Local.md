@@ -23,6 +23,8 @@ if you don't have an account please register and create one.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/crcinstaller.png?raw=true)
 
+accept the license agreement and press next to install till finish. 
+Reboot for the changes to take effect. 
 
 
 
