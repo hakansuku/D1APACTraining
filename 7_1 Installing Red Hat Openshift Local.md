@@ -26,6 +26,22 @@ if you don't have an account please register and create one.
 accept the license agreement and press next to install till finish. 
 Reboot for the changes to take effect. 
 
+> type cmd (administrator rights) to bring up the command prompt
+
+- type
+```
+crc setup new cluster
+```
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/crcsetup.png?raw=true)
+
+- type below command to start the cluster
+```
+crc start
+```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OCP/crcstart.png?raw=true)
+
+use the Url , to access the cluster management console.
 
 
 
