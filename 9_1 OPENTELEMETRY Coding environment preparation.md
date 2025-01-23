@@ -1,4 +1,6 @@
-# 8_1_1 Prepare Coding Environment
+# 9_1_1 Prepare Coding Environment 
+
+## In this tutorial we will spin a Ubuntu linux AWS::EC2 instance , we will then install Visual studio code-server 
 
 - Prepare a development ubuntu VM instance
   You will start with a spot instance .  This comes to be cheaper for our purpose
@@ -27,7 +29,7 @@
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/inbountport.png?raw=true)
 
 
-# 8_1_2  Installing Visual Studio code-server
+# 9_1_2  Installing Visual Studio code-server
 ### Connecting to your ubuntu instance
 - Step 1: Connect to SSH terminal of your new server with Mobaterm. Use the public address of your EC2 instance with username ubuntu and your AWS public key.
   
@@ -91,3 +93,7 @@ systemctl restart code-server@ubuntu
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/welcomecs.png?raw=true)
 
+- You can now use VS code to start coding 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/loginok.png?raw=true)
+
+End of document
