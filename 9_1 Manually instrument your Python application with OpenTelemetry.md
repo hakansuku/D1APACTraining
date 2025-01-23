@@ -1,12 +1,14 @@
 # 8_1_1 Prepare Coding Environment
 
-> Prepare a development ubuntu VM instance
-> You will start with a spot instance .  This comes to be cheaper for our purpose
-> Choose VM OS Ubuntu 24.04 image
+- Prepare a development ubuntu VM instance
+  You will start with a spot instance .  This comes to be cheaper for our purpose
+  
+- Choose VM OS Ubuntu 24.04 image
+  
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/spot1.png?raw=true)
 
 > We will set the max cost of the spot instance to be $0.03 per hour.  (Currently is at $0.0245 for t2.medium size). 
-> Means if demand goes and price goes above $0.03 per hour we'll lose the VM instance. 
+  Means if demand goes and price goes above $0.03 per hour we'll lose the VM instance. 
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/spotprice.png?raw=true)
 
