@@ -30,7 +30,7 @@
 # 8_1_2  Installing Visual Studio code-server
 ### Connecting to your ubuntu instance
 - Step 1: Connect to SSH terminal of your new server with Mobaterm. Use the public address of your EC2 instance with username ubuntu and your AWS public key.
-- 
+  
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/mobaterm.png?raw=true)
 
 ### Upgrade system libraries
@@ -41,8 +41,17 @@ sudo su
 apt update
 apt upgrade -y
 ```
+
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/mobaterm2.png?raw=true)
 
-### Downloading VS code installer 
+### Downloading VS code-server installer 
 
+- Download VS code-server
+```
+curl -fOL https://github.com/coder/code-server/releases/download/v4.96.4/code-server_4.96.4_amd64.deb
+```
+> you can check for latest release from https://github.com/coder/code-server/releases/
 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/codeserver.png?raw=true)
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/codeserver.png?raw=true)
