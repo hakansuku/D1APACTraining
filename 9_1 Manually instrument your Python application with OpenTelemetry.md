@@ -10,16 +10,13 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/spotprice.png?raw=true)
 
-> Choose Manually select instance type
+> Choose Manually select instance type. Select and delete all types of VM in the list. Simply add t2.medium type instance to the list. 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/vmtype.png?raw=true)
-> 
-> Select and delete all types of VM in the list. Simply add t2.medium type instance to the list. 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/inboundport.png?raw=true)
 
 > At the bottom press Done button.   This will create a spot VM instance for our test purpose. 
-> Go to instance tab and observe new instance being created. 
+> Go to AWS EC2 instance tab and observe new instance being created. 
 
 > Open the newly created instance and select security tab mid page.
-
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/inbountport.png?raw=true)
 
 # 8_1_2  
