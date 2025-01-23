@@ -1,4 +1,6 @@
-# 8_1_1 Prepare Coding Environment
+# 8_1_1 Prepare Coding Environment 
+
+## In this tutorial we will spin a Ubuntu linux EC2 instance , we will then install Visual studio code 
 
 - Prepare a development ubuntu VM instance
   You will start with a spot instance .  This comes to be cheaper for our purpose
@@ -91,3 +93,7 @@ systemctl restart code-server@ubuntu
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/welcomecs.png?raw=true)
 
+- You can now use VS code to start coding 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/loginok.png?raw=true)
+
+End of document
