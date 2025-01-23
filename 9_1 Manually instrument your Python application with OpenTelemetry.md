@@ -86,3 +86,8 @@ sudo systemctl enable --now code-server@ubuntu
 systemctl restart code-server@ubuntu
 ```
 
+- Open a browser, use the EC2 instance public address with port 8080 (eg http://<EC2instance-public ip>:8080
+> login with your password you set in config.yaml
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/welcomecs.png?raw=true)
+
