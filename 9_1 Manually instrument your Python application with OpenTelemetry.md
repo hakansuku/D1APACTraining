@@ -64,7 +64,7 @@ curl -fOL https://github.com/coder/code-server/releases/download/v4.96.4/code-se
 ```
 ```
 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/installcs.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/enablecs.png?raw=true)
 -
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip.png?raw=true)
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip2.png?raw=true)
