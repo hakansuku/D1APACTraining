@@ -76,17 +76,12 @@ sudo systemctl enable --now code-server@ubuntu
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/enablecs.png?raw=true)
 
 - Modify binding address and password in /home/ubuntu/.config/code-server/config.yaml
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip.png?raw=true)
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip2.png?raw=true)
-
-> vi tool commands :
-> i is to start editing
-> ESC is to stop editing
-> :wq is to save and exit vi
+- Edit this file and change binding address and password as below
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip3.png?raw=true)
 
 - Now restart code-server service for the modifications to reflect into the service.
+  
 ```
 systemctl restart code-server@ubuntu
 ```
