@@ -54,4 +54,18 @@ curl -fOL https://github.com/coder/code-server/releases/download/v4.96.4/code-se
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/codeserver.png?raw=true)
 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/codeserver.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/cs2.png?raw=true)
+
+- Install code-server package with below command:
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/installcs.png?raw=true)
+
+- Enable code-server service
+```
+```
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/installcs.png?raw=true)
+-
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip2.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/changeip3.png?raw=true)
