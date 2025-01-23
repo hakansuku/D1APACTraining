@@ -15,7 +15,7 @@
 - Choose Manually select instance type. Select and delete all types of VM in the list. Simply add t2.medium type instance to the list. 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/vmtype.png?raw=true)
 
-- At the bottom press Done button.   This will create a spot VM instance for our test purpose.
+- At the bottom of page press LAUNCH button.   This will create a spot VM instance for our test purpose.
   
 > Go to AWS EC2 instance tab and observe new instance being created. 
 
@@ -26,6 +26,23 @@
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/inbountport.png?raw=true)
 
+
 # 8_1_2  Installing Visual Studio code-server
-- SSH to your server using the public address of your EC2 instance
+### Connecting to your ubuntu instance
+- Step 1: Connect to SSH terminal of your new server with Mobaterm. Use the public address of your EC2 instance with username ubuntu and your AWS public key.
+- 
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/mobaterm.png?raw=true)
+
+### Upgrade system libraries
+- Gain root access and update the ubuntu system libraries using the below linux commands.
+  
+```
+sudo su
+apt update
+apt upgrade -y
+```
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/mobaterm2.png?raw=true)
+
+### Downloading VS code installer 
+
 
