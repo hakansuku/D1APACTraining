@@ -148,4 +148,15 @@ composer require open-telemetry/opentelemetry-logger-monolog
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/consoleapp.png?raw=true)
 
+- Click on Run and Debug button to run the PHPsampleapp console application 
+- Observe the debug console while the application runs
+
+](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/rundebug.png?raw=true)
+
+### check the logs in your Dynatrace Logs app 
+> filter content = *Minkook* to find the logs
+te
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/tenantlogs.png?raw=true)
+
+End of Document
 
