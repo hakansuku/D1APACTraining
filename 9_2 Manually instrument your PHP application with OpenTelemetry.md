@@ -131,4 +131,21 @@ composer require open-telemetry/opentelemetry-logger-monolog
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/otel.png?raw=true)
 
+### 9_2_2 Creating a PHP console application (PHPsampleapp)
+
+- Create a file PHPsampleapp.php in /home/ubuntu/ directory and copy and paste the below code:
+```
+<?php
+   require('otel.php');
+   echo "PHP console application started!...\n";
+
+   echo "Ingesting 2 lines of logs to Dynatrace\n";
+   $monolog->info('Minkook your INFO log  message from console application...');
+   $monolog->error('Minkook your ERROR log  message from console application...'); 
+
+   echo "PHP application ended!";
+?>
+```
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/consoleapp.png?raw=true)
+
 
