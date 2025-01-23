@@ -1,6 +1,6 @@
 # 9_1_1 Prepare Coding Environment 
 
-## In this tutorial we will spin a Ubuntu linux EC2 instance , we will then install Visual studio code-server 
+## In this tutorial we will spin a Ubuntu linux AWS::EC2 instance , we will then install Visual studio code-server 
 
 - Prepare a development ubuntu VM instance
   You will start with a spot instance .  This comes to be cheaper for our purpose
