@@ -17,9 +17,15 @@
 
 - At the bottom press Done button.   This will create a spot VM instance for our test purpose.
   
-- Go to AWS EC2 instance tab and observe new instance being created. 
+> Go to AWS EC2 instance tab and observe new instance being created. 
 
-> Open the newly created instance and select security tab mid page.
+- Open the newly created instance and select security tab mid-page.
+- Edit Inbound port rules and add port 8000 and port 8080
+> Port 8080 will be used for VS code server.
+> Port 8000 will be used at later stage for Laravel
+
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/inbountport.png?raw=true)
 
-# 8_1_2  
+# 8_1_2  Installing Visual Studio code-server
+- SSH to your server using the public address of your EC2 instance
+
