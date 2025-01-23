@@ -1,6 +1,6 @@
 # 9_2_1 Manually instrument your PHP application with OpenTelemetry
 
-## In this tutorial we will instrument PHP application with Opentelemetry using the environment created in 
+## In this tutorial we will instrument PHP application with Opentelemetry using the environment created in previous tutorial 9_1
 
 - install PHP and composer with below commands:
 > use root user
