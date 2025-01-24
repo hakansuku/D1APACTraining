@@ -224,13 +224,13 @@ except KeyboardInterrupt:
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/runpyapp.png?raw=true)
 
 ### Checking the logs in your Dynatrace Logs app 
-> apply a filter to find the logs (content = * Minkook * ) there should be 2 logs per application run.
+> apply a filter to find the logs (content = * Minkook * ) there should be 4 logs per application run.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/logpy.png?raw=true)
 
 ### Checking metrics ingested (requests,request_size_bytes,cpu_percent,ram_percent) in Notebook app
 
-- Open notebooks app and write query as below to check for request_counter metric.
+- Open notebooks app and write query as below to check for ingested metrics. Refer DQL query below screenshot.
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/metricpy.png?raw=true)
 
