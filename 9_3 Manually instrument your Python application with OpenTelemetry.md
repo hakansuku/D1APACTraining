@@ -2,21 +2,22 @@
 
 ## In this tutorial we will instrument Python application with Opentelemetry using the environment created in previous tutorial 9_1
 
-- install PHP and composer with below commands:
+- install pyhton3-venv and pip with below commands:
 > use root user
 ```
-apt install php -y
-apt install unzip
-apt install composer
+apt install python3.12-venv -y
+apt install python3-pip -y
+python3 -m venv /home/ubuntu/dynatrace-app
 ```
-> php -v  (checks installation)
+> phython3 -v  (checks installation)
 
-- install opentelemetry dependencies with composer  :
-> Note DO NOT run composer with root user. Use  Ubuntu user.
+- install opentelemetry SDK  :
+
 ```
-composer require php-http/guzzle7-adapter
-composer require open-telemetry/opentelemetry
-composer require open-telemetry/opentelemetry-logger-monolog
+cd /home/ubuntu/dynatrace-app
+/home/ubuntu/dynatrace-app/bin/pip install opentelemetry-api
+/home/ubuntu/dynatrace-app/bin/pip install opentelemetry-sdk
+/home/ubuntu/dynatrace-app/bin/pip install opentelemetry-exporter-otlp-proto-http
 ```
 - Open VS code from your browser and login
 - click on extensions icon and install PHP Debug extension
