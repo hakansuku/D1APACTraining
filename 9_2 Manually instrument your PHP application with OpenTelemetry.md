@@ -174,7 +174,7 @@ composer require open-telemetry/opentelemetry-logger-monolog
       sleep(5);
   }
 ```
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/requestcounter.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/request_counter.png?raw=true)
 
 
 End of Document
