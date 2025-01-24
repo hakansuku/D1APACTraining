@@ -101,7 +101,7 @@ composer require open-telemetry/opentelemetry-logger-monolog
 	);
 
 	$meterProvider = MeterProvider::builder()->setResource($resource)->addReader($reader)->build();
-
+	$meter = $meterProvider->getMeter('my-meter');
 
 	// ===== LOG SETUP =====
 
@@ -152,7 +152,7 @@ composer require open-telemetry/opentelemetry-logger-monolog
 - Click on Run and Debug button to run the PHPsampleapp console application 
 - Observe the debug console while the application runs
 
-](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/rundebug.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/rundebug.png?raw=true)
 
 ### Checking the logs in your Dynatrace Logs app 
 > apply a filter to find the logs (content = * Minkook * ) there should be 2 logs per application run.
@@ -175,6 +175,13 @@ composer require open-telemetry/opentelemetry-logger-monolog
   }
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/request_counter.png?raw=true)
+
+### Checking metric ingested (request_couter) in Notebook app
+
+- Open notebooks app and write query as below to check for request_counter metric.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/notebooks.png?raw=true)
+
 
 
 End of Document
