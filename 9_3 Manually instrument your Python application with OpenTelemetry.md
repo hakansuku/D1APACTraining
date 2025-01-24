@@ -141,7 +141,7 @@ handler = LoggingHandler(level=logging.INFO, logger_provider=logger_provider)
 # Attach OTLP handler to root logger
 logging.getLogger().addHandler(handler)
 ```
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/otel.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/otelpy.png?raw=true)
 
 ### 9_2_2 Creating a Python console application (Pythonsampleapp)
 
@@ -215,13 +215,13 @@ try:
 except KeyboardInterrupt:
     logging.critical("exiting...")
 ```
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/consoleapp.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/pythonsampleapp.png?raw=true)
 
 ### Running the console application
 - Click on Run and Debug button to run the PythonSampleapp console application 
 - Observe the debug console while the application runs
 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/rundebug.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/runpyapp.png?raw=true)
 
 ### Checking the logs in your Dynatrace Logs app 
 > apply a filter to find the logs (content = * Minkook * ) there should be 2 logs per application run.
