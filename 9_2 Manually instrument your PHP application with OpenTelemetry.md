@@ -101,7 +101,7 @@ composer require open-telemetry/opentelemetry-logger-monolog
 	);
 
 	$meterProvider = MeterProvider::builder()->setResource($resource)->addReader($reader)->build();
-
+	$meter = $meterProvider->getMeter('my-meter');
 
 	// ===== LOG SETUP =====
 
