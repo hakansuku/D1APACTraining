@@ -176,6 +176,13 @@ composer require open-telemetry/opentelemetry-logger-monolog
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/request_counter.png?raw=true)
 
+### Checking metric ingested (request_couter) in Notebook app
+
+- Open notebooks app and write query as below to check for request_counter metric.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/notebook.png?raw=true)
+
+
 
 End of Document
 
