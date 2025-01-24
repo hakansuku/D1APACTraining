@@ -159,5 +159,23 @@ composer require open-telemetry/opentelemetry-logger-monolog
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/tenantlogs.png?raw=true)
 
+### Ingesting metric
+- Create a metric counter called request_counter by adding the below code
+
+> Just above line: echo "PHP application ended!";
+
+```
+  $requestCounter = $meter->createCounter('request_counter');
+
+   while (true) {
+      $requestCounter->add(random_int(1, 25), [ 'action.type' => 'create' ]);
+      echo "send requestCounter metric.\n";
+      $meterProvider->forceFlush();
+      sleep(5);
+  }
+```
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/request_counter.png?raw=true)
+
+
 End of Document
 
