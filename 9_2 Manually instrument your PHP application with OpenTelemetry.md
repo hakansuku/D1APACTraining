@@ -180,7 +180,7 @@ composer require open-telemetry/opentelemetry-logger-monolog
 
 - Open notebooks app and write query as below to check for request_counter metric.
 
-![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/notebook.png?raw=true)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/notebooks.png?raw=true)
 
 
 
