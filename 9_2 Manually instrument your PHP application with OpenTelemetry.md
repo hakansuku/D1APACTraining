@@ -148,4 +148,16 @@ composer require open-telemetry/opentelemetry-logger-monolog
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/consoleapp.png?raw=true)
 
+### Running the console application
+- Click on Run and Debug button to run the PHPsampleapp console application 
+- Observe the debug console while the application runs
+
+](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/rundebug.png?raw=true)
+
+### Checking the logs in your Dynatrace Logs app 
+> apply a filter to find the logs (content = * Minkook * ) there should be 2 logs per application run.
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/PHP/tenantlogs.png?raw=true)
+
+End of Document
 
