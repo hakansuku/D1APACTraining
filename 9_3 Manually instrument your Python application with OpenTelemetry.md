@@ -18,6 +18,7 @@ cd /home/ubuntu/dynatrace-app
 /home/ubuntu/dynatrace-app/bin/pip install opentelemetry-api
 /home/ubuntu/dynatrace-app/bin/pip install opentelemetry-sdk
 /home/ubuntu/dynatrace-app/bin/pip install opentelemetry-exporter-otlp-proto-http
+/home/ubuntu/dynatrace-app/bin/pip install psutil
 ```
 - Open VS code from your browser and login
 - click on extensions icon and install PHP Debug extension
