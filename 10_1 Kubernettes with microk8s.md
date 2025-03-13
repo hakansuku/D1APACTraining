@@ -1,3 +1,3 @@
 install microk8s
-snap microk8s --classic
+``` snap install microk8s --classic ```
 
