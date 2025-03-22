@@ -26,6 +26,7 @@ microk8s (1.32/stable) v1.32.2 from Canonical✓ installed
 
 to check installation status run ```microk8s.status```
 
+![microk8s](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/microk8s.jpg)
 
 
 open bash configuration for editing
@@ -36,9 +37,10 @@ add following line into below other aliases
 
 save changes with command :wq
 
+![microk8s](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/alias.jpg)
+
 reload bashrc with command
 ```. ~/.bashrc```
-
 
 ```k get all```
 
