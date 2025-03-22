@@ -24,15 +24,19 @@ sudo install microk8s
 > root@ip-172-31-17-91:/home/ubuntu# snap install microk8s --classic
 microk8s (1.32/stable) v1.32.2 from Canonical✓ installed
 
+to check installation status run ```microk8s.status```
+
+
+
 open bash configuration for editing
 ```vi ~/.bashrc```
 
 add following line into below other aliases
 ``` alias k='microk8s kubectl' ```
 
-save changes with :wq
+save changes with command :wq
 
-reload bashrc
+reload bashrc with command
 ```. ~/.bashrc```
 
 
