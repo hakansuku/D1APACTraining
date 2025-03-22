@@ -22,7 +22,32 @@ save the generated token
 
 ``` k create namespace dynatrace ```
 
-- create secret 
+- create a secret 
 ```k -n dynatrace create secret generic dynakube --from-literal="apiToken=<OPERATOR_TOKEN>"```
+
+![secret](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/namespace.png)
+
+- Install latest version of operator
+```k apply -f https://github.com/Dynatrace/dynatrace-operator/releases/download/v1.4.1/kubernetes.yaml```
+
+check pods status by typing ```k get pods -A```
+![pods](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/pods.png)
+
+- Download the DynaKube custom resource sample for classic full-stack from GitHub 
+https://github.com/Dynatrace/dynatrace-operator/blob/v1.3.2/assets/samples/dynakube/v1beta2/classicFullStack.yaml
+
+> modify the line  apiUrl: https://ENVIRONMENTID.live.dynatrace.com/api with your environment tenant URL
+
+Run the command below to apply the DynaKube custom resource, making sure to replace <your-DynaKube-CR> with your file from your previous step. 
+```k apply -f <your-DynaKube-CR>.yaml```
+
+![apiul](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/apiurl.png)
+
+- Wait and validate by running 
+```k get pods  -A```
+
+![getpods](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/dynakube.jpg)
+
+
 
 
