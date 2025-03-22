@@ -49,8 +49,8 @@ Run the command below to apply the DynaKube custom resource, making sure to repl
 ![getpods](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/dynakube.jpg)
 
 - Open kubernetes app
-- 
-> you'll be able to see the cluster being monitored.
+
+> Observe the new deployed cluster being monitored.
 ![cluster](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/cluster.jpg)
 
 
