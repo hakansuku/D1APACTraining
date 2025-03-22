@@ -1,19 +1,40 @@
-sudo su
-install microk8s
+# 10_1 Environment preparation
 
-``` snap install microk8s --classic ```
+Install kubernetes cluster using microk8s
+
+> Refer to workshop 1_2 Cloud environment preparation.md to create a spot instance. 
+
+- Create a AWS Spot instance , with the 
+  OS : Ubuntu 24.04 LTS
+  Instance type m5.xlarge  (4 vCPU , 16 GB RAM)
+
+- connect via SSH
+
+Run updates to update to latest version
+```
+sudo su
+apt update -y
+apt upgrade -y
+```
+
+sudo install microk8s
+
+``` sudo snap install microk8s --classic ```
 
 > root@ip-172-31-17-91:/home/ubuntu# snap install microk8s --classic
 microk8s (1.32/stable) v1.32.2 from Canonical✓ installed
 
-
+open bash configuration for editing
 ```vi ~/.bashrc```
 
-alias k='microk8s kubectl'
+add following line into below other aliases
+``` alias k='microk8s kubectl' ```
 
-execute to commit changes
+save changes with :wq
 
+reload bashrc
 ```. ~/.bashrc```
+
 
 ```k get all```
 
