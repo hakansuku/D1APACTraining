@@ -40,4 +40,6 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
 ![inbound](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/inbound.jpg)
 
 - Open a browser , type in the ip address & port number
+  ```http://http://43.203.165.232:31146/```
+  
 ![login](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
