@@ -1,4 +1,4 @@
-# 10_2 Deploy - EasyTrade demo application
+![image](https://github.com/user-attachments/assets/3b9c19aa-9417-4381-9b54-46a452bcb999)# 10_2 Deploy - EasyTrade demo application
 
 > We will install Easytrade demo application
 
@@ -25,3 +25,17 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
 
 ![validate](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/easytradevalidate.jpg)
 
+- Observe the deployment pods from kubernetes app
+![app](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/easytrade.jpg)
+
+- Get external nodeport of frontend service
+```k -n easytrade get svc```
+
+![port](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/nodeport.jpg)
+
+- Go to your instance , security tab and allow inbound traffic for the port discovered in previous step
+
+![inbound](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/inbound.jpg)
+
+- Open a browser , type in the ip address & port number
+![login](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
