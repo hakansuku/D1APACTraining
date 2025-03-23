@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/3b9c19aa-9417-4381-9b54-46a452bcb999)# 10_2 Deploy - EasyTrade demo application
+# 10_2 Deploy - EasyTrade demo application
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
 
 > We will install Easytrade demo application
 
