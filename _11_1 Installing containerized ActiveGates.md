@@ -44,7 +44,9 @@ curl -X 'POST' \
 
 ### 11_2_5 Obatining connectivity infromation for AG (tenantUUID , tenantToken and communicationEndpoints) via API
 from the linux terminal execute the below curl command.
-> replace 
+> replace the URL with your tenant URL and authorization token with the download scope token generated from UI in previous step.
+
+
 ```
 curl -X 'GET' \
   'https://<your tenant URL>/api/v1/deployment/installer/gateway/connectioninfo?defaultZoneFallback=false' \
