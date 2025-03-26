@@ -1,4 +1,4 @@
-# Installing Enviornment Activegates in Kubernetes containers
+# Installing Environment Activegate in Kubernetes container
 
 ### 11_1_1 Prepare a kubernettes environment
 - Refer to 10.1 to prepare a kubernetes environment, make sure you add alias k='microk8s kubectl' into the ~/.bashrc file.
