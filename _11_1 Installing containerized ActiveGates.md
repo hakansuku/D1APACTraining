@@ -42,7 +42,7 @@ curl -X 'POST' \
 > Copy and Save the generated download scope token, this will be used in the next step to get connectivity information for AG
 
 
-### 11_2_5 Obatining connectivity infromation for AG (tenantUUID , tenantToken and communicationEndpoints) via API
+### 11_1_5 Obatining connectivity infromation for AG (tenantUUID , tenantToken and communicationEndpoints) via API
 from the linux terminal execute the below curl command.
 > replace the URL with your tenant URL and authorization token with the download scope token generated from UI in previous step.
 
@@ -56,7 +56,7 @@ curl -X 'GET' \
 > Copy and save the values returned for "tenantUUID", "tenantToken" , and "communicationEndpoints"
 
 
-### Extracting the kube-system namespace UUID (k8s namespace UUID)
+### 11_1_6 Extracting the kube-system namespace UUID (k8s namespace UUID)
 
 ```
 k get namespace kube-system -o jsonpath='{.metadata.uid}'
@@ -65,12 +65,55 @@ k get namespace kube-system -o jsonpath='{.metadata.uid}'
 > Copy and Save the kube-system namespace UUID obtained
 
 
-### Creating a namespace for your AG
+### 11_1_7 Creating a namespace for your AG
 ```
 k create namespace dynatrace
 ```
 
+### 11_1_8 Creating secret 
+> replace with your obtained Tenant token and AG token from 11_1_5 and 11_1_3
 
+```
+ k -n dynatrace create secret generic dynatrace-tokens --from-literal="tenant-token=<YOUR TENANT token from 11_1_5> " --from-literal="auth-token=<YOUR AG token from 11_1_3>"
+```
+
+### 11_1_9 Create a ag-deployment-example.yaml file 
+> reference from https://docs.dynatrace.com/docs/ingest-from/dynatrace-activegate/activegate-in-container#deployment
+
+- copy the example configuration code from above link into a ag-deployment-example.yaml file.
+```
+vi ag-deployment-example.yaml
+```
+
+
+making sure to replace:
+
+CPU_ARCHITECTURE with your CPU architecture. (Possible values are amd64, arm64, and s390x)
+
+<REPOSITORY_URL> with one of the supported registries (example: public.ecr.aws/dynatrace/dynatrace-activegate:1.309.26.20250311-132824)
+
+<YOUR_ENVIRONMENT_ID> with your environment ID (example: tax37822)
+
+<YOUR_COMMUNICATION_ENDPOINTS> with the value of communicationEndpoints obtained in Prerequisites from the connectivity information (values obtained from 11_1_5)
+
+<YOUR_KUBE-SYSTEM_NAMESPACE_UUID> with the kube-system namespace UUID (value obtained from 11_1_6)
+
+
+- Execute below command to deploy the ag-deployment-example.yaml file
+```
+k apply -f ag-deployment-example.yaml
+```
+
+
+### 11_1_10 Check your activegate pod running
+```
+k get pods -A
+```
+![deploy](https://github.com/hakansuku/D1APACTraining/blob/main/images/containerAG/deploy.png)
+
+> check in Dynatrace UI :  Deployment Status > Activegates
+
+![status](https://github.com/hakansuku/D1APACTraining/blob/main/images/containerAG/status.png)
 
 
 
