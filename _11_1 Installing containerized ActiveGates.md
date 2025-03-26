@@ -20,7 +20,7 @@
 curl -X 'POST' \
   'https://<your tenant URL>/api/v2/activeGateTokens' \
   -H 'accept: application/json; charset=utf-8' \
-  -H 'Authorization: Api-Token dt0c01.FOGYYUZLDTJTJT6WCW5NVDMM.<YOUR ACCESS TOKEN GENERATED>6UT274JAPDJOAJNCVM5L3LU' \
+  -H 'Authorization: Api-Token <YOUR ACCESS TOKEN GENERATED>' \
   -H 'Content-Type: application/json; charset=utf-8' \
   -d '{
   "activeGateType": "ENVIRONMENT",
