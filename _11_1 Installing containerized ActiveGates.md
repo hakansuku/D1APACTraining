@@ -98,6 +98,7 @@ CPU_ARCHITECTURE with your CPU architecture. (Possible values are amd64, arm64, 
 
 <YOUR_KUBE-SYSTEM_NAMESPACE_UUID> with the kube-system namespace UUID (value obtained from 11_1_6)
 
+>
 
 - Execute below command to deploy the ag-deployment-example.yaml file
 ```
