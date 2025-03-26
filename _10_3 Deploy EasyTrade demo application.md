@@ -30,6 +30,7 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
 - Observe the deployment pods from kubernetes app
 ![app](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/easytrade.jpg)
 
+
 - Get external nodeport of frontend service
 ```k -n easytrade get svc```
 
@@ -43,3 +44,9 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
   ```http://http://43.203.165.232:31146/```
   
 ![login](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
+
+- Launch services app, observe the services from easytrade application being monitored
+
+![services](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/services.jpg)
+
+-end of document-
