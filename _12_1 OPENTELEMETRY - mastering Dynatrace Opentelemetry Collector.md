@@ -88,6 +88,7 @@ def roll():
 
 - Now run the application on port 8080
 > Below command will launch the instrumented app and display logs,traces and metrics into the console while running
+> NOTE: observe how --traces_exporter console --metrics_exporter console --logs_exporter console parameters are set to console.  We will change this later to feed into Dynatrace OTEL collector.
 ```
 opentelemetry-instrument --traces_exporter console --metrics_exporter console --logs_exporter console --service_name dice-server flask run --host=0.0.0.0 -p 8080
 ```
