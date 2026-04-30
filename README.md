@@ -174,10 +174,10 @@ Learning workshops
 
 - Understand opentelemetry instrumentation in web applications
 - Build your own simple Web application and instrument with opentelemetry libraries
-- Visualize opentelemetry bare structure of metrics, traces, logs without dynatrace.
-- Deploy and configure Dynatrace Opentelemetry Collector and route metrics, traces and logs into Dynatrace Openpipelines for ingestion.
-- Examine and learn how Dynatrace helps visualize into Dashboards and bring anaysis via Notebooks
-- Experience how Dynatrace automatically collates opentelemetry discovers Services and empowers connecting end-to-end HTTP service requests to traces and logs
+- Visualize opentelemetry bare structure of metrics, traces, logs.
+- Deploy and configure Dynatrace Opentelemetry Collector Receivers/Exporters and route opentelemetry into Dynatrace Openpipelines.
+- Examine and learn how Dynatrace helps visualize opentelemetry into Dashboards and bring anaysis via Notebooks
+- Experience how Dynatrace automatically discovers Services and empowers connecting end-to-end HTTP service requests to traces and logs
 
 
 
