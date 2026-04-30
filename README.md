@@ -169,6 +169,19 @@ Learning workshops
 > - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
 > - You will create a dashboard to visualize the events ingested near real-time
 
+## Workshop 12 : Mastering Web Application Opentelemetry and Dynatrace Opentelemetry Collector in Dynatrace
+:blue_book: Learning value : 
+
+- Understand opentelemetry instrumentation in web applications
+- Build your own Web application and run in a HTTP webserver instrument with python opentelemetry libraries
+- Visualize opentelemetry bare structure of metrics, traces, logs without dynatrace.
+- Deploy and configure Dynatrace Opentelemetry Collector and route metrics, traces and logs into Dynatrace Openpipelines for ingestion.
+- Examine and learn how Dynatrace helps visualize into Dashboards and bring anaysis via Notebooks
+- Experience how Dynatrace automatically collates opentelemetry discovers Services and empowers connecting end-to-end HTTP service requests to traces and logs
+
+
+
+
 
 
 
