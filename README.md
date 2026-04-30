@@ -173,7 +173,7 @@ Learning workshops
 :blue_book: Learning value : 
 
 - Understand opentelemetry instrumentation in web applications
-- Build your own Web application and run in a HTTP webserver instrument with python opentelemetry libraries
+- Build your own simple Web application and instrument with opentelemetry libraries
 - Visualize opentelemetry bare structure of metrics, traces, logs without dynatrace.
 - Deploy and configure Dynatrace Opentelemetry Collector and route metrics, traces and logs into Dynatrace Openpipelines for ingestion.
 - Examine and learn how Dynatrace helps visualize into Dashboards and bring anaysis via Notebooks
