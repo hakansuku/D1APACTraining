@@ -109,7 +109,7 @@ opentelemetry-instrument --traces_exporter console --metrics_exporter console --
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OTELcollector/traces.jpg?raw=true)
 
-> In the next chapter I will show how to install Dynatrace Opentelemetry collector and configure to accept opentelemetry for ingestion to a tenant
+> In the next chapter I will show how to install Dynatrace Opentelemetry collector and configure to ingest gathered opentelemetry (TRACES,METRICS,LOGS) for ingestion to a Dynatrace tenant.
 
 - End of document -
 
