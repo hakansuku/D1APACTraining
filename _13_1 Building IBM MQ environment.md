@@ -92,13 +92,16 @@ DISPLAY CHANNEL(SVRCONN)
 ```
 ALTER AUTHINFO(SYSTEM.DEFAULT.AUTHINFO.IDPWOS) AUTHTYPE(IDPWOS) CHCKCLNT(NONE)
 REFRESH SECURITY TYPE(CONNAUTH)
+ALTER QMGR CONNAUTH(' ')
+REFRESH QMGR TYPE(CONFIGEV)
 ALTER QMGR CHLAUTH(DISABLED)
 ```
 
 - create a linux user eg. minkook
 > Create your username
 ```
-sudo adduser <Username>
+adduser <Username>
+passwd <Username>
 ```
 
 - Give the <username> all access permissions (for simplicity we are granting all) 
