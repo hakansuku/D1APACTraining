@@ -1,4 +1,4 @@
-# 13_1_1 Run a Docker IBM MQ sample environment on an AWS EC2 instance. 
+# 13_1_1 Run a IBM MQ sample environment on an AWS EC2 instance. 
 
 ## In this tutorial we will spin a Ubuntu linux AWS::EC2 instance , we run a Docker IBM MQ sample on an AWS EC2 instance. This setup is commonly used for rapid development and testing IBM MQ
 - Prepare a development ubuntu VM instance (refer to previous exercise 1_2)
