@@ -79,6 +79,7 @@ runmqsc
 > This command is used to create a Server Connection (SVRCONN) channel. In the world of IBM MQ, this is the most common way for a "Client" (like a Java application, a C# program, or the MQ Explorer) to talk to a "Queue Manager."
 ```
 DEFINE CHANNEL(SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP)
+ALTER CHANNEL(SVRCONN) CHLTYPE(SVRCONN) MCAUSER('minkook')
 ```
 > You can validate the created CHANNEL via the DISPLAY command
 ```
@@ -91,6 +92,7 @@ DISPLAY CHANNEL(SVRCONN)
 ```
 ALTER AUTHINFO(SYSTEM.DEFAULT.AUTHINFO.IDPWOS) AUTHTYPE(IDPWOS) CHCKCLNT(NONE)
 REFRESH SECURITY TYPE(CONNAUTH)
+ALTER QMGR CHLAUTH(DISABLED)
 ```
 
 - create a linux user eg. minkook
