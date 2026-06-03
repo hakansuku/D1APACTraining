@@ -2,8 +2,7 @@
 | --- |
  ## This repository is for training internal Dynatrace One Product Specialists on empowering individual technical knowledge via hand-on workshops 
 
-Learning workshops 
-
+## 📚 Workshop Chapters
 ## Workshop 1 : Managed Cluster environment
 
 :blue_book: Learning value : 
@@ -11,54 +10,22 @@ Learning workshops
  - Gain proficiency using cloud environment. 
  - Improve knowledge supporting on-premise customers 
 
-  ### [1_1 - Obtaining licenses :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_1%20Obtain%20Dynatrace%20License.md)
-  
-  > creating Mission control account
-  > adding license / quota
-
-  ### [1_2 - Cloud environment preparation (AWS) :link:](https://github.com/hakansuku/D1APACTraining/blob/main/1_2%20Cloud%20environment%20preparation.md)
-  
-  > - Regions / availability zones
-  > - EC2 / Spot instance request / costing
-  > - Security groups / ports 
-  > - Trust keys (RSA / PEM)
-  > - VM types / AMI images
-  > - Terminal communication access
-
-  ### [1_3 - Preparing environment (Linux) :link:](https://github.com/hakansuku/D1APACTraining/blob/main/1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
-  > - Permissions
-  > - environment setup
-  >   - linux basic commands 
-  >   - monitoring processes/memory/cpu 
-  >   - partitions / volume storage / file systems
-  >   - mounting devices
-  >   - editing configuration files
-
-  ### [1_4 - Cluster Installation & maintenance :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/1_4%20Cluster_Installation_maintenance.md)
-  > - product architecture / folder structures
-  > - communication 
-  > - Cluster upgrade / published versions
-  > - CMC configuration / nodes / AG / Cluster stats and events
-  > - Common maintenance issues
-
-## 📚 Workshop Chapters
-
 ### [Chapter 1.1: Obtain Dynatrace License](./1_1%20Obtain%20Dynatrace%20License.md)
 **Goal:** Generate a Dynatrace cluster license via Development Mission Control for internal testing.
 * **Concepts covered:** Account creation, license configuration, allocating unlimited Host Units (HU) and DEM units, and retrieving the installation token.
 * **Outcome:** Participants receive a valid Dynatrace Cluster license key and installation instructions via email.
 
-### [Chapter 1.2: Cloud Environment Preparation](./1_2_Cloud_environment_preparation.md)
+### [Chapter 1.2: Cloud Environment Preparation](./1_2%20Cloud%20environment%20preparation.md)
 **Goal:** Provision an AWS EC2 instance to serve as the host server for the Dynatrace Managed Cluster.
 * **Concepts covered:** AWS console navigation, configuring Spot Instances, selecting Ubuntu 22.04 LTS AMIs, creating SSH key pairs, storage allocation (300 GiB), hardware sizing (t3.2xlarge), and configuring Security Group inbound rules (Ports 80, 22, 443).
 * **Outcome:** A running, correctly sized AWS EC2 instance ready for secure remote connection.
 
-### [Chapter 1.3: Learning the Linux Environment and Preparation](./1_3_Learning_the_linux_envrionment_and_preparation.md)
+### [Chapter 1.3: Learning the Linux Environment and Preparation](./1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
 **Goal:** Establish a secure connection to the newly provisioned host and prepare the operating system.
 * **Concepts covered:** SSH connections via MobaXterm using private `.pem` keys, gaining Linux root access (`sudo su`), updating OS packages (`apt update/upgrade`), and monitoring system resources (`htop`, `df -h`). *Includes an appendix on manually partitioning and mounting additional EBS volumes (`lsblk`, `mkfs`, `mount`).*
 * **Outcome:** An updated and fully prepared Linux environment ready for the Dynatrace installation.
 
-### [Chapter 1.4: Dynatrace Managed Cluster Installation & Maintenance](./1_4_Cluster_Installation_maintenance.md)
+### [Chapter 1.4: Dynatrace Managed Cluster Installation & Maintenance](./1_4%20Cluster_Installation_maintenance.md)
 **Goal:** Install the Dynatrace Managed Cluster software and configure the initial administrative settings.
 * **Concepts covered:** Downloading the installer via `wget`, executing the shell installation script with the provided license token, verifying server status via the launcher directory, first-time CMC (Cluster Management Console) setup, enabling Log Monitoring/RUM, and configuring data retention and overload prevention.
 * **Outcome:** A fully functional Dynatrace Managed Cluster accessible via a web browser.
