@@ -43,7 +43,7 @@ Learning workshops
 
 ## 📚 Workshop Chapters
 
-### [Chapter 1.1: Obtain Dynatrace License](./1_1_Obtain_Dynatrace_License.md)
+### [Chapter 1.1: Obtain Dynatrace License](./1_1%20Obtain%20Dynatrace%20License.md)
 **Goal:** Generate a Dynatrace cluster license via Development Mission Control for internal testing.
 * **Concepts covered:** Account creation, license configuration, allocating unlimited Host Units (HU) and DEM units, and retrieving the installation token.
 * **Outcome:** Participants receive a valid Dynatrace Cluster license key and installation instructions via email.
