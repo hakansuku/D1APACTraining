@@ -41,6 +41,28 @@ Learning workshops
   > - CMC configuration / nodes / AG / Cluster stats and events
   > - Common maintenance issues
 
+## 📚 Workshop Chapters
+
+### [Chapter 1.1: Obtain Dynatrace License](./chapter_1_1_Obtain_Dynatrace_License.md)
+**Goal:** Generate a Dynatrace cluster license via Development Mission Control for internal testing.
+* **Concepts covered:** Account creation, license configuration, allocating unlimited Host Units (HU) and DEM units, and retrieving the installation token.
+* **Outcome:** Participants receive a valid Dynatrace Cluster license key and installation instructions via email.
+
+### [Chapter 1.2: Cloud Environment Preparation](./chapter_1_2_Cloud_environment_preparation.md)
+**Goal:** Provision an AWS EC2 instance to serve as the host server for the Dynatrace Managed Cluster.
+* **Concepts covered:** AWS console navigation, configuring Spot Instances, selecting Ubuntu 22.04 LTS AMIs, creating SSH key pairs, storage allocation (300 GiB), hardware sizing (t3.2xlarge), and configuring Security Group inbound rules (Ports 80, 22, 443).
+* **Outcome:** A running, correctly sized AWS EC2 instance ready for secure remote connection.
+
+### [Chapter 1.3: Learning the Linux Environment and Preparation](./chapter_1_3_Learning_the_linux_envrionment_and_preparation.md)
+**Goal:** Establish a secure connection to the newly provisioned host and prepare the operating system.
+* **Concepts covered:** SSH connections via MobaXterm using private `.pem` keys, gaining Linux root access (`sudo su`), updating OS packages (`apt update/upgrade`), and monitoring system resources (`htop`, `df -h`). *Includes an appendix on manually partitioning and mounting additional EBS volumes (`lsblk`, `mkfs`, `mount`).*
+* **Outcome:** An updated and fully prepared Linux environment ready for the Dynatrace installation.
+
+### [Chapter 1.4: Dynatrace Managed Cluster Installation & Maintenance](./chapter_1_4_Cluster_Installation_maintenance.md)
+**Goal:** Install the Dynatrace Managed Cluster software and configure the initial administrative settings.
+* **Concepts covered:** Downloading the installer via `wget`, executing the shell installation script with the provided license token, verifying server status via the launcher directory, first-time CMC (Cluster Management Console) setup, enabling Log Monitoring/RUM, and configuring data retention and overload prevention.
+* **Outcome:** A fully functional Dynatrace Managed Cluster accessible via a web browser.
+
 ## Workshop 2 : Mobile application monitoring
 
 :blue_book: Learning value : 
