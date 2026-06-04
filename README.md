@@ -171,20 +171,24 @@
 * Understanding OpenShift Projects vs. Kubernetes namespaces
 * **Exercise:** Log into the cluster management console and provision a new OpenShift Project.
 
+## Chapter 8: Serverless Architecture & Observability
+
+**Overall Value:** Serverless computing abstracts away the underlying infrastructure, making deployment easier but creating "blind spots" for monitoring and troubleshooting. This chapter bridges that gap. You will learn not only how to build and trigger AWS Lambda functions, but also how to implement robust observability using Dynatrace. By the end of this module, you will be able to deploy serverless code, manage local development tools like the AWS SAM CLI, and gain immediate, deep visibility into your application's performance, traces, and logs.
+
 ### Chapter 8.1: Creating a Sample AWS Lambda Function
 **Goal:** Build a serverless AWS Lambda function from scratch and expose it via an API endpoint.
 * AWS Lambda configuration (Python 3.12 runtime, x86_64 architecture)
 * API Gateway trigger setup and security configuration
 * **Exercise:** Create a new Lambda function, attach an open API Gateway trigger, and test the live endpoint directly in your browser.
 
-### Chapter 8.2: Instrumenting Serverless - Lambda Function via Environment Variables
+### Chapter 8.2: Instrumenting Serverless - Lambda via Environment Variables
 **Goal:** Connect your AWS Lambda function to Dynatrace to monitor performance, traces, and logs.
 * Dynatrace Hub setup for AWS Lambda (Python)
 * Configuring AWS Lambda environment variables for instrumentation
 * Applying AWS Layers using a specified Amazon Resource Name (ARN)
-* **Exercise:** Generate connection tokens in Dynatrace, update your Lambda function's configuration (variables and layers), generate test traffic, and observe the resulting traces and logs in the Dynatrace console.
+* **Exercise:** Generate connection tokens in Dynatrace, update your Lambda function's configuration, generate test traffic, and observe the resulting traces and logs in the Dynatrace console.
 
-### Chapter 8.3: Prerequisites and AWS SAM CLI Installation (OPTIONAL)
+### Chapter 8.3: Prerequisites and AWS SAM CLI Installation
 **Goal:** Set up your local development environment with Python and the AWS Serverless Application Model (SAM) CLI.
 * AWS console privilege requirements (Private Full Access)
 * Python 3.12 installation 
