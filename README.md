@@ -171,6 +171,27 @@
 * Understanding OpenShift Projects vs. Kubernetes namespaces
 * **Exercise:** Log into the cluster management console and provision a new OpenShift Project.
 
+### Chapter 8.1: Creating a Sample AWS Lambda Function
+**Goal:** Build a serverless AWS Lambda function from scratch and expose it via an API endpoint.
+* AWS Lambda configuration (Python 3.12 runtime, x86_64 architecture)
+* API Gateway trigger setup and security configuration
+* **Exercise:** Create a new Lambda function, attach an open API Gateway trigger, and test the live endpoint directly in your browser.
+
+### Chapter 8.2: Instrumenting Serverless - Lambda Function via Environment Variables
+**Goal:** Connect your AWS Lambda function to Dynatrace to monitor performance, traces, and logs.
+* Dynatrace Hub setup for AWS Lambda (Python)
+* Configuring AWS Lambda environment variables for instrumentation
+* Applying AWS Layers using a specified Amazon Resource Name (ARN)
+* **Exercise:** Generate connection tokens in Dynatrace, update your Lambda function's configuration (variables and layers), generate test traffic, and observe the resulting traces and logs in the Dynatrace console.
+
+### Chapter 8.3: Prerequisites and AWS SAM CLI Installation (OPTIONAL)
+**Goal:** Set up your local development environment with Python and the AWS Serverless Application Model (SAM) CLI.
+* AWS console privilege requirements (Private Full Access)
+* Python 3.12 installation 
+* AWS SAM CLI downloading and configuration
+* **Exercise:** Install the required software on your local machine and verify the installation via the command line using `sam --version`.
+
+
 
 ## Workshop 12 : Mastering Web Application Opentelemetry and Dynatrace Opentelemetry Collector in Dynatrace
 :blue_book: Learning value : 
