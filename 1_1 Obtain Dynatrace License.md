@@ -7,6 +7,7 @@ Log in to the [Mission Control Accounts page](https://mc-dev.internal.dynatracel
 
 ### 2. Create an Account
 Click on **Add new account** to start the creation process.
+
 ![Add a new account](./images/managed/addaccount.png?raw=true)
 
 ### 3. Configure Account Details
