@@ -25,7 +25,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Exercise:** Create a new internal account, generate a "Never Expires" license with unlimited quotas, and retrieve your installation token via email.
 
-**Outcome:** You will possess a valid, unlimited internal Dynatrace license key and token required for a managed cluster installation.
+✅**Outcome:** You will possess a valid, unlimited internal Dynatrace license key and token required for a managed cluster installation.
 
 ### [Chapter 1.2: Cloud Environment Preparation](./1_2%20Cloud%20environment%20preparation.md)
 **Goal:** Provision a dedicated AWS EC2 instance tailored for a Dynatrace Managed deployment.
