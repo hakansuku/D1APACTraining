@@ -394,7 +394,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 **Goal:** Provision a dedicated Kubernetes environment using MicroK8s on an enterprise-grade cloud instance.
 
 **Concepts Covered:**
-* AWS EC2 Spot Instance configuration (`m5.xlarge` with 4 vCPU, 16 GB RAM)
+* AWS EC2 Spot Instance configuration (`m5.xlarge` with 4 vCPU, 16 GB RAM) NOTE use Ubuntu 22.x
 * MicroK8s installation via Snap package manager (`--classic`)
 * Configuring shell quality-of-life enhancements via `kubectl` alias mapping (`k`)
 
