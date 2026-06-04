@@ -158,7 +158,11 @@
 > - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
 > - You will create a dashboard to visualize the events ingested near real-time
 
-### [Chapter 7.1: Install Red Hat OpenShift Local](./)
+## Chapter 7: Local OpenShift Development & Cluster Management
+
+**Overall Value:** Developing and testing containerized applications requires a robust, isolated environment that mirrors production without the overhead of cloud infrastructure. This chapter provides the foundation for working with Red Hat OpenShift, a leading enterprise Kubernetes platform. You will learn how to provision a fully functional, localized OpenShift cluster directly on your machine and navigate its web-based management console. By the end of this module, you will have the administrative skills to deploy a local cluster, manage authentication, and isolate resources using OpenShift Projects—setting the stage for secure, hands-on application deployment.
+
+### Chapter 7.1: Install Red Hat OpenShift Local
 **Goal:** Create a minimal OpenShift cluster on your local machine for development and testing.
 * Hardware prerequisites and Red Hat SSO
 * OpenShift Local Installer deployment
