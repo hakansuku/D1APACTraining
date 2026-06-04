@@ -22,6 +22,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 **Concepts Covered:**
 * Development Mission Control account creation
 * Assigning unlimited Host Units (HU) and Digital Experience Monitoring (DEM) units
+
 **Exercise:** Create a new internal account, generate a "Never Expires" license with unlimited quotas, and retrieve your installation token via email.
 
 **Outcome:** You will possess a valid, unlimited internal Dynatrace license key and token required for a managed cluster installation.
@@ -33,6 +34,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 * AWS Spot Instance requests (Ubuntu 22.04 LTS, `t3.2xlarge`)
 * SSH Key Pair generation and 300 GiB root storage allocation
 * Configuring AWS Security Group inbound rules (Ports 22, 80, 443)
+
 **Exercise:** Launch an optimized Ubuntu spot instance, secure it with a new key pair, expand the root volume to meet installation requirements, and open the necessary network ports.
 
 **Outcome:** A secured, properly resourced AWS Ubuntu instance running in the cloud, accessible via SSH and ready for enterprise software installation.
