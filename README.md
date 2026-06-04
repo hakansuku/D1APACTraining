@@ -18,10 +18,12 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 1.1: Obtain Dynatrace License](./1_1%20Obtain%20Dynatrace%20License.md)
 **Goal:** Generate a Dynatrace Managed Cluster license with unlimited quota for development and testing.
+
 **Concepts Covered:**
 * Development Mission Control account creation
 * Assigning unlimited Host Units (HU) and Digital Experience Monitoring (DEM) units
 **Exercise:** Create a new internal account, generate a "Never Expires" license with unlimited quotas, and retrieve your installation token via email.
+
 **Outcome:** You will possess a valid, unlimited internal Dynatrace license key and token required for a managed cluster installation.
 
 ### [Chapter 1.2: Cloud Environment Preparation](./1_2%20Cloud%20environment%20preparation.md)
