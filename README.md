@@ -30,58 +30,57 @@
 * **Concepts covered:** Downloading the installer via `wget`, executing the shell installation script with the provided license token, verifying server status via the launcher directory, first-time CMC (Cluster Management Console) setup, enabling Log Monitoring/RUM, and configuring data retention and overload prevention.
 * **Outcome:** A fully functional Dynatrace Managed Cluster accessible via a web browser.
 
-## Workshop 2 : Mobile application monitoring
+## Chapter 2: Mobile Application Development & Dynatrace Monitoring
 
-:blue_book: Learning value : 
- - Gain confidence with mobile development environment
- - Experience native mobile development from design to coding , testing and monitoring.
- - Expand knowledge and benefits Dynatrace bring to mobile application monitoring
- - Query , segment and aggregate session data using custom action properties for visual analysis
- - Improve knowledge supporting mobile monitoring customers
+**Overall Value:** Native mobile application development requires a properly configured IDE and emulator environment. This chapter covers the end-to-end process of building a native Android application from scratch and integrating it with Dynatrace for deep user session monitoring. You will learn to set up Android Studio, build a functional "CookieClicker" UI using XML and Kotlin, and apply Dynatrace auto-instrumentation to capture user interactions, custom metrics, and session data.
 
-  ### [2_1 - Mobile Development Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/2_1%20Mobile%20Development%20Environment%20preparatio.md)
-  > - Android Studio / configuration / SDK libraries / projects
-  > - Native android app / Kotlin language / builds and structures
-  > - Gradle build tool / Repositories /dependencies / plugins
-  > - Device manager/ Virtual devices / Android OS
+### Chapter 2.1: Mobile Development Environment Preparation
+**Goal:** Configure Android Studio and set up an Android Virtual Device (AVD) for local testing.
+* Android Studio installation and project initialization (Empty Views Activity)
+* Android Gradle Plugin (AGP) and SDK configuration (Android 14 / API 34)
+* Provisioning an Android Virtual Device (Pixel 8 with Tiramisu)
+* **Exercise:** Install the IDE, configure the required Kotlin/Gradle plugins, and successfully boot up a virtual Pixel 8 device in your environment.
 
-  ### [2_2 - Build your native Android application :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/2_2%20Build%20your%20native%20Android%20application.md)
-  > - Native android app / Kotlin language / builds and folder structures
-  > - manifest / layout editor / components
-  > - Configurations / Code / Design / Build / Run / Debug / Test / logs
-  > - Pairing to physical device 
+### Chapter 2.2: Build Your Native Android Application (CookieClicker)
+**Goal:** Develop a functional, interactive Android application using Kotlin and XML layouts.
+* Android manifest configuration for network permissions
+* XML Layout Editor design (TextView and Buttons)
+* Kotlin `MainActivity` logic (button listeners, click counters)
+* **Exercise:** Design the CookieClicker UI, wire up the Kotlin logic to increment the counter on click, and test the live application using the Logcat debugger in your emulator.
 
-  ### [2_3 - Monitoring with Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/2_3%20Monitoring%20with%20Dynatrace.md)
-  > - Instrument dynatrace mobile OneAgent / configuration
-  > - Data privacy / tagging / custom actions
-  > - sessions / key user actions / APDEX thresholds
-  > - custom USQL queries queries / segmentation and aggregation of session data
-  > - custom action properties / custom metrics / dashboards
- 
-## Workshop 3 : Unleash the full power of logs using Dynatrace Pattern Language (DPL)
+### Chapter 2.3: Monitoring with Dynatrace
+**Goal:** Instrument your native Android app with Dynatrace to monitor user sessions, interactions, and custom metrics.
+* Dynatrace Android Gradle plugin configuration and privacy settings
+* Implementing User Tags and Custom Actions via the Dynatrace API
+* User Session Query Language (USQL) and Data Explorer visualizations
+* **Exercise:** Instrument the app using the Dynatrace wizard, capture custom "send score" actions, and build a Dynatrace dashboard tracking total cookie clicks using USQL and custom metric queries.
 
-:blue_book: Learning value : 
- - Gain confidence with Dynatrace Pattern Language 
- - Experience ingesting reshaping Log data processing.
- - Expand knowledge and benefits Dynatrace bring helping organizations more quickly detect anomalies and respond to them.
- - Ingest / match / reshape / filter/ parse log data using DPL to unlock information.
- - Improve knowledge supporting customers enhance data visibility, insights and security
+---
 
-### [3_1 - Log management environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_1%20Log%20management%20environment%20preparation.md)
-  > - ( :exclamation: **pre-requisite**) SaaS Dynatrace (3rd gen) tenant with Grail enabled environment access.  
-  >    Pls ask me for an account if you don't have one.
-  > - Dynatrace API Swagger UI / Environment API v2 / Logs / Access Token and scope
-  > - Ingest sample log record data / validate
+## Chapter 3: Log Management & Dynatrace Pattern Language (DPL)
 
-### [3_2 - Combine DQL query with DPL to parse unstructured text log data :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_2%20Combine%20DQL%20query%20with%20DPL%20to%20parse%20unstructured%20text%20log%20data.md)
-  > - DQL query fetch and parse commands and parameters
-  > - DPL log-processing-grammar / DPL architect / schema / visual feedback / pattern quality / preset patterns
-  > - Extract fields with data type and format / conversion pattern
+**Overall Value:** Processing and parsing log data is essential for extracting actionable business and operational intelligence. This chapter explores Dynatrace's log management capabilities, focusing on the Dynatrace Pattern Language (DPL) and the Dynatrace Query Language (DQL). You will learn how to ingest logs via the Dynatrace API and use DPL Architect to structure both unstructured text and nested JSON payloads, turning raw log data into queryable, metric-ready attributes.
 
-### [3_3 - Parse and extract elegantly using structured JSON data :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/3_3%20Parse%20and%20extract%20elegantly%20using%20structured%20JSON%20data%20.md)
-  > - Analyze visually JSON structures
-  > - Extract elegantly fields with data type and format
-  > - Optimize logs using log processing commands
+### Chapter 3.1: Log Management Environment Preparation
+**Goal:** Authenticate and interact with the Dynatrace Environment API to manually ingest log records.
+* Dynatrace API access token generation with log ingest scopes
+* Swagger UI configuration for REST API interaction
+* Sending HTTP POST requests to the `/logs/ingest` endpoint
+* **Exercise:** Generate an ingest token, authenticate via Swagger UI, push a sample order-fallout log payload to the API, and validate its arrival in the Dynatrace Logs & Events app.
+
+### Chapter 3.2: Parse Unstructured Text Log Data using DPL
+**Goal:** Use DPL Architect to extract specific data fields from raw, unstructured log text.
+* Understanding DPL matchers (`DATA`) and pointer traversal
+* Extracting variables and defining data types (`JSONTIMESTAMP`, `INT`)
+* Creating and testing Dynatrace log processing rules
+* **Exercise:** Open DPL Architect in Notebooks, write a pattern expression to extract the `orderId` and timestamps from the raw text, and save it as a permanent log processing rule.
+
+### Chapter 3.3: Parse and Extract Structured JSON Data
+**Goal:** Efficiently extract nested attributes from structured JSON log payloads.
+* JSON visualization and payload decoding
+* Utilizing the Line Data (`LD`) matcher and `VARIANT OBJECT` JSON auto-discovery
+* Mapping nested JSON paths using the `FIELDS_ADD` command
+* **Exercise:** Parse a complex JSON order event using the `JSON:parsedJson` matcher, map specific nested attributes (like `orderInfo.externalKey`) to log fields, and validate the fully structured log record in Dynatrace.
 
 ## Workshop 4 : Practice Dynatrace Query Language (DQL)
 
