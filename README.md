@@ -86,84 +86,83 @@
 
 ---
 
-## Workshop 4 : Practice Dynatrace Query Language (DQL)
+## Chapter 4: Dynatrace Query Language (DQL) & Davis AI
 
-:blue_book: Learning value : 
- - Gain confidence with Dynatrace Query Language 
- - Learn DQL through hands-on experience with interactive tutorials.
- - Explore, query, combine and process ALL of your observability data stored in Grail.
- - Davis Analyzer / Davis Predictive AI
- - Familiarize with Notebooks
- - Examine use cases
+**Overall Value:** Navigating and analyzing vast amounts of observability data requires a powerful query language. This chapter introduces you to the Dynatrace Query Language (DQL) and Davis Predictive AI. You will start with the basics of fetching, parsing, and filtering data before moving into advanced data manipulation. By the end of this module, you will be able to join complex datasets using the `lookup` command and leverage AI to automatically forecast future infrastructure capacity limits.
 
-### [4_1 - Practice Dynatrace Query language (DQL) :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
- > - Basic commands and tutorials.
- > - fetch, filter, fieldsAdd & fieldsRemove , parse (DPL), sort , makeTimeseries and summarize commands.
+### Chapter 4.1: Practice Dynatrace Query Language
+**Goal:** Familiarize yourself with basic DQL commands (`fetch`, `filter`, `fieldsAdd`, `parse`, `summarize`) using interactive tutorials.
+* Dynatrace interactive Dojo application
+* Fundamental DQL query structuring
+* **Exercise:** Install the Dojo app within Dynatrace and complete the 8-step Beginner's tutorial.
 
-### [4_2 - Davis® forecast analysis :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_2%20Davis%C2%AE%20forecast%20analysis.md)
- > - Visualize future trend with help of Davis predictive AI.
- > - Timeseries, understand intervals and granularity
- > - Predictive AI use case and its benefits
+### Chapter 4.2: Davis® Forecast Analysis
+**Goal:** Use Davis Predictive AI to project future infrastructure capacity based on historical timeseries data.
+* Timeseries data queries and aggregation (`avg`, `dt.host.memory.usage`)
+* Chaining commands via pipeline operators (`|`)
+* Activating the Davis Analyzer for trend projection
+* **Exercise:** Query the 30-day average memory usage of a specific VMware host group, visualize it as a line chart, and enable Davis AI to forecast future memory demands.
 
-### [4_3 - Joining DQL queries via lookup command :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/4_3%20Joining%20DQL%20queries%20via%20lookup%20command.md)
- > - Joining DQL queries for analysis
- > - Use case comparing disk % usage week-over-week 
- > - Thresholds/Indicators to display trends/status
-
----
-
-## Workshop 5 : Automation services with Workflows 
-:blue_book: Learning value : 
-- Gain confidence and understand Dynatrace Workflows
-- Familiarize with Workflows app
-- Examine usecases
-- Learn by building a workflow define triggers and apply programming language to define filters and logic
-- Explore query data, transform, filter results and further ingest into Dynatrace for analysis, notification and alerting
-
-
-### [5_1 Basic Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_1%20Basic%20Dynatrace%20Workflows.md)
- > - Basic Settings / Task Types / Trigger types
- > - Create a workflow that is triggered on demand
-
-### [5_2 Advanced Workflows :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/5_2%20Advanced%20Dynatrace%20Workflows.md)
- > - JavaScript / Dynatrace SDK
- > - Loops and characteristics
-
-## Workshop 6 : Site Reliability Engineering with Dynatrace
-:blue_book: Learning value : 
-
-- Understand how Dynatrace Software Intelligence Platform empowers SRE
-- Build your own Continuous Deployment pipeline
-- Examine and learn how Dynatrace helps automate, optimize CI/CD operations and reduce cost 
-- Experience coding Synchronous and Asynchronous communication between CI/CD tool.
-- Be able to articulate competitive value and unique proposition of Dynatrace for SRE and demonstrate live.
+### Chapter 4.3: Joining DQL Queries via the Lookup Command
+**Goal:** Join data from multiple independent queries to perform comparative analysis.
+* DQL `lookup` command syntax and execution
+* Mapping `sourceField` to `lookupField` to join tables
+* Advanced array math and conditional UI indicators (e.g., 🔴 🟠 🟢)
+* **Exercise:** Write a complex query using `lookup` to compare week-over-week disk usage across hosts, calculating the difference and automatically assigning visual status indicators based on threshold logic.
 
 ---
 
-### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
-> - Prepare Ubuntu and update libraries
->   Install JDK 17
-> - Install Jenkins 
-> - Activate Jenkins admin password / install Plugins
+## Chapter 5: Automation with Dynatrace Workflows
 
-### [6_2 Continuous Delivery (CD) pipeline :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_2%20Continuous%20Delivery%20(CD)%20pipeline.md)
-> - Create a new pipeline
-> - Build triggers
-> - Define stages in the pipeline
-> - Test the pipeline
+**Overall Value:** Modern operations require automation to bridge the gap between monitoring and action. This chapter explores Dynatrace Workflows, teaching you how to build automated sequences using APIs and custom code. You will learn to extract third-party data, transform it, and ingest it into Dynatrace. By the end of this module, you will understand how to trigger workflows on-demand, handle HTTP requests, use Jinja templating, and execute serverless JavaScript functions natively within Dynatrace.
 
-### [6_3 Asynchronous - Sending Continuous Delivery signals to Dynatrace :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
-> - You will create a custom JSON data structure with the pipeline stage information.
-> - You will create a Dynatrace token to ingest / write data through Dynatrace API via the /bizevents/ingest endpoint
-> - You will be adding API call script task within the pipeline for each of 3 stages: Build -> Deploy -> Test.
-> - You will be using notebooks app to write DQL query to Grail and validate the events information of the pipeline executions.
+### Chapter 5.1: Basic Dynatrace Workflows
+**Goal:** Create a workflow that pulls external data via an HTTP GET request and ingests a filtered subset into Dynatrace via an HTTP POST request.
+* Workflow triggers (On-demand, Scheduled, Event-based)
+* HTTP request tasks (GET/POST) and outbound connection preferences
+* Jinja templating for dynamic payload generation
+* **Exercise:** Build a workflow that calls a public currency exchange API, uses a Jinja template to isolate four specific currencies (AUD, KRW, USD, JPY), and POSTs the formatted JSON as a log event into Dynatrace.
 
-### [6_4 Synchronous monitoring of Continuous Deployment Pipeline :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_4%20Synchronous%20CD%20monitoring%20of%20Continuous%20Deployment%20Pipelines.md)
-> - You will create a token in Jenkins.
-> - You will create a workflow and trigger a run every 60 minutes.
-> - You will create a Javascript code to PULL data using Jenkins API endpoint to retrieve pipeline execution informaiton (pipeline run status, ID , Duration for each stage (Build/Deploy/Test) etc. Then will PUSH (ingest) the information as bizevents into Dynatrace.
-> - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
-> - You will create a dashboard to visualize the events ingested near real-time
+### Chapter 5.2: Advanced Dynatrace Workflows Using JavaScript
+**Goal:** Replace basic HTTP tasks with custom JavaScript code for more complex data fetching and transformation.
+* The `Run Javascript` workflow action
+* Writing asynchronous `fetch` requests inside the Dynatrace JS runtime
+* Adapting downstream tasks to handle altered JSON structures
+* **Exercise:** Duplicate your basic workflow, replace the initial HTTP GET task with a custom JavaScript function, adjust the Jinja payload to match the new nested JSON structure, and validate the successfully ingested logs.
+
+---
+
+## Chapter 6: CI/CD Pipeline Observability with Jenkins
+
+**Overall Value:** Software delivery pipelines are mission-critical, yet they often lack the same level of observability as production applications. This chapter focuses on Site Reliability Engineering (SRE) practices by integrating Jenkins CI/CD pipelines with Dynatrace. You will build a Jenkins environment from scratch and learn two distinct methods for tracking pipeline health: actively pushing deployment signals (Push) and synchronously polling Jenkins for job metrics (Pull). 
+
+### Chapter 6.1: Environment Preparation (Jenkins)
+**Goal:** Provision an AWS Ubuntu server and install Jenkins for continuous integration and delivery.
+* AWS EC2 initialization (`t3a.medium`)
+* OpenJDK 17 and Jenkins repository configuration
+* Initial Jenkins security setup and plugin installation
+* **Exercise:** Spin up the EC2 instance, install Java and Jenkins via the command line, unlock the Jenkins web UI using the initial admin password, and create your master administrator account.
+
+### Chapter 6.2: Creating a Simple Continuous Delivery (CD) Pipeline
+**Goal:** Define and automate a multi-stage software release pipeline.
+* Jenkins Pipeline job creation
+* CRON-based scheduling (`H/15 * * * *`)
+* Groovy script syntax for pipeline stages (Build, Deploy, Test)
+* **Exercise:** Create a scheduled Jenkins Pipeline with three distinct echo stages, manually trigger a build, and examine the console output.
+
+### Chapter 6.3: Sending CD Pipeline Signals to Dynatrace
+**Goal:** Configure the Jenkins pipeline to actively push stage-execution metrics into Dynatrace as Business Events.
+* Groovy JSON data manipulation (`JsonOutput`)
+* Dynatrace API token generation for the `/bizevents/ingest` endpoint
+* Executing `curl` POST requests directly from Jenkins Pipeline steps
+* **Exercise:** Install the required Pipeline Utility plugins, inject Groovy code to capture build environment variables into a JSON payload, and execute an API call in each pipeline stage to push the event to Grail.
+
+### Chapter 6.4: Synchronous Monitoring Using Dynatrace Workflows
+**Goal:** Use Dynatrace Workflows to poll the Jenkins API at regular intervals, extracting deep pipeline metadata and pushing it to Grail.
+* Jenkins API token creation and authentication (Crumb Issuer)
+* Advanced Dynatrace JavaScript functions for multi-step API polling (Pull)
+* Dynatrace Business Events Client SDK (Push)
+* **Exercise:** Create a scheduled Dynatrace workflow running custom JavaScript to authenticate with Jenkins, poll all job stages and durations, map them to a BizEvents schema, and visualize the performance of your CI/CD pipelines on a custom dashboard.
 
 ---
 
