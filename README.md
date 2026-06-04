@@ -158,6 +158,20 @@
 > - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
 > - You will create a dashboard to visualize the events ingested near real-time
 
+### [Chapter 7.1: Install Red Hat OpenShift Local](./)
+**Goal:** Create a minimal OpenShift cluster on your local machine for development and testing.
+* Hardware prerequisites and Red Hat SSO
+* OpenShift Local Installer deployment
+* Command-line cluster initialization (`crc setup` and `crc start`)
+* **Exercise:** Download the installer, configure your local environment, and successfully spin up a local OpenShift cluster.
+
+### Chapter 7.2: Managing OpenShift Cluster from Web Console
+**Goal:** Access and navigate the OpenShift web console to manage your cluster environment.
+* Web console authentication via `kubeadmin`
+* Understanding OpenShift Projects vs. Kubernetes namespaces
+* **Exercise:** Log into the cluster management console and provision a new OpenShift Project.
+
+
 ## Workshop 12 : Mastering Web Application Opentelemetry and Dynatrace Opentelemetry Collector in Dynatrace
 :blue_book: Learning value : 
 
