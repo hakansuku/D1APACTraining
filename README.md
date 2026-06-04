@@ -2,37 +2,9 @@
 | --- |
  ## This repository is for training internal Dynatrace One Platform Specialist Engineers on empowering individual technical knowledge via hands-on workshops 
 
-## 📚 Workshop Chapters
-## Workshop 1 : Managed Cluster environment
-## Chapter 1: Dynatrace Managed Cluster Deployment & Administration
-
-**Overall Value:** Deploying a self-managed observability platform requires foundational knowledge in cloud infrastructure, Linux system administration, and software provisioning. This chapter walks you through the complete lifecycle of deploying a Dynatrace Managed Cluster. You will learn how to generate internal cluster licenses, provision dedicated AWS EC2 resources, manage Linux server fundamentals, and execute a full Dynatrace Managed installation. By the end of this module, you will have a fully functional, self-hosted Dynatrace environment ready for monitoring.
-
-### [Chapter 1.1: Obtain Dynatrace License](./1_1%20Obtain%20Dynatrace%20License.md)
-**Goal:** Generate a Dynatrace cluster license via Development Mission Control for internal testing.
-* **Concepts covered:** Account creation, license configuration, allocating unlimited Host Units (HU) and DEM units, and retrieving the installation token.
-* **Outcome:** Participants receive a valid Dynatrace Cluster license key and installation instructions via email.
-
-### [Chapter 1.2: Cloud Environment Preparation](./1_2%20Cloud%20environment%20preparation.md)
-**Goal:** Provision an AWS EC2 instance to serve as the host server for the Dynatrace Managed Cluster.
-* **Concepts covered:** AWS console navigation, configuring Spot Instances, selecting Ubuntu 22.04 LTS AMIs, creating SSH key pairs, storage allocation (300 GiB), hardware sizing (t3.2xlarge), and configuring Security Group inbound rules (Ports 80, 22, 443).
-* **Outcome:** A running, correctly sized AWS EC2 instance ready for secure remote connection.
-
-### [Chapter 1.3: Learning the Linux Environment and Preparation](./1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
-**Goal:** Establish a secure connection to the newly provisioned host and prepare the operating system.
-* **Concepts covered:** SSH connections via MobaXterm using private `.pem` keys, gaining Linux root access (`sudo su`), updating OS packages (`apt update/upgrade`), and monitoring system resources (`htop`, `df -h`). *Includes an appendix on manually partitioning and mounting additional EBS volumes (`lsblk`, `mkfs`, `mount`).*
-* **Outcome:** An updated and fully prepared Linux environment ready for the Dynatrace installation.
-
-### [Chapter 1.4: Dynatrace Managed Cluster Installation & Maintenance](./1_4%20Cluster_Installation_maintenance.md)
-**Goal:** Install the Dynatrace Managed Cluster software and configure the initial administrative settings.
-* **Concepts covered:** Downloading the installer via `wget`, executing the shell installation script with the provided license token, verifying server status via the launcher directory, first-time CMC (Cluster Management Console) setup, enabling Log Monitoring/RUM, and configuring data retention and overload prevention.
-* **Outcome:** A fully functional Dynatrace Managed Cluster accessible via a web browser.
-
 # D1 APAC Training Workshop
 
-Welcome to the D1 APAC Training repository! This workshop is designed to provide hands-on experience with modern cloud infrastructure, serverless application observability, application instrumentation using OpenTelemetry, and container orchestration monitoring using Dynatrace.
-
----
+Welcome to the D1 APAC Training repository! This workshop is designed to provide hands-on experience with modern cloud infrastructure, serverless application observability, application instrumentation using OpenTelemetry, and container orchestration monitoring using Dynatrace.  NOTE : This content is for informational purposes only and is not official. We assume no responsibility or liability for any errors, omissions, or outcomes.
 
 ## 📚 Workshop Chapters
 
