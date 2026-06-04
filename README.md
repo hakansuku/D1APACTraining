@@ -402,7 +402,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A single-node, production-grade Kubernetes cluster ready for container orchestration.
 
-### [Chapter 10.2: Install Dynatrace Operator - ClassicFullStack Deployment Mode](./10_2%20Install%20Dynatrace%20Operator%20-%20ClassicFullStack%20Deployment%20Mode.md)
+### [Chapter 10.2: Install Dynatrace Operator - ClassicFullStack Deployment Mode](./_10_2%20Dynatrace%20Operator%20install%20-%20ClassicFullStack.md)
 **Goal:** Deploy the Dynatrace Operator onto your cluster to automatically monitor nodes and cluster infrastructure.
 
 **Concepts Covered:**
@@ -414,7 +414,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** Automated, full-stack monitoring of a Kubernetes cluster, covering the host node, namespaces, and underlying infrastructure.
 
-### [Chapter 10.3: Deploy EasyTrade Demo Application](./10_3%20Deploy%20EasyTrade%20Demo%20Application.md)
+### [Chapter 10.3: Deploy EasyTrade Demo Application](./_10_3%20Deploy%20EasyTrade%20demo%20application.md)
 **Goal:** Deploy a multi-tier microservice application, expose its frontend, and validate end-to-end service monitoring.
 
 **Concepts Covered:**
@@ -432,7 +432,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** To securely bridge the gap between your Kubernetes cluster and the Dynatrace platform, an ActiveGate is essential for routing traffic and executing API calls. 
 
-### [Chapter 11.1: Deploying ActiveGate in a Kubernetes Container](./11_1%20Deploying%20ActiveGate%20in%20a%20Kubernetes%20Container.md)
+### [Chapter 11.1: Deploying ActiveGate in a Kubernetes Container](./_11_1%20Deploying%20containerized%20ActiveGates.md)
 **Goal:** Securely deploy an Environment ActiveGate within a dedicated Kubernetes namespace using API-generated credentials.
 
 **Concepts Covered:**
@@ -450,7 +450,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** OpenTelemetry provides a vendor-agnostic framework for observability, but managing that data requires a robust collector. This chapter covers end-to-end OTel implementation.
 
-### [Chapter 12.1: Building and Instrumenting a Python Application with OpenTelemetry](./12_1%20Building%20and%20Instrumenting%20a%20Python%20Application%20with%20OpenTelemetry.md)
+### [Chapter 12.1: Building and Instrumenting a Python Application with OpenTelemetry](./_12_1%20OPENTELEMETRY%20-%20Mastering%20Dynatrace%20Opentelemetry%20Collector.md)
 **Goal:** Create a Python Flask web application and implement zero-code OpenTelemetry instrumentation.
 
 **Concepts Covered:**
@@ -462,7 +462,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A Python web application automatically generating OTel traces and metrics without requiring deep code modifications.
 
-### [Chapter 12.2: Deploying the Dynatrace OTel Collector and Ingesting Data](./12_2%20Deploying%20the%20Dynatrace%20OTel%20Collector%20and%20Ingesting%20Data.md)
+### [Chapter 12.2: Deploying the Dynatrace OTel Collector and Ingesting Data](./_12_2%20OPENTELEMETRY%20-%20Dynatrace%20Collector.md)
 **Goal:** Route OpenTelemetry data from your application to Dynatrace using a dedicated OTel Collector.
 
 **Concepts Covered:**
@@ -480,7 +480,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Message queues are critical middleware for enterprise applications. This chapter provides hands-on experience with IBM MQ and the Dynatrace IBM MQ Extension.
 
-### [Chapter 13.1: Run an IBM MQ Sample Environment on AWS EC2](./13_1%20Run%20an%20IBM%20MQ%20Sample%20Environment%20on%20AWS%20EC2.md)
+### [Chapter 13.1: Run an IBM MQ Sample Environment on AWS EC2](./_13_1%20Building%20IBM%20MQ%20environment.md)
 **Goal:** Provision a functional IBM MQ message broker environment using Docker.
 
 **Concepts Covered:**
@@ -492,7 +492,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A containerized enterprise message broker ready to send and receive queues.
 
-### [Chapter 13.2: Connect Dynatrace IBM MQ Extension](./13_2%20Connect%20Dynatrace%20IBM%20MQ%20Extension.md)
+### [Chapter 13.2: Connect Dynatrace IBM MQ Extension](./_13_2%20Dynatrace%20IBM%20MQ%20extension.md)
 **Goal:** Configure the Dynatrace platform to monitor your IBM MQ server remotely via an ActiveGate.
 
 **Concepts Covered:**
@@ -504,7 +504,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** Dynatrace successfully reaching out and polling the IBM MQ server for health and performance metrics.
 
-### [Chapter 13.3: Debug and Troubleshoot IBM MQ Connection Issues](./13_3%20Debug%20and%20Troubleshoot%20IBM%20MQ%20Connection%20Issues.md)
+### [Chapter 13.3: Debug and Troubleshoot IBM MQ Connection Issues](./_13_3%20Debug%20and%20troubleshoot%20IBM%20MQ%20connection%20issues.md)
 **Goal:** Identify, debug, and resolve standard MQ connection and authorization errors.
 
 **Concepts Covered:**
