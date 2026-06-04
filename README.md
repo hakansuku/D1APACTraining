@@ -1,6 +1,6 @@
 | # D1APACTraining |
 | --- |
- ## This repository is for training internal Dynatrace One Product Specialists on empowering individual technical knowledge via hand-on workshops 
+ ## This repository is for training internal Dynatrace One Platform Specialist Engineers on empowering individual technical knowledge via hands-on workshops 
 
 ## 📚 Workshop Chapters
 ## Workshop 1 : Managed Cluster environment
