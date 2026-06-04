@@ -224,17 +224,86 @@
 * Configuring `otel.py` with Dynatrace API credentials
 * **Exercise:** Build a Python console application that generates logs and uses callback functions to monitor CPU and RAM usage, then query the ingested data within Dynatrace using DQL.
 
-## Workshop 12 : Mastering Web Application Opentelemetry and Dynatrace Opentelemetry Collector in Dynatrace
-:blue_book: Learning value : 
+## Chapter 10: Kubernetes Monitoring with Dynatrace ClassicFullStack
 
-- Understand opentelemetry instrumentation in web applications
-- Build your own simple Web application and instrument with opentelemetry libraries
-- Visualize opentelemetry bare structure of metrics, traces, logs.
-- Deploy and configure Dynatrace Opentelemetry Collector Receivers/Exporters and route opentelemetry into Dynatrace Openpipelines.
-- Examine and learn how Dynatrace helps visualize opentelemetry into Dashboards and bring anaysis via Notebooks
-- Experience how Dynatrace automatically discovers Services and empowers connecting end-to-end HTTP service requests to traces and logs
+**Overall Value:** Containerized orchestrators like Kubernetes introduce complex layers of abstraction that can obscure infrastructure health and application performance. This chapter guides you through establishing full-stack visibility within a Kubernetes cluster. You will deploy a local single-node cluster using MicroK8s, install the Dynatrace Operator using the ClassicFullStack deployment model, and launch a multi-service microservice application (EasyTrade). By the end of this module, you will understand how containerized workloads interact with host resources and how to seamlessly monitor Kubernetes nodes, namespaces, pods, and services within Dynatrace.
 
+### Chapter 10.1: Environment Preparation
+**Goal:** Provision a dedicated Kubernetes environment using MicroK8s on an enterprise-grade cloud instance.
+* AWS EC2 Spot Instance configuration (`m5.xlarge` with 4 vCPU, 16 GB RAM)
+* MicroK8s installation via Snap package manager (`--classic`)
+* Configuring shell quality-of-life enhancements via `kubectl` alias mapping (`k`)
+* **Exercise:** Spin up the Ubuntu host, install MicroK8s, verify cluster status, and create a permanent command alias for local cluster management.
 
+### Chapter 10.2: Install Dynatrace Operator - ClassicFullStack Deployment Mode
+**Goal:** Deploy the Dynatrace Operator onto your cluster to automatically monitor nodes and cluster infrastructure.
+* Dynatrace API token generation tailored for Kubernetes workloads
+* Dedicated Kubernetes namespace creation and secure token secret handling
+* Deploying the Dynatrace Operator manifests and tailoring a `DynaKube` Custom Resource (CR) file
+* **Exercise:** Create the `dynatrace` namespace, apply the operator YAML manifests, substitute your environment tenant details into the `classicFullStack.yaml` template, and confirm cluster recognition in the Dynatrace console.
+
+### Chapter 10.3: Deploy EasyTrade Demo Application
+**Goal:** Deploy a multi-tier microservice application, expose its frontend, and validate end-to-end service monitoring.
+* Cloning the open-source EasyTrade multi-service repository
+* Declaring a targeted application namespace and deploying release manifests
+* Exposing containerized workloads through local Kubernetes NodePort services
+* **Exercise:** Clone and apply the EasyTrade manifests inside the cluster, configure AWS security group inbound rules to expose the frontend NodePort, generate live traffic in your browser, and track the detected application services in Dynatrace.
+
+## Chapter 11: Deploying Environment ActiveGate in Kubernetes
+
+**Overall Value:** To securely bridge the gap between your Kubernetes cluster and the Dynatrace platform, an ActiveGate is essential for routing traffic and executing API calls. This chapter walks through deploying an Environment ActiveGate directly within a Kubernetes container. You will learn to navigate the Dynatrace API to dynamically generate authentication tokens and connection information, injecting them as Kubernetes secrets for a secure, declarative deployment.
+
+### Chapter 11.1: Deploying ActiveGate in a Kubernetes Container
+**Goal:** Securely deploy an Environment ActiveGate within a dedicated Kubernetes namespace using API-generated credentials.
+* Dynatrace API operations via `curl` (generating tokens and fetching tenant endpoints)
+* Kubernetes namespace and Secret creation (`dynatrace-tokens`)
+* YAML manifest deployment for ActiveGate containerization
+* **Exercise:** Generate ActiveGate and tenant tokens via the Dynatrace API, create a `dynatrace` namespace and secret, deploy the ActiveGate via a custom YAML file, and validate its running status in both the CLI and the Dynatrace UI.
+
+---
+
+## Chapter 12: OpenTelemetry (OTel) Collector & Python Instrumentation
+
+**Overall Value:** OpenTelemetry provides a vendor-agnostic framework for observability, but managing that data requires a robust collector. This chapter covers end-to-end OTel implementation. You will start by instrumenting a custom Python Flask application with zero-code OTel libraries, pushing data to the console. Then, you will deploy a Dynatrace OpenTelemetry Collector via Docker, reroute your application's telemetry to the collector, and validate the flow of traces, metrics, and logs in Dynatrace.
+
+### Chapter 12.1: Building and Instrumenting a Python Application with OpenTelemetry
+**Goal:** Create a Python Flask web application and implement zero-code OpenTelemetry instrumentation.
+* Python virtual environments (`venv`) and Flask HTTP server creation
+* OpenTelemetry zero-code instrumentation (`opentelemetry-distro`)
+* Exporting telemetry data to the local terminal console
+* **Exercise:** Deploy a Dice Roll Python application, configure OTel to track metrics (roll counter) and distributed traces, and test the app to view the telemetry output locally in your SSH console.
+
+### Chapter 12.2: Deploying the Dynatrace OTel Collector and Ingesting Data
+**Goal:** Route OpenTelemetry data from your application to Dynatrace using a dedicated OTel Collector.
+* Docker-based Dynatrace OTel Collector deployment
+* Collector YAML configuration (receivers, processors, exporters)
+* OTLP data routing and Dynatrace OpenPipelines
+* **Exercise:** Launch the Dynatrace OTel Collector in Docker, update the Flask application to use OTLP exporters instead of the console, generate web traffic, and analyze the resulting distributed traces, logs, and metrics within custom Dynatrace dashboards.
+
+## Chapter 13: IBM MQ Monitoring and Troubleshooting
+
+**Overall Value:** Message queues are critical middleware for enterprise applications, making their performance and health essential to monitor. This chapter provides hands-on experience with IBM MQ and the Dynatrace IBM MQ Extension. You will deploy a containerized IBM MQ environment, configure server-connection channels, and integrate it with Dynatrace via an ActiveGate. Finally, you will learn real-world troubleshooting skills by identifying and resolving MQ authentication errors.
+
+### Chapter 13.1: Run an IBM MQ Sample Environment on AWS EC2
+**Goal:** Provision a functional IBM MQ message broker environment using Docker.
+* Docker volume persistence and IBM MQ container initialization
+* MQSC CLI administration (`runmqsc`)
+* Channel configuration (`SVRCONN`) and MQ authorization (`setmqaut`)
+* **Exercise:** Pull and run the IBM MQ image, access the container's shell, define a server-connection channel, create a local Linux user, and assign the necessary message queue access permissions.
+
+### Chapter 13.2: Connect Dynatrace IBM MQ Extension
+**Goal:** Configure the Dynatrace platform to monitor your IBM MQ server remotely via an ActiveGate.
+* Dynatrace Extensions hub configuration
+* ActiveGate routing for extension workloads
+* Remote queue manager connection parameters
+* **Exercise:** Add an IBM MQ configuration in the Dynatrace Extensions app, link it to your ActiveGate, input your AWS EC2 public IP and MQ credentials, and review the initial connection logs.
+
+### Chapter 13.3: Debug and Troubleshoot IBM MQ Connection Issues
+**Goal:** Identify, debug, and resolve standard MQ connection and authorization errors.
+* Docker container troubleshooting and bash execution
+* Reading and interpreting MQ `AMQERR01.LOG` files
+* Diagnosing `MQRC_NOT_AUTHORIZED` (2035) errors
+* **Exercise:** Analyze a failed connection attempt via Dynatrace logs, trace the error back to the IBM MQ server error logs within the container, apply the required configuration fix, and validate successful metric ingestion in a pre-built Dynatrace MQ dashboard.
 
 
 
