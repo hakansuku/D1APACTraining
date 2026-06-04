@@ -5,7 +5,7 @@ Dynatrace employee you can create an account in Developement Mission Control and
 ## 1) Login https://mc-dev.internal.dynatracelabs.com/ui/mc/accounts
 
 ## 2) Create an account
-![Add a new account](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/addaccount.png?raw=true)
+![Add a new account](./images/managed/addaccount.png?raw=true)
 
 ## 3) Fill in the required fields and SAVE
 ![enter fields](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/addaccountfields.png?raw=true)
