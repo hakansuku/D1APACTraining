@@ -168,11 +168,14 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 4.2: Davis® Forecast Analysis](./4_2%20Davis®%20Forecast%20Analysis.md)
 **Goal:** Use Davis Predictive AI to project future infrastructure capacity based on historical timeseries data.
+
 **Concepts Covered:**
 * Timeseries data queries and aggregation (`avg`, `dt.host.memory.usage`)
 * Chaining commands via pipeline operators (`|`)
 * Activating the Davis Analyzer for trend projection
+
 **Exercise:** Query the 30-day average memory usage of a specific VMware host group, visualize it as a line chart, and enable Davis AI to forecast future memory demands.
+
 **Outcome:** The ability to leverage AI-driven forecasting to predict infrastructure bottlenecks before they occur.
 
 ### [Chapter 4.3: Joining DQL Queries via the Lookup Command](./4_3%20Joining%20DQL%20Queries%20via%20the%20Lookup%20Command.md)
@@ -181,7 +184,9 @@ Below is an overview of the modules covered in this training. Each chapter direc
 * DQL `lookup` command syntax and execution
 * Mapping `sourceField` to `lookupField` to join tables
 * Advanced array math and conditional UI indicators (e.g., 🔴 🟠 🟢)
+
 **Exercise:** Write a complex query using `lookup` to compare week-over-week disk usage across hosts, calculating the difference and automatically assigning visual status indicators based on threshold logic.
+
 **Outcome:** Advanced querying skills allowing you to merge disparate datasets and build highly customized analytical dashboards.
 
 ---
@@ -192,20 +197,26 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 5.1: Basic Dynatrace Workflows](./5_1%20Basic%20Dynatrace%20Workflows.md)
 **Goal:** Create a workflow that pulls external data via an HTTP GET request and ingests a filtered subset into Dynatrace.
+
 **Concepts Covered:**
 * Workflow triggers (On-demand, Scheduled, Event-based)
 * HTTP request tasks (GET/POST) and outbound connection preferences
 * Jinja templating for dynamic payload generation
+
 **Exercise:** Build a workflow that calls a public currency exchange API, uses a Jinja template to isolate four specific currencies (AUD, KRW, USD, JPY), and POSTs the formatted JSON as a log event into Dynatrace.
+
 **Outcome:** A working automated workflow capable of communicating with external APIs and ingesting formatted data.
 
 ### [Chapter 5.2: Advanced Dynatrace Workflows Using JavaScript](./5_2%20Advanced%20Dynatrace%20Workflows%20Using%20JavaScript.md)
 **Goal:** Replace basic HTTP tasks with custom JavaScript code for more complex data fetching and transformation.
+
 **Concepts Covered:**
 * The `Run Javascript` workflow action
 * Writing asynchronous `fetch` requests inside the Dynatrace JS runtime
 * Adapting downstream tasks to handle altered JSON structures
+
 **Exercise:** Duplicate your basic workflow, replace the initial HTTP GET task with a custom JavaScript function, adjust the Jinja payload to match the new nested JSON structure, and validate the successfully ingested logs.
+
 **Outcome:** The ability to write serverless JavaScript functions directly within Dynatrace to handle complex logic and API interactions.
 
 ---
@@ -216,38 +227,50 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 6.1: Environment Preparation (Jenkins)](./6_1%20Environment%20Preparation%20(Jenkins).md)
 **Goal:** Provision an AWS Ubuntu server and install Jenkins for continuous integration and delivery.
+
 **Concepts Covered:**
 * AWS EC2 initialization (`t3a.medium`)
 * OpenJDK 17 and Jenkins repository configuration
 * Initial Jenkins security setup and plugin installation
+
 **Exercise:** Spin up the EC2 instance, install Java and Jenkins via the command line, unlock the Jenkins web UI using the initial admin password, and create your master administrator account.
+
 **Outcome:** A fully functioning Jenkins automation server ready to run CI/CD workloads.
 
 ### [Chapter 6.2: Creating a Simple Continuous Delivery (CD) Pipeline](./6_2%20Creating%20a%20Simple%20Continuous%20Delivery%20(CD)%20Pipeline.md)
 **Goal:** Define and automate a multi-stage software release pipeline.
+
 **Concepts Covered:**
 * Jenkins Pipeline job creation
 * CRON-based scheduling (`H/15 * * * *`)
 * Groovy script syntax for pipeline stages (Build, Deploy, Test)
+
 **Exercise:** Create a scheduled Jenkins Pipeline with three distinct echo stages, manually trigger a build, and examine the console output.
+
 **Outcome:** A functioning, automated CI/CD pipeline capable of running multi-stage deployments on a schedule.
 
 ### [Chapter 6.3: Sending CD Pipeline Signals to Dynatrace](./6_3%20Sending%20CD%20Pipeline%20Signals%20to%20Dynatrace.md)
 **Goal:** Configure the Jenkins pipeline to actively push stage-execution metrics into Dynatrace as Business Events.
+
 **Concepts Covered:**
 * Groovy JSON data manipulation (`JsonOutput`)
 * Dynatrace API token generation for the `/bizevents/ingest` endpoint
 * Executing `curl` POST requests directly from Jenkins Pipeline steps
+
 **Exercise:** Install the required Pipeline Utility plugins, inject Groovy code to capture build environment variables into a JSON payload, and execute an API call in each pipeline stage to push the event to Grail.
+
 **Outcome:** A "Push" observability model where Jenkins actively reports its build, deploy, and test metrics to Dynatrace in real-time.
 
 ### [Chapter 6.4: Synchronous Monitoring Using Dynatrace Workflows](./6_4%20Synchronous%20Monitoring%20Using%20Dynatrace%20Workflows.md)
 **Goal:** Use Dynatrace Workflows to poll the Jenkins API at regular intervals, extracting deep pipeline metadata and pushing it to Grail.
+
 **Concepts Covered:**
 * Jenkins API token creation and authentication (Crumb Issuer)
 * Advanced Dynatrace JavaScript functions for multi-step API polling (Pull)
 * Dynatrace Business Events Client SDK (Push)
+
 **Exercise:** Create a scheduled Dynatrace workflow running custom JavaScript to authenticate with Jenkins, poll all job stages and durations, map them to a BizEvents schema, and visualize the performance of your CI/CD pipelines on a custom dashboard.
+
 **Outcome:** A "Pull" observability model leveraging Dynatrace to actively track external CI/CD health without modifying the pipeline's core code.
 
 ---
@@ -258,19 +281,25 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 7.1: Install Red Hat OpenShift Local](./7_1%20Install%20Red%20Hat%20OpenShift%20Local.md)
 **Goal:** Create a minimal OpenShift cluster on your local machine for development and testing.
+
 **Concepts Covered:**
 * Hardware prerequisites and Red Hat SSO
 * OpenShift Local Installer deployment
 * Command-line cluster initialization (`crc setup` and `crc start`)
+
 **Exercise:** Download the installer, configure your local environment, and successfully spin up a local OpenShift cluster.
+
 **Outcome:** A fully functioning, local OpenShift container platform running on your own hardware.
 
 ### [Chapter 7.2: Managing OpenShift Cluster from Web Console](./7_2%20Managing%20OpenShift%20Cluster%20from%20Web%20Console.md)
 **Goal:** Access and navigate the OpenShift web console to manage your cluster environment.
+
 **Concepts Covered:**
 * Web console authentication via `kubeadmin`
 * Understanding OpenShift Projects vs. Kubernetes namespaces
+
 **Exercise:** Log into the cluster management console and provision a new OpenShift Project.
+
 **Outcome:** The administrative ability to navigate OpenShift, manage resources, and isolate workloads using Projects.
 
 ---
@@ -281,28 +310,37 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 8.1: Creating a Sample AWS Lambda Function](./8_1%20Creating%20a%20Sample%20AWS%20Lambda%20Function.md)
 **Goal:** Build a serverless AWS Lambda function from scratch and expose it via an API endpoint.
+
 **Concepts Covered:**
 * AWS Lambda configuration (Python 3.12 runtime, x86_64 architecture)
 * API Gateway trigger setup and security configuration
+
 **Exercise:** Create a new Lambda function, attach an open API Gateway trigger, and test the live endpoint directly in your browser.
+
 **Outcome:** A live, scalable serverless function accessible over the public internet.
 
 ### [Chapter 8.2: Instrumenting Serverless - Lambda via Environment Variables](./8_2%20Instrumenting%20Serverless%20-%20Lambda%20via%20Environment%20Variables.md)
 **Goal:** Connect your AWS Lambda function to Dynatrace to monitor performance, traces, and logs.
+
 **Concepts Covered:**
 * Dynatrace Hub setup for AWS Lambda (Python)
 * Configuring AWS Lambda environment variables for instrumentation
 * Applying AWS Layers using a specified Amazon Resource Name (ARN)
+
 **Exercise:** Generate connection tokens in Dynatrace, update your Lambda function's configuration, generate test traffic, and observe the resulting traces and logs in the Dynatrace console.
+
 **Outcome:** Full observability into serverless code execution, eliminating monitoring blind spots in AWS Lambda.
 
 ### [Chapter 8.3: Prerequisites and AWS SAM CLI Installation](./8_3%20Prerequisites%20and%20AWS%20SAM%20CLI%20Installation.md)
 **Goal:** Set up your local development environment with Python and the AWS Serverless Application Model (SAM) CLI.
+
 **Concepts Covered:**
 * AWS console privilege requirements (Private Full Access)
 * Python 3.12 installation 
 * AWS SAM CLI downloading and configuration
+
 **Exercise:** Install the required software on your local machine and verify the installation via the command line using `sam --version`.
+
 **Outcome:** A local machine fully equipped to build, test, and deploy serverless infrastructure as code.
 
 ---
@@ -313,11 +351,14 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 9.1: Prepare Coding Environment](./9_1%20Prepare%20Coding%20Environment.md)
 **Goal:** Provision a cost-effective Ubuntu development environment on AWS and install a web-based code editor.
+
 **Concepts Covered:**
 * AWS EC2 Spot Instance creation (Ubuntu 24.04, `t2.medium`)
 * Configuring EC2 inbound port rules (Ports 8000 & 8080)
 * Installing and configuring Visual Studio Code-Server for browser-based development
+
 **Exercise:** Launch a Spot Instance, connect via SSH, update system packages, install VS Code-Server, and access your cloud IDE via the browser.
+
 **Outcome:** A remote, cloud-hosted IDE accessible from anywhere, optimized for software development.
 
 ### [Chapter 9.2: Manually Instrument your PHP Application with OpenTelemetry](./9_2%20Manually%20Instrument%20your%20PHP%20Application%20with%20OpenTelemetry.md)
@@ -326,16 +367,21 @@ Below is an overview of the modules covered in this training. Each chapter direc
 * PHP and Composer installation
 * OpenTelemetry dependencies and VS Code PHP Debug extension setup
 * Configuring `otel.php` with Dynatrace API credentials
+
 **Exercise:** Create a PHP console application that utilizes the OpenTelemetry SDK to generate custom logs and metric counters, then verify their ingestion via the Dynatrace Logs and Notebooks apps.
+
 **Outcome:** A functioning PHP application that programmatically generates and exports its own telemetry data using open-source standards.
 
 ### [Chapter 9.3: Manually Instrument your Python Application with OpenTelemetry](./9_3%20Manually%20Instrument%20your%20Python%20Application%20with%20OpenTelemetry.md)
 **Goal:** Configure a Python virtual environment with OpenTelemetry and write a script to gather system metrics and logs.
+
 **Concepts Covered:**
 * Python virtual environment (`venv`) and PIP configuration
 * Installing the OpenTelemetry SDK and `psutil` library
 * Configuring `otel.py` with Dynatrace API credentials
+
 **Exercise:** Build a Python console application that generates logs and uses callback functions to monitor CPU and RAM usage, then query the ingested data within Dynatrace using DQL.
+
 **Outcome:** A functioning Python application that monitors its own host resource usage and exports it via OpenTelemetry.
 
 ---
@@ -346,29 +392,38 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 10.1: Environment Preparation](./10_1%20Environment%20Preparation.md)
 **Goal:** Provision a dedicated Kubernetes environment using MicroK8s on an enterprise-grade cloud instance.
+
 **Concepts Covered:**
 * AWS EC2 Spot Instance configuration (`m5.xlarge` with 4 vCPU, 16 GB RAM)
 * MicroK8s installation via Snap package manager (`--classic`)
 * Configuring shell quality-of-life enhancements via `kubectl` alias mapping (`k`)
+
 **Exercise:** Spin up the Ubuntu host, install MicroK8s, verify cluster status, and create a permanent command alias for local cluster management.
+
 **Outcome:** A single-node, production-grade Kubernetes cluster ready for container orchestration.
 
 ### [Chapter 10.2: Install Dynatrace Operator - ClassicFullStack Deployment Mode](./10_2%20Install%20Dynatrace%20Operator%20-%20ClassicFullStack%20Deployment%20Mode.md)
 **Goal:** Deploy the Dynatrace Operator onto your cluster to automatically monitor nodes and cluster infrastructure.
+
 **Concepts Covered:**
 * Dynatrace API token generation tailored for Kubernetes workloads
 * Dedicated Kubernetes namespace creation and secure token secret handling
 * Deploying the Dynatrace Operator manifests and tailoring a `DynaKube` Custom Resource (CR) file
+
 **Exercise:** Create the `dynatrace` namespace, apply the operator YAML manifests, substitute your environment tenant details into the `classicFullStack.yaml` template, and confirm cluster recognition in the Dynatrace console.
+
 **Outcome:** Automated, full-stack monitoring of a Kubernetes cluster, covering the host node, namespaces, and underlying infrastructure.
 
 ### [Chapter 10.3: Deploy EasyTrade Demo Application](./10_3%20Deploy%20EasyTrade%20Demo%20Application.md)
 **Goal:** Deploy a multi-tier microservice application, expose its frontend, and validate end-to-end service monitoring.
+
 **Concepts Covered:**
 * Cloning the open-source EasyTrade multi-service repository
 * Declaring a targeted application namespace and deploying release manifests
 * Exposing containerized workloads through local Kubernetes NodePort services
+
 **Exercise:** Clone and apply the EasyTrade manifests inside the cluster, configure AWS security group inbound rules to expose the frontend NodePort, generate live traffic in your browser, and track the detected application services in Dynatrace.
+
 **Outcome:** A live, containerized microservice application running in Kubernetes, fully mapped and monitored by Dynatrace.
 
 ---
@@ -379,11 +434,14 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 11.1: Deploying ActiveGate in a Kubernetes Container](./11_1%20Deploying%20ActiveGate%20in%20a%20Kubernetes%20Container.md)
 **Goal:** Securely deploy an Environment ActiveGate within a dedicated Kubernetes namespace using API-generated credentials.
+
 **Concepts Covered:**
 * Dynatrace API operations via `curl` (generating tokens and fetching tenant endpoints)
 * Kubernetes namespace and Secret creation (`dynatrace-tokens`)
 * YAML manifest deployment for ActiveGate containerization
+
 **Exercise:** Generate ActiveGate and tenant tokens via the Dynatrace API, create a `dynatrace` namespace and secret, deploy the ActiveGate via a custom YAML file, and validate its running status in both the CLI and the Dynatrace UI.
+
 **Outcome:** A secure, containerized proxy gateway that safely routes internal cluster telemetry out to the Dynatrace SaaS tenant.
 
 ---
@@ -394,20 +452,26 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 12.1: Building and Instrumenting a Python Application with OpenTelemetry](./12_1%20Building%20and%20Instrumenting%20a%20Python%20Application%20with%20OpenTelemetry.md)
 **Goal:** Create a Python Flask web application and implement zero-code OpenTelemetry instrumentation.
+
 **Concepts Covered:**
 * Python virtual environments (`venv`) and Flask HTTP server creation
 * OpenTelemetry zero-code instrumentation (`opentelemetry-distro`)
 * Exporting telemetry data to the local terminal console
+
 **Exercise:** Deploy a Dice Roll Python application, configure OTel to track metrics (roll counter) and distributed traces, and test the app to view the telemetry output locally in your SSH console.
+
 **Outcome:** A Python web application automatically generating OTel traces and metrics without requiring deep code modifications.
 
 ### [Chapter 12.2: Deploying the Dynatrace OTel Collector and Ingesting Data](./12_2%20Deploying%20the%20Dynatrace%20OTel%20Collector%20and%20Ingesting%20Data.md)
 **Goal:** Route OpenTelemetry data from your application to Dynatrace using a dedicated OTel Collector.
+
 **Concepts Covered:**
 * Docker-based Dynatrace OTel Collector deployment
 * Collector YAML configuration (receivers, processors, exporters)
 * OTLP data routing and Dynatrace OpenPipelines
+
 **Exercise:** Launch the Dynatrace OTel Collector in Docker, update the Flask application to use OTLP exporters instead of the console, generate web traffic, and analyze the resulting distributed traces, logs, and metrics within custom Dynatrace dashboards.
+
 **Outcome:** A centralized OpenTelemetry architecture where application telemetry is routed through a dedicated collector and securely ingested into Dynatrace.
 
 ---
@@ -418,28 +482,36 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 13.1: Run an IBM MQ Sample Environment on AWS EC2](./13_1%20Run%20an%20IBM%20MQ%20Sample%20Environment%20on%20AWS%20EC2.md)
 **Goal:** Provision a functional IBM MQ message broker environment using Docker.
+
 **Concepts Covered:**
 * Docker volume persistence and IBM MQ container initialization
 * MQSC CLI administration (`runmqsc`)
 * Channel configuration (`SVRCONN`) and MQ authorization (`setmqaut`)
+
 **Exercise:** Pull and run the IBM MQ image, access the container's shell, define a server-connection channel, create a local Linux user, and assign the necessary message queue access permissions.
+
 **Outcome:** A containerized enterprise message broker ready to send and receive queues.
 
 ### [Chapter 13.2: Connect Dynatrace IBM MQ Extension](./13_2%20Connect%20Dynatrace%20IBM%20MQ%20Extension.md)
 **Goal:** Configure the Dynatrace platform to monitor your IBM MQ server remotely via an ActiveGate.
+
 **Concepts Covered:**
 * Dynatrace Extensions hub configuration
 * ActiveGate routing for extension workloads
 * Remote queue manager connection parameters
+
 **Exercise:** Add an IBM MQ configuration in the Dynatrace Extensions app, link it to your ActiveGate, input your AWS EC2 public IP and MQ credentials, and review the initial connection logs.
+
 **Outcome:** Dynatrace successfully reaching out and polling the IBM MQ server for health and performance metrics.
 
 ### [Chapter 13.3: Debug and Troubleshoot IBM MQ Connection Issues](./13_3%20Debug%20and%20Troubleshoot%20IBM%20MQ%20Connection%20Issues.md)
 **Goal:** Identify, debug, and resolve standard MQ connection and authorization errors.
+
 **Concepts Covered:**
 * Docker container troubleshooting and bash execution
 * Reading and interpreting MQ `AMQERR01.LOG` files
 * Diagnosing `MQRC_NOT_AUTHORIZED` (2035) errors
+
 **Exercise:** Analyze a failed connection attempt via Dynatrace logs, trace the error back to the IBM MQ server error logs within the container, apply the required configuration fix, and validate successful metric ingestion in a pre-built Dynatrace MQ dashboard.
 **Outcome:** Real-world troubleshooting experience resolving middleware authentication failures and restoring observability.
 
@@ -451,10 +523,6 @@ To get the most out of this workshop, ensure you have the following prerequisite
 * An active AWS Account with permissions to launch Spot instances.
 * A Dynatrace environment (SaaS tenant) with administrative access to generate API tokens.
 * A Red Hat SSO account for downloading OpenShift Local assets.
-
-**Clone this repository to begin:**
-```bash
-git clone [https://github.com/hakansuku/D1APACTraining.git](https://github.com/hakansuku/D1APACTraining.git)
 
 
 
