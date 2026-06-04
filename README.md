@@ -33,7 +33,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 **Exercise:** Launch an optimized Ubuntu spot instance, secure it with a new key pair, expand the root volume to meet installation requirements, and open the necessary network ports.
 **Outcome:** A secured, properly resourced AWS Ubuntu instance running in the cloud, accessible via SSH and ready for enterprise software installation.
 
-### [Chapter 1.3: Linux Environment Fundamentals](./1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md
+### [Chapter 1.3: Linux Environment Fundamentals](./1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
 **Goal:** Establish an SSH connection to your instance and perform essential Linux system administration tasks.
 **Concepts Covered:**
 * SSH client configuration (MobaXterm) and root access (`sudo su`)
