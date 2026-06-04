@@ -28,31 +28,39 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [Chapter 1.2: Cloud Environment Preparation](./1_2%20Cloud%20environment%20preparation.md)
 **Goal:** Provision a dedicated AWS EC2 instance tailored for a Dynatrace Managed deployment.
+
 **Concepts Covered:**
 * AWS Spot Instance requests (Ubuntu 22.04 LTS, `t3.2xlarge`)
 * SSH Key Pair generation and 300 GiB root storage allocation
 * Configuring AWS Security Group inbound rules (Ports 22, 80, 443)
 **Exercise:** Launch an optimized Ubuntu spot instance, secure it with a new key pair, expand the root volume to meet installation requirements, and open the necessary network ports.
+
 **Outcome:** A secured, properly resourced AWS Ubuntu instance running in the cloud, accessible via SSH and ready for enterprise software installation.
 
 ### [Chapter 1.3: Linux Environment Fundamentals](./1_3%20Learning%20the%20linux%20envrionment%20and%20preparation.md)
 **Goal:** Establish an SSH connection to your instance and perform essential Linux system administration tasks.
+
 **Concepts Covered:**
 * SSH client configuration (MobaXterm) and root access (`sudo su`)
 * OS package management (`apt update`, `apt upgrade`)
 * Monitoring system resources (`df -h`, `htop`)
 * *(Optional)* Additional AWS EBS volume mounting (`lsblk`, `mkfs`, `mount`)
+
 **Exercise:** Connect to your AWS instance via SSH, update the core Ubuntu packages, verify available CPU/RAM resources using `htop`, and check the available disk space to ensure readiness for Dynatrace.
+
 **Outcome:** Competency in basic Linux command-line navigation, system updates, and resource validation.
 
 ### [Chapter 1.4: Dynatrace Managed Cluster Installation & Maintenance](./1_4%20Cluster_Installation_maintenance.md)
 **Goal:** Install the Dynatrace Managed software and perform initial cluster configuration.
+
 **Concepts Covered:**
 * Downloading the Dynatrace installer via `wget` using your license token
 * Executing the installation script (`dynatrace-managed.sh`)
 * Verifying cluster status (`server.sh status`)
 * Cluster Management Console (CMC) setup (storage retention, Log Monitoring, overload prevention)
+
 **Exercise:** Run the automated Dynatrace installer, verify the server processes, log into the web interface using your public IP, and configure initial data retention and capability settings in the CMC.
+
 **Outcome:** A fully functional, self-hosted Dynatrace Managed Cluster ready to monitor your applications and infrastructure.
 
 ---
