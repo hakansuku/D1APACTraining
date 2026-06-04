@@ -113,7 +113,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Processing and parsing log data is essential for extracting actionable business and operational intelligence. This chapter explores Dynatrace's log management capabilities, focusing on the Dynatrace Pattern Language (DPL) and the Dynatrace Query Language (DQL).
 
-### [Chapter 3.1: Log Management Environment Preparation](./3_1%20Log%20Management%20Environment%20Preparation.md)
+### [Chapter 3.1: Log Management Environment Preparation](./3_1%20Log%20management%20environment%20preparation.md)
 **Goal:** Authenticate and interact with the Dynatrace Environment API to manually ingest log records.
 
 **Concepts Covered:**
@@ -125,7 +125,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** The technical capability to programmatically push custom log data into Dynatrace using REST APIs.
 
-### [Chapter 3.2: Parse Unstructured Text Log Data using DPL](./3_2%20Parse%20Unstructured%20Text%20Log%20Data%20using%20DPL.md)
+### [Chapter 3.2: Parse Unstructured Text Log Data using DPL](./3_2%20Combine%20DQL%20query%20with%20DPL%20to%20parse%20unstructured%20text%20log%20data.md)
 **Goal:** Use DPL Architect to extract specific data fields from raw, unstructured log text.
 
 **Concepts Covered:**
@@ -137,7 +137,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** The ability to transform messy, unstructured log strings into clean, queryable key-value attributes.
 
-### [Chapter 3.3: Parse and Extract Structured JSON Data](./3_3%20Parse%20and%20Extract%20Structured%20JSON%20Data.md)
+### [Chapter 3.3: Parse and Extract Structured JSON Data](./3_3%20Parse%20and%20extract%20elegantly%20using%20structured%20JSON%20data%20.md)
 **Goal:** Efficiently extract nested attributes from structured JSON log payloads.
 
 **Concepts Covered:**
@@ -155,7 +155,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Navigating and analyzing vast amounts of observability data requires a powerful query language. This chapter introduces you to the Dynatrace Query Language (DQL) and Davis Predictive AI.
 
-### [Chapter 4.1: Practice Dynatrace Query Language](./4_1%20Practice%20Dynatrace%20Query%20Language.md)
+### [Chapter 4.1: Practice Dynatrace Query Language](./4_1%20Practice%20Dynatrace%20Query%20Language%20DQL.md)
 **Goal:** Familiarize yourself with basic DQL commands using interactive tutorials.
 
 **Concepts Covered:**
@@ -166,7 +166,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A foundational understanding of DQL syntax and the ability to retrieve and filter data in Grail.
 
-### [Chapter 4.2: Davis® Forecast Analysis](./4_2%20Davis®%20Forecast%20Analysis.md)
+### [Chapter 4.2: Davis® Forecast Analysis](./4_2%20Davis®%20forecast%20analysis.md)
 **Goal:** Use Davis Predictive AI to project future infrastructure capacity based on historical timeseries data.
 
 **Concepts Covered:**
@@ -178,7 +178,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** The ability to leverage AI-driven forecasting to predict infrastructure bottlenecks before they occur.
 
-### [Chapter 4.3: Joining DQL Queries via the Lookup Command](./4_3%20Joining%20DQL%20Queries%20via%20the%20Lookup%20Command.md)
+### [Chapter 4.3: Joining DQL Queries via the Lookup Command](./4_3%20Joining%20DQL%20queries%20via%20lookup%20command.md)
 **Goal:** Join data from multiple independent queries to perform comparative analysis.
 **Concepts Covered:**
 * DQL `lookup` command syntax and execution
@@ -207,7 +207,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A working automated workflow capable of communicating with external APIs and ingesting formatted data.
 
-### [Chapter 5.2: Advanced Dynatrace Workflows Using JavaScript](./5_2%20Advanced%20Dynatrace%20Workflows%20Using%20JavaScript.md)
+### [Chapter 5.2: Advanced Dynatrace Workflows Using JavaScript](./5_2%20Advanced%20Dynatrace%20Workflows.md)
 **Goal:** Replace basic HTTP tasks with custom JavaScript code for more complex data fetching and transformation.
 
 **Concepts Covered:**
@@ -225,7 +225,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Software delivery pipelines are mission-critical, yet they often lack the same level of observability as production applications. This chapter focuses on integrating Jenkins CI/CD pipelines with Dynatrace.
 
-### [Chapter 6.1: Environment Preparation (Jenkins)](./6_1%20Environment%20Preparation%20(Jenkins).md)
+### [Chapter 6.1: Environment Preparation (Jenkins)](./6_1%20Environment%20preparation.md)
 **Goal:** Provision an AWS Ubuntu server and install Jenkins for continuous integration and delivery.
 
 **Concepts Covered:**
@@ -237,7 +237,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A fully functioning Jenkins automation server ready to run CI/CD workloads.
 
-### [Chapter 6.2: Creating a Simple Continuous Delivery (CD) Pipeline](./6_2%20Creating%20a%20Simple%20Continuous%20Delivery%20(CD)%20Pipeline.md)
+### [Chapter 6.2: Creating a Simple Continuous Delivery (CD) Pipeline](./6_2%20Continuous%20Delivery%20(CD)%20pipeline.md)
 **Goal:** Define and automate a multi-stage software release pipeline.
 
 **Concepts Covered:**
@@ -249,7 +249,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A functioning, automated CI/CD pipeline capable of running multi-stage deployments on a schedule.
 
-### [Chapter 6.3: Sending CD Pipeline Signals to Dynatrace](./6_3%20Sending%20CD%20Pipeline%20Signals%20to%20Dynatrace.md)
+### [Chapter 6.3: Sending CD Pipeline Signals to Dynatrace](./6_3%20Sending%20Continuous%20Delivery%20signals%20to%20Dynatrace.md)
 **Goal:** Configure the Jenkins pipeline to actively push stage-execution metrics into Dynatrace as Business Events.
 
 **Concepts Covered:**
@@ -261,7 +261,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A "Push" observability model where Jenkins actively reports its build, deploy, and test metrics to Dynatrace in real-time.
 
-### [Chapter 6.4: Synchronous Monitoring Using Dynatrace Workflows](./6_4%20Synchronous%20Monitoring%20Using%20Dynatrace%20Workflows.md)
+### [Chapter 6.4: Synchronous Monitoring Using Dynatrace Workflows](./6_4%20Synchronous%20CD%20monitoring%20of%20Continuous%20Deployment%20Pipelines.md)
 **Goal:** Use Dynatrace Workflows to poll the Jenkins API at regular intervals, extracting deep pipeline metadata and pushing it to Grail.
 
 **Concepts Covered:**
@@ -279,7 +279,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Developing and testing containerized applications requires a robust, isolated environment. This chapter provides the foundation for working with Red Hat OpenShift, a leading enterprise Kubernetes platform.
 
-### [Chapter 7.1: Install Red Hat OpenShift Local](./7_1%20Install%20Red%20Hat%20OpenShift%20Local.md)
+### [Chapter 7.1: Install Red Hat OpenShift Local](./7_1%20Installing%20Red%20Hat%20Openshift%20Local.md)
 **Goal:** Create a minimal OpenShift cluster on your local machine for development and testing.
 
 **Concepts Covered:**
@@ -291,7 +291,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A fully functioning, local OpenShift container platform running on your own hardware.
 
-### [Chapter 7.2: Managing OpenShift Cluster from Web Console](./7_2%20Managing%20OpenShift%20Cluster%20from%20Web%20Console.md)
+### [Chapter 7.2: Managing OpenShift Cluster from Web Console](./7_2%20Create%20Namespace%20and%20deploy%20containerized%20application.md)
 **Goal:** Access and navigate the OpenShift web console to manage your cluster environment.
 
 **Concepts Covered:**
@@ -308,7 +308,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Serverless computing abstracts away the underlying infrastructure, making deployment easier but creating "blind spots" for monitoring. This chapter bridges that gap using AWS Lambda and Dynatrace.
 
-### [Chapter 8.1: Creating a Sample AWS Lambda Function](./8_1%20Creating%20a%20Sample%20AWS%20Lambda%20Function.md)
+### [Chapter 8.1: Creating a Sample AWS Lambda Function](./8_1%20Create%20sample%20LAMBDA%20function.md)
 **Goal:** Build a serverless AWS Lambda function from scratch and expose it via an API endpoint.
 
 **Concepts Covered:**
@@ -319,7 +319,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A live, scalable serverless function accessible over the public internet.
 
-### [Chapter 8.2: Instrumenting Serverless - Lambda via Environment Variables](./8_2%20Instrumenting%20Serverless%20-%20Lambda%20via%20Environment%20Variables.md)
+### [Chapter 8.2: Instrumenting Serverless - Lambda via Environment Variables](./8_2%20Instrumenting%20Serverless%20LAMBDA%20function.md)
 **Goal:** Connect your AWS Lambda function to Dynatrace to monitor performance, traces, and logs.
 
 **Concepts Covered:**
@@ -331,7 +331,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** Full observability into serverless code execution, eliminating monitoring blind spots in AWS Lambda.
 
-### [Chapter 8.3: Prerequisites and AWS SAM CLI Installation](./8_3%20Prerequisites%20and%20AWS%20SAM%20CLI%20Installation.md)
+### [Chapter 8.3: Prerequisites and AWS SAM CLI Installation](./8_3_OPTIONAL_LAMBDA_SAM_CLI_tool.md)
 **Goal:** Set up your local development environment with Python and the AWS Serverless Application Model (SAM) CLI.
 
 **Concepts Covered:**
@@ -349,7 +349,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** In modern cloud environments, leveraging OpenTelemetry (OTel)—the open-source industry standard for observability—allows you to instrument your code directly.
 
-### [Chapter 9.1: Prepare Coding Environment](./9_1%20Prepare%20Coding%20Environment.md)
+### [Chapter 9.1: Prepare Coding Environment](./9_1%20OPENTELEMETRY%20Coding%20environment%20preparation.md)
 **Goal:** Provision a cost-effective Ubuntu development environment on AWS and install a web-based code editor.
 
 **Concepts Covered:**
@@ -361,7 +361,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A remote, cloud-hosted IDE accessible from anywhere, optimized for software development.
 
-### [Chapter 9.2: Manually Instrument your PHP Application with OpenTelemetry](./9_2%20Manually%20Instrument%20your%20PHP%20Application%20with%20OpenTelemetry.md)
+### [Chapter 9.2: Manually Instrument your PHP Application with OpenTelemetry](./9_2%20Manually%20instrument%20your%20PHP%20application%20with%20OpenTelemetry.md)
 **Goal:** Configure a PHP environment with OpenTelemetry and write a script to ingest logs and metrics into Dynatrace.
 **Concepts Covered:**
 * PHP and Composer installation
@@ -372,7 +372,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A functioning PHP application that programmatically generates and exports its own telemetry data using open-source standards.
 
-### [Chapter 9.3: Manually Instrument your Python Application with OpenTelemetry](./9_3%20Manually%20Instrument%20your%20Python%20Application%20with%20OpenTelemetry.md)
+### [Chapter 9.3: Manually Instrument your Python Application with OpenTelemetry](./9_3%20Manually%20instrument%20your%20Python%20application%20with%20OpenTelemetry.md)
 **Goal:** Configure a Python virtual environment with OpenTelemetry and write a script to gather system metrics and logs.
 
 **Concepts Covered:**
