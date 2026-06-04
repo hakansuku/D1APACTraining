@@ -30,6 +30,8 @@
 * **Concepts covered:** Downloading the installer via `wget`, executing the shell installation script with the provided license token, verifying server status via the launcher directory, first-time CMC (Cluster Management Console) setup, enabling Log Monitoring/RUM, and configuring data retention and overload prevention.
 * **Outcome:** A fully functional Dynatrace Managed Cluster accessible via a web browser.
 
+---
+
 ## Chapter 2: Mobile Application Development & Dynatrace Monitoring
 
 **Overall Value:** Native mobile application development requires a properly configured IDE and emulator environment. This chapter covers the end-to-end process of building a native Android application from scratch and integrating it with Dynatrace for deep user session monitoring. You will learn to set up Android Studio, build a functional "CookieClicker" UI using XML and Kotlin, and apply Dynatrace auto-instrumentation to capture user interactions, custom metrics, and session data.
@@ -82,6 +84,8 @@
 * Mapping nested JSON paths using the `FIELDS_ADD` command
 * **Exercise:** Parse a complex JSON order event using the `JSON:parsedJson` matcher, map specific nested attributes (like `orderInfo.externalKey`) to log fields, and validate the fully structured log record in Dynatrace.
 
+---
+
 ## Workshop 4 : Practice Dynatrace Query Language (DQL)
 
 :blue_book: Learning value : 
@@ -105,6 +109,8 @@
  > - Joining DQL queries for analysis
  > - Use case comparing disk % usage week-over-week 
  > - Thresholds/Indicators to display trends/status
+
+---
 
 ## Workshop 5 : Automation services with Workflows 
 :blue_book: Learning value : 
@@ -132,6 +138,8 @@
 - Experience coding Synchronous and Asynchronous communication between CI/CD tool.
 - Be able to articulate competitive value and unique proposition of Dynatrace for SRE and demonstrate live.
 
+---
+
 ### [6_1 Environment preparation :link: ](https://github.com/hakansuku/D1APACTraining/blob/main/6_1%20Environment%20preparation.md)
 > - Prepare Ubuntu and update libraries
 >   Install JDK 17
@@ -157,6 +165,8 @@
 > - You will validate the information using Notebooks app and DQL to observe the Bizevents ingested.
 > - You will create a dashboard to visualize the events ingested near real-time
 
+---
+
 ## Chapter 7: Local OpenShift Development & Cluster Management
 
 **Overall Value:** Developing and testing containerized applications requires a robust, isolated environment that mirrors production without the overhead of cloud infrastructure. This chapter provides the foundation for working with Red Hat OpenShift, a leading enterprise Kubernetes platform. You will learn how to provision a fully functional, localized OpenShift cluster directly on your machine and navigate its web-based management console. By the end of this module, you will have the administrative skills to deploy a local cluster, manage authentication, and isolate resources using OpenShift Projects—setting the stage for secure, hands-on application deployment.
@@ -173,6 +183,8 @@
 * Web console authentication via `kubeadmin`
 * Understanding OpenShift Projects vs. Kubernetes namespaces
 * **Exercise:** Log into the cluster management console and provision a new OpenShift Project.
+
+---
 
 ## Chapter 8: Serverless Architecture & Observability
 
@@ -197,6 +209,8 @@
 * Python 3.12 installation 
 * AWS SAM CLI downloading and configuration
 * **Exercise:** Install the required software on your local machine and verify the installation via the command line using `sam --version`.
+
+---
 
 ## Chapter 9: Application Instrumentation with OpenTelemetry
 
@@ -223,6 +237,8 @@
 * Configuring `otel.py` with Dynatrace API credentials
 * **Exercise:** Build a Python console application that generates logs and uses callback functions to monitor CPU and RAM usage, then query the ingested data within Dynatrace using DQL.
 
+---
+
 ## Chapter 10: Kubernetes Monitoring with Dynatrace ClassicFullStack
 
 **Overall Value:** Containerized orchestrators like Kubernetes introduce complex layers of abstraction that can obscure infrastructure health and application performance. This chapter guides you through establishing full-stack visibility within a Kubernetes cluster. You will deploy a local single-node cluster using MicroK8s, install the Dynatrace Operator using the ClassicFullStack deployment model, and launch a multi-service microservice application (EasyTrade). By the end of this module, you will understand how containerized workloads interact with host resources and how to seamlessly monitor Kubernetes nodes, namespaces, pods, and services within Dynatrace.
@@ -247,6 +263,8 @@
 * Declaring a targeted application namespace and deploying release manifests
 * Exposing containerized workloads through local Kubernetes NodePort services
 * **Exercise:** Clone and apply the EasyTrade manifests inside the cluster, configure AWS security group inbound rules to expose the frontend NodePort, generate live traffic in your browser, and track the detected application services in Dynatrace.
+
+---
 
 ## Chapter 11: Deploying Environment ActiveGate in Kubernetes
 
@@ -278,6 +296,8 @@
 * Collector YAML configuration (receivers, processors, exporters)
 * OTLP data routing and Dynatrace OpenPipelines
 * **Exercise:** Launch the Dynatrace OTel Collector in Docker, update the Flask application to use OTLP exporters instead of the console, generate web traffic, and analyze the resulting distributed traces, logs, and metrics within custom Dynatrace dashboards.
+
+---
 
 ## Chapter 13: IBM MQ Monitoring and Troubleshooting
 
