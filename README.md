@@ -199,7 +199,30 @@
 * AWS SAM CLI downloading and configuration
 * **Exercise:** Install the required software on your local machine and verify the installation via the command line using `sam --version`.
 
+## Chapter 9: Application Instrumentation with OpenTelemetry
 
+**Overall Value:** In modern cloud environments, relying on proprietary monitoring agents isn't always feasible or desired. This chapter teaches you how to leverage OpenTelemetry (OTel)—the open-source industry standard for observability—to instrument your code directly. You will start by provisioning a cost-effective development environment in AWS, then move hands-on into configuring OTel SDKs for both PHP and Python applications. By the end of this module, you will be able to programmatically capture traces, custom metrics, and logs, and route them securely into Dynatrace for analysis.
+
+### Chapter 9.1: Prepare Coding Environment
+**Goal:** Provision a cost-effective Ubuntu development environment on AWS and install a web-based code editor.
+* AWS EC2 Spot Instance creation (Ubuntu 24.04, `t2.medium`)
+* Configuring EC2 inbound port rules (Ports 8000 & 8080)
+* Installing and configuring Visual Studio Code-Server for browser-based development
+* **Exercise:** Launch a Spot Instance, connect via SSH, update system packages, install VS Code-Server, and access your cloud IDE via the browser.
+
+### Chapter 9.2: Manually Instrument your PHP Application with OpenTelemetry
+**Goal:** Configure a PHP environment with OpenTelemetry and write a script to ingest logs and metrics into Dynatrace.
+* PHP and Composer installation
+* OpenTelemetry dependencies and VS Code PHP Debug extension setup
+* Configuring `otel.php` with Dynatrace API credentials
+* **Exercise:** Create a PHP console application that utilizes the OpenTelemetry SDK to generate custom logs and metric counters, then verify their ingestion via the Dynatrace Logs and Notebooks apps.
+
+### Chapter 9.3: Manually Instrument your Python Application with OpenTelemetry
+**Goal:** Configure a Python virtual environment with OpenTelemetry and write a script to gather system metrics and logs.
+* Python virtual environment (`venv`) and PIP configuration
+* Installing the OpenTelemetry SDK and `psutil` library
+* Configuring `otel.py` with Dynatrace API credentials
+* **Exercise:** Build a Python console application that generates logs and uses callback functions to monitor CPU and RAM usage, then query the ingested data within Dynatrace using DQL.
 
 ## Workshop 12 : Mastering Web Application Opentelemetry and Dynatrace Opentelemetry Collector in Dynatrace
 :blue_book: Learning value : 
