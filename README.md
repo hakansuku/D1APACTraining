@@ -71,7 +71,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Overall Value:** Native mobile application development requires a properly configured IDE and emulator environment. This chapter covers the end-to-end process of building a native Android application from scratch and integrating it with Dynatrace for deep user session monitoring.
 
-### [Chapter 2.1: Mobile Development Environment Preparation](./2_1%20Mobile%20Development%20Environment%20Preparation.md)
+### [Chapter 2.1: Mobile Development Environment Preparation](./2_1%20Mobile%20Development%20Environment%20preparatio.md)
 **Goal:** Configure Android Studio and set up an Android Virtual Device (AVD) for local testing.
 
 **Concepts Covered:**
@@ -83,7 +83,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 **Outcome:** A fully configured mobile development environment capable of compiling code and running a virtual Android device.
 
-### [Chapter 2.2: Build Your Native Android Application (CookieClicker)](./2_2%20Build%20Your%20Native%20Android%20Application%20(CookieClicker).md)
+### [Chapter 2.2: Build Your Native Android Application (CookieClicker)](./2_2%20Build%20your%20native%20Android%20application.md)
 **Goal:** Develop a functional, interactive Android application using Kotlin and XML layouts.
 
 **Concepts Covered:**
