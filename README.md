@@ -4,11 +4,9 @@
 
 ## 📚 Workshop Chapters
 ## Workshop 1 : Managed Cluster environment
+## Chapter 1: Dynatrace Managed Cluster Deployment & Administration
 
-:blue_book: Learning value : 
- - Gain confidence in Linux commands 
- - Gain proficiency using cloud environment. 
- - Improve knowledge supporting on-premise customers 
+**Overall Value:** Deploying a self-managed observability platform requires foundational knowledge in cloud infrastructure, Linux system administration, and software provisioning. This chapter walks you through the complete lifecycle of deploying a Dynatrace Managed Cluster. You will learn how to generate internal cluster licenses, provision dedicated AWS EC2 resources, manage Linux server fundamentals, and execute a full Dynatrace Managed installation. By the end of this module, you will have a fully functional, self-hosted Dynatrace environment ready for monitoring.
 
 ### [Chapter 1.1: Obtain Dynatrace License](./1_1%20Obtain%20Dynatrace%20License.md)
 **Goal:** Generate a Dynatrace cluster license via Development Mission Control for internal testing.
