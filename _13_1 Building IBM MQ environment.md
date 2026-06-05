@@ -6,9 +6,13 @@
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OTELcollector/SSHterminal.jpg)
 
-- Update, Upgrade ubuntu and install Docker (execute each line of below command one by one)
+- Get root access
 ```
 sudo su
+```
+- Update, Upgrade ubuntu and install Docker
+
+```
 apt update -y
 apt upgrade -y
 apt install docker.io -y
