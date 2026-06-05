@@ -91,7 +91,7 @@ DISPLAY CHANNEL(SVRCONN)
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/svrconn.jpg?raw=true)
 
-- (OPTIONAL) Disable connection password check 
+- Disable connection password check 
 > For simplicity, in this workshop we will will configure No Authentication: When CHCKCLNT is set to NONE, valid credentials supplied by applications are not checked, and invalid ones are ignored
 ```
 ALTER AUTHINFO(SYSTEM.DEFAULT.AUTHINFO.IDPWOS) AUTHTYPE(IDPWOS) CHCKCLNT(NONE)
@@ -100,6 +100,8 @@ ALTER QMGR CONNAUTH(' ')
 REFRESH QMGR TYPE(CONFIGEV)
 ALTER QMGR CHLAUTH(DISABLED)
 ```
+
+Press CTRL+C to exit MQSC and get back to the root bash terminal.
 
 - create a linux user eg. minkook
 > Create your username
