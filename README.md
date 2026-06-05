@@ -513,6 +513,7 @@ Below is an overview of the modules covered in this training. Each chapter direc
 * Diagnosing `MQRC_NOT_AUTHORIZED` (2035) errors
 
 **Exercise:** Analyze a failed connection attempt via Dynatrace logs, trace the error back to the IBM MQ server error logs within the container, apply the required configuration fix, and validate successful metric ingestion in a pre-built Dynatrace MQ dashboard.
+
 ✅**Outcome:** Real-world troubleshooting experience resolving middleware authentication failures and restoring observability.
 
 ---
