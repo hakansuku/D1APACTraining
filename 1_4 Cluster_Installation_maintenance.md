@@ -4,6 +4,7 @@
 > you should have received a download link with a token generated for your license.
 
 ![installation guide](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/installationmail.png?raw=true)
+
 > Gain root user permission using 'sudo su' command
 Copy and paste YOUR license token download link command from your invitation email into the command prompt to trigger the download.
 - wget -O dynatrace-managed.sh "https://mcsvc-ap-dev.dynatracelabs.com/downloads/installer/get/latest?token=AQECAHhxuvu5y6kpzj-Wo7g-6EIEO37a13xdLw9AvZ7cPYFyJQAAAIQwgYEGCSqGSIb3DQEHBqB0MHICAQAwbQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAxEoMYsxTvY2usGE4ECARCAQNHq6L621VV0vkmiVliVqrQ9vPco93ygNTOSmwyotObUliNMfWEjyIFVO8DwEaaUWlRIe3commMMpPlXXXXXXXX"
