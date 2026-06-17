@@ -11,14 +11,14 @@ We will look at how we can use Davis Predictive AI to predict the percentage of 
  - Open Notebooks
  - Create new query section
 
-!["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/querygrail.png?raw=true)
+!["query"](./images/DQL/querygrail.png?raw=true)
 
 Type below query to get list of hostgroups in the tenant and run
 ```
 fetch dt.entity.host_group
 ```
 
-!["query"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/hostgroup.png?raw=true)
+!["query"](./images/DQL/hostgroup.png?raw=true)
 
 > copy the host group ID for VMWARE we will use this ID to filter our query in the next step.
 
@@ -44,11 +44,11 @@ filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
 
 > Observe the output contains the fields thisWeek , dt.entity.host , interval and timeframe defined. 
 
-!["line"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/memoryusage.png?raw=true)
+!["line"](./images/DQL/memoryusage.png?raw=true)
 
 - Change the visualization type by pressing OPTIONS and select Line chart
 
-!["linechart"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/memorylinechart.png?raw=true)
+!["linechart"](./images/DQL/memorylinechart.png?raw=true)
 
 > Next, we will now use Davis predictive AI to forecast memory percentage usage based on our timeseries dataset.
 
@@ -56,11 +56,11 @@ filter: dt.entity.host_group=="HOST_GROUP-E7C1CF343BD32188"
 - Click to enable Davis Analyzer
 - Press Run Query
 
-!["linechart"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/enableforecast.png?raw=true)
+!["linechart"](./images/DQL/enableforecast.png?raw=true)
 
 > Observe how easily memory usage trend is projected into the future with the help of Davis Analyzer. 
 
-!["forecasted"](https://github.com/hakansuku/D1APACTraining/blob/main/images/DQL/forecastedmemoryusage.png?raw=true)
+!["forecasted"](./images/DQL/forecastedmemoryusage.png?raw=true)
 
 
 
