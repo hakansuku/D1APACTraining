@@ -4,7 +4,7 @@
 > Download latest version of Android studio
 https://developer.android.com/studio
 
-![installation guide](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/install.png?raw=true)
+![installation guide](./images/mobile/install.png?raw=true)
 > Download the installer file and run through the default installation until complete.
 > Launch Android studio.
 
