@@ -23,6 +23,7 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
 ![deploy](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/deploy2.jpg)
 
 - add external port 31146 to easytrade-frontendreverseproxy
+
 ```k -n easytrade patch svc easytrade-frontendreverseproxy -p '{"spec": {"type": "NodePort", "ports": [{"port": 8080, "targetPort": 8080, "nodePort": 31146}]}}'```
 
 - validate all pods are running
@@ -45,6 +46,8 @@ reference: https://github.com/Dynatrace/easytrade/blob/main/README.md
 
 - Open a browser , type in the ip address & port number
   ```http://http://43.203.165.232:31146/```
+
+> note: when testing from external browser make sure you do not have corporate vpn enabled.
   
 ![login](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
 
