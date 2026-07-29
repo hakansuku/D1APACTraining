@@ -1,4 +1,4 @@
-# 10_2 Deploy - EasyTrade demo application
+# 10_3 Deploy - EasyTrade demo application
 
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/classicfullstack/login.jpg)
 
