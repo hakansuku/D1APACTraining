@@ -1,14 +1,18 @@
 # 13_1_1 Run a IBM MQ sample environment on an AWS EC2 instance. 
 
 ## In this tutorial we will spin a Ubuntu linux AWS::EC2 instance , we run a Docker IBM MQ sample on an AWS EC2 instance. This setup is commonly used for rapid development and testing IBM MQ
-- Prepare a development ubuntu VM instance (refer to previous exercise 1_2)
+- Prepare a development ubuntu VM instance (refer to previous exercise 1_2) Choose a smaller instance type (eg. t3.large).
 - SSH into the Ubuntu terminal 
   
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/OTELcollector/SSHterminal.jpg)
 
-- Update, Upgrade ubuntu and install Docker
+- Get root access
 ```
 sudo su
+```
+- Update, Upgrade ubuntu and install Docker
+
+```
 apt update -y
 apt upgrade -y
 apt install docker.io -y
@@ -87,7 +91,7 @@ DISPLAY CHANNEL(SVRCONN)
 ```
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/svrconn.jpg?raw=true)
 
-- (OPTIONAL) Disable connection password check 
+- Disable connection password check 
 > For simplicity, in this workshop we will will configure No Authentication: When CHCKCLNT is set to NONE, valid credentials supplied by applications are not checked, and invalid ones are ignored
 ```
 ALTER AUTHINFO(SYSTEM.DEFAULT.AUTHINFO.IDPWOS) AUTHTYPE(IDPWOS) CHCKCLNT(NONE)
@@ -96,6 +100,8 @@ ALTER QMGR CONNAUTH(' ')
 REFRESH QMGR TYPE(CONFIGEV)
 ALTER QMGR CHLAUTH(DISABLED)
 ```
+
+Press CTRL+C to exit MQSC and get back to the root bash terminal.
 
 - create a linux user eg. minkook
 > Create your username

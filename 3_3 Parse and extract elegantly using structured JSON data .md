@@ -5,7 +5,7 @@
 ## 1) Understanding JSON structure through visualization
 - Open DPL architect from Notebooks, copy JSON data from record content.
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualizeJSON.png?raw=true)
+![JSONdata](./images/DPL/visualizeJSON.png?raw=true)
 
 - copy and paste into online JSON decoder tool 
 
@@ -15,7 +15,7 @@
 
 > Online JSON decoder : https://codebeautify.org/json-decode-online
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/visualJSON.png?raw=true)
+![JSONdata](./images/DPL/visualJSON.png?raw=true)
 
 > Expand the JSON object structure to visualize the nested fields.
 
@@ -28,18 +28,18 @@ LD 'pushed to kafka ' JSON:parsedJson
 
 > NOTE: LD stands for	Line data matcher.  Refer to https://docs.dynatrace.com/docs/platform/grail/dynatrace-pattern-language/log-processing-grammar.
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONvariantobject2.png?raw=true)
+![JSONdata](./images/DPL/JSONvariantobject2.png?raw=true)
 
 - Click on results tab
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/resultvariantobject2.png?raw=true)
+![JSONdata](./images/DPL/resultvariantobject2.png?raw=true)
 
 > Observe the JSON data format is VARIANT OBJECT. You don't have to list all of the attributes. Instead, a JSON matcher can be used in auto-discovery mode. As a result, you get a VARIANT_OBJECT that you can process further.
 
 - Open Log & Events app and click Run Query.
 - In advanced mode, select the ingested sample record and click on Create processing rule button 
 
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONmkrule.png?raw=true)
+![JSONdata](./images/DPL/JSONmkrule.png?raw=true)
 
 - Type in the Rule name field
 - Type isNotNull(dt.auth.origin) in the matcher field
@@ -74,7 +74,7 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson ")
 
 - scroll down and click run test rule button
   
-![JSONdata](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/JSONtestrun123.png?raw=true)
+![JSONdata](./images/DPL/JSONtestrun123.png?raw=true)
 
 - Click Save changes button.
 - Disable previous 3_2 unstructured text processing rule created.
@@ -84,7 +84,7 @@ PARSE(content, "LD 'pushed to kafka ' JSON:parsedJson ")
 - Ingest same sample record again using Dynatrace Log API Swagger UI
 - Validate that all the JSON structure fields are added as attributes in the new ingested log record.
 
-![FINAL](https://github.com/hakansuku/D1APACTraining/blob/main/images/DPL/validatefinal.png?raw=true)
+![FINAL](./images/DPL/validatefinal.png?raw=true)
 
 > Parsing with DPL expressions for unstructured text data is messy compared to parsing structured JSON data.
 

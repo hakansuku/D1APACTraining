@@ -14,6 +14,7 @@ We will be using this tool to establish an SSH connection to the AWS instance ho
 > 5. Click Advanced SSH settings tab 
 > 6. Set Use private key - select the key pair .pem file downloaded from previous workshop
 Press OK
+
 ![Select Region](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/moba.png?raw=true)
 
 ### 3) SSH Login (Secure SHell) as ubuntu user

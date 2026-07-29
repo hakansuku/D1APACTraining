@@ -9,14 +9,14 @@ Insert the below code to declare the following permissions :
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
-![manifest](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/manifest.png?raw=true)
+![manifest](./images/mobile/manifest.png?raw=true)
 
 ## 2) Design your User Interface (UI) with Layout Editor
 Expand res folder.  Under layout folder locate activity_main.xml click to open. 
 - Change to Code view (tab)
 - Delete existing TextView element as below
 
-![iactivity_main](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/activityview.png?raw=true)
+![iactivity_main](./images/mobile/activityview.png?raw=true)
 > Replace with below code.  This will add 3 elements to the layout
 
 ```xml
@@ -53,7 +53,7 @@ Expand res folder.  Under layout folder locate activity_main.xml click to open.
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 ```
-![kayout code](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/insert.png?raw=true)
+![kayout code](./images/mobile/insert.png?raw=true)
  - TextView element : CookiClicker
 - Button element : Click +
 - Button element : Exit
@@ -61,7 +61,7 @@ Expand res folder.  Under layout folder locate activity_main.xml click to open.
 
 Click on Design mode (tab).
 
-![layout](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/editlayout.png?raw=true)
+![layout](./images/mobile/editlayout.png?raw=true)
 > Info on Layout Editor can be found at https://developer.android.com/studio/write/layout-editor
 
 ## 3) Get started with coding the MainActivity class
@@ -72,7 +72,7 @@ Edit the class declaration and add the first part of the code for the MainActivi
 
 Click to open MainActivity file in the editor
 
-![MainActivity](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/androidappview.png?raw=true)
+![MainActivity](./images/mobile/androidappview.png?raw=true)
 
 In the editor, copy the below code and insert into the MainActivity source code as below
 
@@ -98,7 +98,7 @@ In the editor, copy the below code and insert into the MainActivity source code 
 
 > Import necessary classes like Button and TextView
 
-![MainActivitye](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/mainactivity.png?raw=true)
+![MainActivitye](./images/mobile/mainactivity.png?raw=true)
 > In summary the above added code does:
 - declares and initializes a counter and button handlers for use
 - adds a listener for "Click +" button and increments by 1 when clicked. 
@@ -107,7 +107,7 @@ In the editor, copy the below code and insert into the MainActivity source code 
 ## 4) Run the application 
 >  Click on Run icon to Run the application in the Emulator
 
-![Runbutton](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/PlaytoRun.png?raw=true)
+![Runbutton](./images/mobile/PlaytoRun.png?raw=true)
 > During each run , Android Studio will recompile and install the software and install in the virtual device. 
 
 ## 5) Testing 
@@ -117,12 +117,12 @@ In the editor, copy the below code and insert into the MainActivity source code 
 
 > You can also stop the application running by stopping from using the red stop icon in Adroid studio. 
 
-![Test](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/runningapp2.png?raw=true)
+![Test](./images/mobile/runningapp2.png?raw=true)
 
 ## 6) View logs with Logcat
 
 > The Logcat window in Android Studio helps you debug your app by displaying logs from your device in real time
 
-![Logcat](https://github.com/hakansuku/D1APACTraining/blob/main/images/mobile/debug.png?raw=true)
+![Logcat](./images/mobile/debug.png?raw=true)
 
 End of Document

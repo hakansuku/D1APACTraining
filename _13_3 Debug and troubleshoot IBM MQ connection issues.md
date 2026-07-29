@@ -30,3 +30,22 @@ cat AMQERR01.LOG
 
 - Fix
 ![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/FIX.jpg)
+
+```
+DISPLAY AUTHINFO(DEV.AUTHINFO) ALL
+ALTER AUTHINFO(DEV.AUTHINFO) AUTHTYPE(IDPWOS) CHCKCLNT(NONE)
+REFRESH QMGR TYPE(CONFIGEV)
+REFRESH SECURITY TYPE(CONNAUTH)
+```
+
+- Check there are no longer warning logs
+> you should no longer observe warning in the logs
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/nowarnings.jpg)
+
+- Visualize IBM MQ performance metrics via Pre-built dashboard IBM MQ in the Dashboard App
+
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/dash1.jpg)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/dash2.jpg)
+![](https://github.com/hakansuku/D1APACTraining/blob/main/images/IBMMQ/dash3.jpg)
+
+-End of document-

@@ -48,8 +48,8 @@ Return to the original screen tab, click the refresh button and confirm your new
 The minimum recommended storage for a managed cluster node is 300 GB
 
 ![change storage](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/storage.png?raw=true)
-
-### 11) Click on Set maximum cost for Spot instances and set 0.15
+ 
+### 11) Click on Set maximum cost for Spot instances and set 0.15 (check the current minimum price of t3.2xlarge)
 ![delete list of type](https://github.com/hakansuku/D1APACTraining/blob/main/images/managed/maxcost.png?raw=true)
 > Using Spot Instances to Reduce Cluster Costs:
 > The maximum spot price is the maximum price you would be willing to pay for a Spot instance hour.

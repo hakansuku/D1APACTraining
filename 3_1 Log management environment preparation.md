@@ -1,6 +1,6 @@
 # Log management environment preparation
 
-> IMPORTANT : If you don't have SaaS (3rd Gen) with Grail tenant environment access. Please ping me and I'll give you an account.
+> IMPORTANT : If you don't have SaaS (3rd Gen) with Grail tenant environment access. You can use the managed cluster environment you previously created in Workshop 1.  You will require permissions to creating log processing rules.
 
 ## 1) Creating access token to ingest log records via API
 
