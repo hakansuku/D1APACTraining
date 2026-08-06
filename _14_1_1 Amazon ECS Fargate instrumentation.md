@@ -1,4 +1,4 @@
-# 13_1_1 Instrumenting Amazon ECS Fargate applications
+# 14_1_1 Instrumenting Amazon ECS Fargate applications
 
 ## In this tutorial we will instrument Amazon ECS Fargate application. 
 > Amazon ECS Fargate is a serverless compute engine for Amazon ECS that lets you run containers without managing servers or EC2 clusters.
