@@ -4,5 +4,7 @@
 > Amazon ECS Fargate is a serverless compute engine for Amazon ECS that lets you run containers without managing servers or EC2 clusters.
 
 - In AWS console , go to Elastic Container Service (ECS Fargate)
-- Create cluster
+- Click Create cluster
 ![](./images/ECS/ecscreate.jpg)
+- name the cluster and click Create 
+![](./images/ECS/namecluster.jpg)
