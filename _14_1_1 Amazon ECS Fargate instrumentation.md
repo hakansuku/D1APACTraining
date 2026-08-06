@@ -9,3 +9,8 @@
 ![](./images/ECS/ecscreate.jpg)
 - name the cluster and click Create 
 ![](./images/ECS/namecluster.jpg)
+
+## 2) Creating secret to store environment variables used for configuration
+- In AWS console , go to Secret Manager service
+- Click store a new secret
+![](./images/ECS/createsecret.jpg)
