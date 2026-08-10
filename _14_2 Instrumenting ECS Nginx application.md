@@ -5,7 +5,7 @@
 
 > When you integrate Dynatrace OneAgent code modules into AWS Fargate tasks using an initContainer (also known as runtime integration), it operates in Application-Only monitoring mode.  Because AWS Fargate is a serverless platform, users do not have administrative access to the underlying virtual machine host or operating system. Consequently, traditional Full-Stack monitoring mode (which requires a root-privileged OneAgent daemon running on the host system to monitor all processes) cannot be utilized
 
-> In this lab we are only showing how to instrument with oneagent nginx technology module. However (valid technology module values: python, java, dotnet, nodejs, php, go, apache, nginx, all). make sure supported application versions for each technology.
+> In this lab we are only showing how to instrument with Oneagent nginx technology module. However (valid technology module values: python, java, dotnet, nodejs, php, go, apache, nginx, all). make sure supported application versions for each technology.
 
 # Creating a task definition 
 > Refer https://docs.dynatrace.com/docs/shortlink/aws-fargate#configure-the-task-definition
