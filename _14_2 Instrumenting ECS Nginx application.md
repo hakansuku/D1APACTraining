@@ -11,7 +11,19 @@
 - Click Create new task definition button and choose Create new task definition with JSON
 ![](./images/ECS/createtask.jpg)
 
--  template for the sample application - you will need to modify with your own values
+-  template for the sample application - you will need to modify the below template with your own values
+
+> 1. Rename first line mk-fargate-task with your own task name. 
+> 2. Replace all secrets: ARN values with your own ones from your secret manager 
+> "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:917226228317:secret:mk-fargate-secret-ZqKPI0:DT_API_URL::"
+> "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:917226228317:secret:mk-fargate-secret-ZqKPI0:DT_PAAS_TOKEN::"
+> "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:917226228317:secret:mk-fargate-secret-ZqKPI0:DT_TENANT::"
+> "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:917226228317:secret:mk-fargate-secret-ZqKPI0:DT_TENANTTOKEN::"
+> "valueFrom": "arn:aws:secretsmanager:ap-northeast-2:917226228317:secret:mk-fargate-secret-ZqKPI0:DT_CONNECTION_POINT::"
+
+> 3. Under /ecs/oneagent , Replace "awslogs-region": "ap-northeast-2" with your own Cloudwatch region
+> 4. Under /ecs/webcontainer , Replace "awslogs-region": "ap-northeast-2" with your own Cloudwatch region
+
 ```
 {
     "family": "mk-fargate-task",
