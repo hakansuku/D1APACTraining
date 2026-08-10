@@ -520,6 +520,8 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ## Chapter 14 Amazon ECS Fargate run-time instrumentation
 
+**Overall Value:** This hands-on lab provides an end-to-end practical blueprint for implementing seamless observability in serverless environments. By combining AWS infrastructure setup with advanced deployment patterns, it equips participants with the exact skills needed to monitor containerized applications without modifying the core application code.
+
 ### [14_1 Instrumenting Amazon ECS Fargate workloads - environment preparation](./_14_1%20Amazon%20ECS%20Fargate%20instrumentation.md)
 **Goal:** 
 * Learn how to manually instrument Amazon ECS Fargate workloads.  
