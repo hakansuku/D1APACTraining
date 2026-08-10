@@ -14,3 +14,16 @@
 - In AWS console , go to Secret Manager service
 - Click store a new secret
 ![](./images/ECS/createsecret.jpg)
+
+- Choose Other type of secret
+- Add the key and values as below. Replace your with your tenant ID, platform PAAS token and tenant token.
+- 
+![](./images/ECS/secrets.jpg)
+
+- 2.1 Below is how to create your own tokens
+> NOTE: Create PAAS token via my https://myaccount.dynatrace.com/platformTokens  
+> Refer Permissions: https://docs.dynatrace.com/docs/ingest-from/amazon-web-services/integrate-into-aws/aws-fargate
+
+> NOTE: Get Tenant token via (Swagger UI) Dynatrace API > Environment API v1 > Deployment > GET /deployment/installer/agent/connectioninfo.   
+
+![](./images/ECS/tenanttoken.jpg)
