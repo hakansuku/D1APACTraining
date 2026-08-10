@@ -8,5 +8,5 @@
 
 ## 1) Creating a task definition
 - In AWS console , go to Elastic Container Service (ECS Fargate) > Task definition 
-- Click Create new task definition button
+- Click Create new task definition button and choose Create new task definition with JSON
 ![](./images/ECS/createtask.jpg)
