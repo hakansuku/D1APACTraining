@@ -34,3 +34,11 @@
 ![](./images/ECS/tenanttoken.jpg)
 
 > NOTE: You will need to use your platform token to authorize the API call in Swagger UI.
+
+## 3) Creating Cloudwatch log group 
+-  In AWS console , go to Cloudwatch service
+- Under Logs > Log Management
+- Click Create log group button and create two groups called (/ecs/oneagent and /ecs/webcontainer) as per screenshot below
+> NOTE : These two log groups will be used to gather the oneagent and web container application logs to understand what is going on within the ECS container for debugging. 
+
+![](./images/ECS/loggroups.jpg)
