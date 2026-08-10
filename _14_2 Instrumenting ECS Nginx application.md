@@ -1,7 +1,9 @@
 # 14_2 Instrumenting sample Nginx application with Oneagent code module for Nginx
 
 ## In this tutorial we will define a task definition. The ECS task definition configures an AWS Fargate task that runs an NGINX web server instrumented with Dynatrace OneAgent for application performance monitoring.
-> It accomplishes this using the init-container pattern, where a temporary setup container prepares the monitoring files before the main web server starts.
+> It accomplishes this using the init-container pattern, where a temporary setup container prepares the monitoring files before the main web server starts.  
+
+> When you integrate Dynatrace OneAgent code modules into AWS Fargate tasks using an initContainer (also known as runtime integration), it operates in Application-Only monitoring mode.  Because AWS Fargate is a serverless platform, users do not have administrative access to the underlying virtual machine host or operating system. Consequently, traditional Full-Stack monitoring mode (which requires a root-privileged OneAgent daemon running on the host system to monitor all processes) cannot be utilized
 
 # Creating a task definition 
 > Refer https://docs.dynatrace.com/docs/shortlink/aws-fargate#configure-the-task-definition
@@ -214,5 +216,20 @@
 
 ![](./images/ECS/connected.jpg)
 
+## 4) Validate detected nginx service in Dynatrace tenant
 
+- Go to your Dynatrace tenant
+- Run the Services app
+- Observe the nginx service being listed on port 80 
+- View traces belonging to the nginx service
+
+![](./images/ECS/services.jpg)
+
+- Additionally , Run Infrastructure & Operations app
+- Validate that host is visible as the oneagent 
+
+
+![](./images/ECS/oneagenthost.jpg)
+
+- End of lab Document -
 
