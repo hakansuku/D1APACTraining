@@ -189,9 +189,11 @@
 > NOTE the browser page cannot connect, check your security group and allow TCP inbound port 80
 
 - You page should display nginx welcome page (meaning your nginx application is running in ECS. 
+
 ![](./images/ECS/nginx.jpg)
 
 ## 3) Validating Oneagent instrumentation via logs
+
 > NOTE : we previously added environment variables in the task definition to enable logging, this is not necessary in production and can be removed.  It was added for demonstration purpose in this lab.
 
 > "name": "DT_LOGSTREAM", "value": "stdout" and   "name": "DT_LOGLEVELCON", "value": "INFO" 
@@ -207,7 +209,9 @@
 - Similarly open /ecs/webcontainer log group 
 - Open the latest log stream 
 - Observe the logs generated 
+
 > To validate there is a proper connection to the tenant endpoint look for connection log as below
+
 ![](./images/ECS/connected.jpg)
 
 
