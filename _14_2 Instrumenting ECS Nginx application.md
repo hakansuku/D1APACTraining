@@ -196,7 +196,7 @@
 
 ![](./images/ECS/nginx.jpg)
 
-## 3) Validating Oneagent instrumentation via logs
+## 3) Debug and validate Oneagent instrumentation via logs
 
 > NOTE : we previously added environment variables in the task definition to enable logging, this is not necessary in production and can be removed.  It was added for demonstration purpose in this lab.
 
@@ -218,7 +218,7 @@
 
 ![](./images/ECS/connected.jpg)
 
-## 4) Validate detected nginx service in Dynatrace tenant
+## 4) Validate detected nginx service from Dynatrace tenant
 
 - Go to your Dynatrace tenant
 - Run the Services app
