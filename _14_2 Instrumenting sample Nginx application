@@ -1,0 +1,12 @@
+# 14_2 Instrumenting sample Nginx application with Oneagent code module for Nginx
+
+## In this tutorial we will define a task definition. The ECS task definition configures an AWS Fargate task that runs an NGINX web server instrumented with Dynatrace OneAgent for application performance monitoring.
+> It accomplishes this using the init-container pattern, where a temporary setup container prepares the monitoring files before the main web server starts.
+
+# Creating a task definition 
+> Refer https://docs.dynatrace.com/docs/shortlink/aws-fargate#configure-the-task-definition
+
+## 1) Creating a task definition
+- In AWS console , go to Elastic Container Service (ECS Fargate) > Task definition 
+- Click Create new task definition button
+![](./images/ECS/createtask.jpg)
