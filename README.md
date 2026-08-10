@@ -545,24 +545,24 @@ Below is an overview of the modules covered in this training. Each chapter direc
 
 ### [14_2 Instrumenting sample Nginx application with Oneagent code module for Nginx](./_14_2%20Instrumenting%20ECS%20Nginx%20application.md)
 **Goal:** 
-* Learn how to manually instrument Amazon ECS Fargate workloads.
-* Integrate Dynatrace OneAgent code modules into Fargate tasks using an initContainer.
-* Configure and activate OneAgent using environment variables and shared ephemeral volumes.
+* Configure an AWS Fargate task running an NGINX web server.
+* Instrument the application with Dynatrace OneAgent for Application Performance Monitoring (APM).
+* Utilize the init-container pattern to prepare monitoring files before the main web server starts.
 
 **Concepts Covered:**
-* Amazon ECS Fargate: A serverless compute engine for running containers without managing underlying servers or EC2 clusters.
-* Dynatrace OneAgent Integration: Using an initContainer to deploy monitoring artifacts.
-* AWS Secrets Manager: Securely storing sensitive configuration data (like Tenant IDs and API tokens) as environment variables.
-* Dynatrace API Authorization: Generating and utilizing Platform (PaaS) and Tenant tokens.
-* AWS CloudWatch: Creating log groups to aggregate and monitor application and agent logs for debugging.
+* Init-Container Pattern (Runtime Integration): Deploying a temporary setup container to inject OneAgent code modules before the primary application loads.
+* Application-Only Monitoring Mode: Operating without root access to the underlying host, which is necessary for serverless platforms like Fargate (as opposed to Full-Stack monitoring).
+* ECS Task Definitions: Constructing JSON templates to define container configurations, resource limits, secrets, shared volumes, and container start dependencies.
+* Instrumentation Validation: Utilizing specific environment variables (DT_LOGSTREAM, DT_LOGLEVELCON) to route agent logs to AWS CloudWatch for troubleshooting.
 
 **Exercise:**
-* Create an ECS Cluster: Navigate the AWS console to set up a new Elastic Container Service (Fargate) cluster.
-* Store Secrets: Use AWS Secrets Manager to securely store Dynatrace configuration variables (Tenant ID, Platform PAAS token, and Tenant token).
-* Generate Tokens: Create a PAAS token from the Dynatrace account platform and retrieve a Tenant token using the Dynatrace Environment API (Swagger UI).
-* Configure Logging: Set up two specific AWS CloudWatch log groups (/ecs/oneagent and /ecs/webcontainer) to capture container outputs.
+* Create a Task Definition: Build a new task definition using a provided JSON template, substituting placeholders with your custom task name, Secrets Manager ARNs, and CloudWatch region.
+* Run the Task in ECS: Deploy the task to your cluster, making sure Public IP is enabled and the security group allows inbound traffic on TCP port 80.
+* Verify Application Access: Open the assigned public IP address in a web browser to confirm the NGINX welcome page is functioning.
+* Debug via CloudWatch: Inspect the /ecs/oneagent and /ecs/webcontainer log streams to confirm the agent successfully connected to the tenant endpoint.
+* Validate in Dynatrace: Use the Dynatrace Services app and Infrastructure & Operations app to confirm the NGINX service is detected on port 80 and the host is visible.
 
-✅**Outcome:** Participants will have successfully prepared their AWS environment—complete with a running ECS cluster, secure credentials management, and dedicated logging infrastructure—ready to deploy and monitor a containerized application using Dynatrace OneAgent.
+✅**Outcome:* Participants will have successfully deployed a functional, containerized NGINX application on AWS Fargate that is fully instrumented with Dynatrace. They will understand how to orchestrate container dependencies via JSON, debug runtime issues using CloudWatch, and confirm telemetry ingestion in the Dynatrace platform.
 
 ---
 
