@@ -33,3 +33,4 @@
 
 ![](./images/ECS/tenanttoken.jpg)
 
+> NOTE: You will need to use your platform token to authorize the API call in Swagger UI.
