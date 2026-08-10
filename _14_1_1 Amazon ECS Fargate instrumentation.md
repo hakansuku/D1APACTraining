@@ -23,11 +23,13 @@
 ![](./images/ECS/secrets.jpg)
 
 - 2.1 Below is how to create your own tokens
-> NOTE: Create PAAS token via my https://myaccount.dynatrace.com/platformTokens  
+
+- 2.1.1 Create PAAS token via my https://myaccount.dynatrace.com/platformTokens  
 > Refer Permissions: https://docs.dynatrace.com/docs/ingest-from/amazon-web-services/integrate-into-aws/aws-fargate
 
+
+
+- 2.1.2 Get Tenant token via (Swagger UI) Dynatrace API > Environment API v1 > Deployment > GET /deployment/installer/agent/connectioninfo.   
+
 ![](./images/ECS/tenanttoken.jpg)
-
-> NOTE: Get Tenant token via (Swagger UI) Dynatrace API > Environment API v1 > Deployment > GET /deployment/installer/agent/connectioninfo.   
-
 
