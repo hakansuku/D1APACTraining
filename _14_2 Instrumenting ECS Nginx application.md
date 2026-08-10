@@ -157,3 +157,5 @@
     "memory": "512"
 }
 ```
+- Save the task definition. 
+
